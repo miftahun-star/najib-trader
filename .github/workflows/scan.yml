@@ -1,0 +1,49 @@
+name: Signal Scanner
+
+on:
+  schedule:
+    # IDX session (~09:00-16:00 WIB = 02:00-09:00 UTC)
+    # US session (~09:30-16:00 ET = 13:30-20:00 UTC, +1h for DST)
+    - cron: '0 3,15 * * 1-5'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run signal scan
+        run: python -m engine.run_scan
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push results
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Signal Scanner Bot"
+          git config user.email "bot@najibtrader.my.id"
+          git add data/
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+          git commit -m "📊 Signal scan: ${TIMESTAMP}"
+          git push

@@ -1,0 +1,62 @@
+{
+  "ticker": "BBCA.JK",
+  "market": "IHSG",
+  "last_updated": "2026-07-14T03:00:00Z",
+  "data_stale": false,
+  "timeframes": {
+    "daily": {
+      "signal": "BOTTOM",
+      "score": 74.2,
+      "reason": "High confluence score (74.2) at range low | Bullish divergence detected | Candle: hammer (bullish)",
+      "components": {"rsi_stoch": 72, "divergence": 90, "candle_pattern": 75, "bb_touch": 85, "volume_climax": 65, "sr_fib": 70},
+      "indicators": {
+        "rsi": 28.4, "stoch_k": 15.2, "stoch_d": 18.7, "macd": -52.3, "macd_signal": -48.1, "macd_hist": -4.2,
+        "bb_upper": 10250, "bb_mid": 9950, "bb_lower": 9650, "atr": 125.5, "ma50": 10050, "ma200": 9800,
+        "price": 9875, "vol_ratio": 2.3, "above_ma50": false, "above_ma200": true
+      },
+      "patterns": {
+        "candle": {"name": "hammer", "direction": "bullish"},
+        "bullish_divergence": true, "bearish_divergence": false,
+        "bb_touch": "lower", "volume_climax": true,
+        "near_support": true, "near_resistance": false, "in_fib_zone": true
+      },
+      "trade_levels": {
+        "entry": 9875, "stop_loss": 9686.75, "tp1": 10063.25, "tp2": 10251.50, "tp3": 10439.75,
+        "risk": 188.25, "rr_ratio": "1:1.0 / 1:2.0 / 1:3.0", "trailing_stop": 9561.25, "trailing_k": 2.5
+      },
+      "support_levels": [9650, 9400], "resistance_levels": [10250, 10500],
+      "fib_levels": {"0.0": 10500, "23.6": 10238, "38.2": 10080, "50.0": 9950, "61.8": 9820, "78.6": 9636, "100.0": 9400}
+    },
+    "weekly": {
+      "signal": "WATCH", "score": 61.5,
+      "reason": "Elevated score (61.5) but not at confirmed range low",
+      "components": {"rsi_stoch": 55, "divergence": 50, "candle_pattern": 50, "bb_touch": 50, "volume_climax": 65, "sr_fib": 70},
+      "indicators": {"rsi": 42.1, "stoch_k": 38.5, "stoch_d": 41.2, "macd": -28.1, "macd_signal": -25.4, "macd_hist": -2.7,
+        "bb_upper": 10800, "bb_mid": 10100, "bb_lower": 9400, "atr": 280, "ma50": 10200, "ma200": 9600,
+        "price": 9875, "vol_ratio": 1.4, "above_ma50": false, "above_ma200": true
+      },
+      "patterns": {"candle": {"name": null, "direction": null}, "bullish_divergence": false, "bearish_divergence": false,
+        "bb_touch": "none", "volume_climax": false, "near_support": false, "near_resistance": false, "in_fib_zone": true
+      },
+      "trade_levels": {"entry": null, "stop_loss": null, "tp1": null, "tp2": null, "tp3": null, "risk": null, "rr_ratio": null, "trailing_stop": null, "trailing_k": 2.5},
+      "support_levels": [9400, 9000], "resistance_levels": [10500, 11000],
+      "fib_levels": {"0.0": 11200, "23.6": 10776, "38.2": 10513, "50.0": 10300, "61.8": 10088, "100.0": 9400}
+    },
+    "monthly": {
+      "signal": "HOLD", "score": 52.3,
+      "reason": "Neutral zone (52.3)",
+      "components": {"rsi_stoch": 50, "divergence": 50, "candle_pattern": 50, "bb_touch": 50, "volume_climax": 55, "sr_fib": 55},
+      "indicators": {"rsi": 48.2, "stoch_k": 45.1, "stoch_d": 47.8, "macd": 15.2, "macd_signal": 18.4, "macd_hist": -3.2,
+        "bb_upper": 11500, "bb_mid": 10200, "bb_lower": 8900, "atr": 520, "ma50": 10100, "ma200": 9200,
+        "price": 9875, "vol_ratio": 1.1, "above_ma50": false, "above_ma200": true
+      },
+      "patterns": {"candle": {"name": null, "direction": null}, "bullish_divergence": false, "bearish_divergence": false,
+        "bb_touch": "none", "volume_climax": false, "near_support": false, "near_resistance": false, "in_fib_zone": false
+      },
+      "trade_levels": {"entry": null, "stop_loss": null, "tp1": null, "tp2": null, "tp3": null, "risk": null, "rr_ratio": null, "trailing_stop": null, "trailing_k": 2.5},
+      "support_levels": [8900, 8200], "resistance_levels": [11000, 12000],
+      "fib_levels": {}
+    }
+  },
+  "yearly_trend": {"bias": "bullish", "ma200_position": "above", "structure": "uptrend (HH+HL)", "description": "Long-term trend bias — not a reversal call"}
+}
