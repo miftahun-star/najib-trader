@@ -1,7 +1,8 @@
 """
 run_scan.py — Main orchestrator for the signal scanner.
 Fetches data, computes indicators/scores/trade levels per timeframe,
-generates yearly trend overlay, runs backtest, outputs JSON.
+generates yearly trend overlay, runs backtests, and outputs JSON.
+Sends optional Telegram push alerts for active BOTTOM/PEAK signals.
 """
 
 import json
@@ -10,6 +11,7 @@ import os
 import sys
 from datetime import datetime
 from pathlib import Path
+import requests
 
 import numpy as np
 import pandas as pd
@@ -57,6 +59,28 @@ class NumpyEncoder(json.JSONEncoder):
         return super().default(obj)
 
 
+def send_telegram_alert(message: str):
+    """Send a markdown/HTML formatted alert to Telegram."""
+    token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+    if not token or not chat_id:
+        return
+    try:
+        url = f"https://api.telegram.org/bot{token}/sendMessage"
+        res = requests.post(url, json={
+            "chat_id": chat_id,
+            "text": message,
+            "parse_mode": "HTML",
+            "disable_web_page_preview": True
+        }, timeout=10)
+        if res.status_code == 200:
+            logger.info("Telegram alert sent successfully.")
+        else:
+            logger.error(f"Failed to send Telegram alert: {res.text}")
+    except Exception as e:
+        logger.error(f"Error sending Telegram alert: {e}")
+
+
 def compute_yearly_trend(daily_df: pd.DataFrame) -> dict:
     """
     Compute yearly trend overlay — NOT a reversal signal.
@@ -70,11 +94,11 @@ def compute_yearly_trend(daily_df: pd.DataFrame) -> dict:
     }
 
     try:
-        if daily_df is None or len(daily_df) < 200:
+        if daily_df is None or len(daily_df) < 50:
             return trend
 
         weekly = resample_to_weekly(daily_df)
-        if len(weekly) < 50:
+        if weekly is None or len(weekly) < 15:
             return trend
 
         # Weekly MA200 (pure pandas)
@@ -87,14 +111,14 @@ def compute_yearly_trend(daily_df: pd.DataFrame) -> dict:
 
         # Higher-high / higher-low structure (last 4 swing points)
         closes = weekly["Close"].values
-        if len(closes) >= 20:
+        if len(closes) >= 10:
             # Simple structure: compare last 4 local extremes
             highs = []
             lows = []
-            for i in range(5, len(closes) - 5):
-                if closes[i] == max(closes[i-5:i+6]):
+            for i in range(2, len(closes) - 2):
+                if closes[i] == max(closes[i-2:i+3]):
                     highs.append(closes[i])
-                if closes[i] == min(closes[i-5:i+6]):
+                if closes[i] == min(closes[i-2:i+3]):
                     lows.append(closes[i])
 
             if len(highs) >= 2 and len(lows) >= 2:
@@ -150,13 +174,15 @@ def process_ticker(ticker: str, daily_df: pd.DataFrame) -> dict:
     }
 
     for tf_name, tf_df in timeframe_dfs.items():
-        if tf_df is None or len(tf_df) < 30:
-            logger.info(f"Skipping {ticker} {tf_name}: insufficient data ({len(tf_df) if tf_df is not None else 0} bars)")
+        if tf_df is None or len(tf_df) < 15:
             continue
 
         try:
             # 1. Compute indicators
             indicators = compute_all_indicators(tf_df)
+
+            if not indicators:
+                continue
 
             # 2. Compute score
             score_result = compute_score(indicators)
@@ -216,15 +242,26 @@ def process_ticker(ticker: str, daily_df: pd.DataFrame) -> dict:
 def run():
     """Main scan execution."""
     logger.info("=" * 60)
-    logger.info(f"SIGNAL SCAN STARTED — {datetime.now(tz=__import__("datetime").timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}")
+    logger.info(f"SIGNAL SCAN STARTED — {datetime.now(tz=__import__('datetime').timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}")
     logger.info("=" * 60)
 
     # Ensure output dirs exist
     SIGNALS_DIR.mkdir(parents=True, exist_ok=True)
 
+    # Allow custom run limit via environment variable (useful for local runs/testing)
+    ticker_limit = os.environ.get("SCAN_LIMIT")
+    tickers_to_scan = ALL_TICKERS
+    if ticker_limit:
+        try:
+            limit = int(ticker_limit)
+            tickers_to_scan = ALL_TICKERS[:limit]
+            logger.info(f"Scan limit set via SCAN_LIMIT. Scanning first {limit} tickers.")
+        except ValueError:
+            pass
+
     # 1. Fetch all data
     logger.info("Step 1: Fetching OHLCV data...")
-    daily_data = fetch_all_tickers()
+    daily_data = fetch_all_tickers(tickers_to_scan)
 
     if not daily_data:
         logger.error("CRITICAL: No data fetched for any ticker. Aborting scan.")
@@ -234,6 +271,10 @@ def run():
     logger.info("Step 2: Processing tickers...")
     all_signals = []
     all_backtest_results = []
+    
+    ihsg_bt_count = 0
+    us_bt_count = 0
+    max_bt_per_market = 35 # Keeps overall backtest execution under 2 minutes
 
     for ticker, daily_df in daily_data.items():
         logger.info(f"Processing {ticker}...")
@@ -245,32 +286,58 @@ def run():
         ticker_file = SIGNALS_DIR / f"{safe_name}.json"
         with open(ticker_file, "w") as f:
             json.dump(ticker_result, f, cls=NumpyEncoder, indent=2)
-        logger.info(f"  → Written: {ticker_file.name}")
+        
+        # 3. Run backtests on a representative subset to keep actions fast
+        market = MARKET_MAP.get(ticker, "UNKNOWN")
+        run_bt = False
+        if market == "IHSG" and ihsg_bt_count < max_bt_per_market:
+            ihsg_bt_count += 1
+            run_bt = True
+        elif market == "US" and us_bt_count < max_bt_per_market:
+            us_bt_count += 1
+            run_bt = True
 
-        # 3. Run backtest per timeframe
-        for tf_name, tf_df in [("daily", daily_df), ("weekly", resample_to_weekly(daily_df)), ("monthly", resample_to_monthly(daily_df))]:
-            if tf_df is not None and len(tf_df) >= 200:
-                market = MARKET_MAP.get(ticker, "UNKNOWN")
-                bt = run_backtest(tf_df, ticker, market, tf_name)
-                all_backtest_results.append(bt)
+        if run_bt:
+            for tf_name, tf_df in [("daily", daily_df), ("weekly", resample_to_weekly(daily_df)), ("monthly", resample_to_monthly(daily_df))]:
+                if tf_df is not None and len(tf_df) >= 50:
+                    bt = run_backtest(tf_df, ticker, market, tf_name)
+                    all_backtest_results.append(bt)
 
     # 4. Write index.json (summary of all tickers)
     index_data = {
-        "last_updated": datetime.now(tz=__import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "last_updated": datetime.now(tz=__import__('datetime').timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "ticker_count": len(all_signals),
         "tickers": [],
     }
 
+    telegram_alerts = []
+
     for sig in all_signals:
         daily_tf = sig.get("timeframes", {}).get("daily", {})
+        signal = daily_tf.get("signal", "HOLD")
+        price = daily_tf.get("indicators", {}).get("price")
+        score = daily_tf.get("score", 50)
+        
         index_data["tickers"].append({
             "ticker": sig["ticker"],
             "market": sig["market"],
-            "signal": daily_tf.get("signal", "HOLD"),
-            "score": daily_tf.get("score", 50),
-            "price": daily_tf.get("indicators", {}).get("price"),
+            "signal": signal,
+            "score": score,
+            "price": price,
             "data_stale": sig.get("data_stale", False),
         })
+
+        # Collect active BOTTOM/PEAK signals for Telegram push
+        if signal in ("BOTTOM", "PEAK"):
+            tl = daily_tf.get("trade_levels", {})
+            emoji = "🟢" if signal == "BOTTOM" else "🔴"
+            alert = (
+                f"{emoji} <b>{sig['ticker']} ({sig['market']})</b>: <b>{signal}</b> (Score: {score})\n"
+                f"Price: {price:.2f if isinstance(price, (int, float)) else price}\n"
+            )
+            if tl and tl.get("entry"):
+                alert += f"Entry: {tl['entry']:.2f} | SL: {tl['stop_loss']:.2f} | TP1: {tl['tp1']:.2f}\n"
+            telegram_alerts.append(alert)
 
     index_file = SIGNALS_DIR / "index.json"
     with open(index_file, "w") as f:
@@ -285,6 +352,14 @@ def run():
         json.dump(backtest_output, f, cls=NumpyEncoder, indent=2)
     logger.info(f"Written: {backtest_file.name}")
 
+    # Send Telegram Alerts if any
+    if telegram_alerts:
+        summary_msg = f"<b>NajibTrader Signal Alerts</b>\n" \
+                      f"Time: {datetime.now(tz=__import__('datetime').timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}\n\n"
+        summary_msg += "\n".join(telegram_alerts)
+        for chunk in range(0, len(summary_msg), 4000):
+            send_telegram_alert(summary_msg[chunk:chunk+4000])
+
     # Summary
     logger.info("=" * 60)
     logger.info("SCAN COMPLETE")
@@ -298,7 +373,7 @@ def run():
         logger.info(f"  {s}: {c}")
 
     if backtest_output["overall"]["n_trades"] > 0:
-        logger.info(f"  Backtest: WR={backtest_output['overall']['win_rate']}%, "
+        logger.info(f"  Backtest (representative sample): WR={backtest_output['overall']['win_rate']}%, "
                     f"avgR={backtest_output['overall']['avg_r']}, "
                     f"n={backtest_output['overall']['n_trades']}")
     logger.info("=" * 60)

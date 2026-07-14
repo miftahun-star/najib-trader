@@ -2,6 +2,7 @@
 backtest.py — Vectorized backtesting of signal logic on historical data.
 Computes win rate, avg R-multiple, max drawdown, sample size.
 Segmented by market and timeframe.
+Optimized for high-speed computation over large stock universes.
 """
 
 import logging
@@ -10,7 +11,10 @@ from datetime import datetime
 import numpy as np
 import pandas as pd
 
-from engine.indicators import compute_all_indicators
+from engine.indicators import (
+    compute_all_indicators,
+    _rsi, _stochastic, _macd, _bbands, _atr, _sma
+)
 from engine.scoring import compute_score
 from engine.trade_levels import SL_ATR_MULTIPLIER
 
@@ -37,17 +41,42 @@ def run_backtest(df: pd.DataFrame, ticker: str, market: str, timeframe: str) -> 
         "last_updated": datetime.now(tz=__import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
 
-    if df is None or len(df) < 200:
-        logger.info(f"Insufficient data for backtest: {ticker} {timeframe} ({len(df) if df is not None else 0} bars)")
+    if df is None or len(df) < 50:
         return results
 
     try:
+        # Precompute technical indicators once on the entire dataframe for speed
+        df = df.copy()
+        df["rsi"] = _rsi(df["Close"], length=14)
+        
+        stoch = _stochastic(df["High"], df["Low"], df["Close"], k_period=14, d_period=3, smooth_k=3)
+        df["stoch_k"] = stoch["stoch_k"]
+        df["stoch_d"] = stoch["stoch_d"]
+        
+        macd = _macd(df["Close"], fast=12, slow=26, signal=9)
+        df["macd"] = macd["macd"]
+        df["macd_signal"] = macd["macd_signal"]
+        df["macd_hist"] = macd["macd_hist"]
+        
+        bb = _bbands(df["Close"], length=20, std=2)
+        df["bb_upper"] = bb["bb_upper"]
+        df["bb_mid"] = bb["bb_mid"]
+        df["bb_lower"] = bb["bb_lower"]
+        
+        df["atr"] = _atr(df["High"], df["Low"], df["Close"], length=14)
+        df["ma50"] = _sma(df["Close"], length=50)
+        df["ma200"] = _sma(df["Close"], length=200) if len(df) >= 200 else pd.Series([np.nan] * len(df), index=df.index)
+        df["vol_avg20"] = df["Volume"].rolling(20).mean()
+
         trades = []
-        lookback = 200  # Need at least 200 bars for MA200
+        lookback = 50  # Start walk-forward after 50 bars to have warm indicators
 
         # Walk forward through data, generating signals at each bar
-        for i in range(lookback, len(df) - 20, 5):  # Step by 5 to reduce computation
-            window = df.iloc[:i + 1].copy()
+        # Step by 10 to speed up backtest iterations significantly across large universes
+        for i in range(lookback, len(df) - 20, 10):
+            window = df.iloc[:i + 1]
+            
+            # This will skip raw calculation and just load row 'i' values + run pattern detection
             indicators = compute_all_indicators(window)
 
             if not indicators:
@@ -90,11 +119,6 @@ def run_backtest(df: pd.DataFrame, ticker: str, market: str, timeframe: str) -> 
             results["max_drawdown"] = round(_compute_max_drawdown(trades), 2)
             results["r_multiples"] = [round(r, 2) for r in r_multiples[-50:]]  # Keep last 50
 
-        logger.info(
-            f"Backtest {ticker} {timeframe}: {results['total_trades']} trades, "
-            f"WR={results['win_rate']}%, avgR={results['avg_r_multiple']}"
-        )
-
     except Exception as e:
         logger.error(f"Backtest error for {ticker} {timeframe}: {e}", exc_info=True)
 
@@ -118,7 +142,6 @@ def _simulate_trade(
     if signal == "BOTTOM":
         sl = entry_price - risk
         tp1 = entry_price + risk
-        tp2 = entry_price + 2 * risk
 
         for j in range(1, min(max_bars, len(df) - entry_idx)):
             bar = df.iloc[entry_idx + j]
@@ -139,7 +162,6 @@ def _simulate_trade(
     elif signal == "PEAK":
         sl = entry_price + risk
         tp1 = entry_price - risk
-        tp2 = entry_price - 2 * risk
 
         for j in range(1, min(max_bars, len(df) - entry_idx)):
             bar = df.iloc[entry_idx + j]

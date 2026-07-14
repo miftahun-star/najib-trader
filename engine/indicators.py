@@ -3,6 +3,7 @@ indicators.py — Full technical indicator computation per §3.1.
 Pure pandas/numpy implementation — no external TA library dependency.
 Computes RSI, Stochastic, MACD, Bollinger Bands, ATR, volume analysis,
 moving averages, divergence detection, candle patterns, S/R levels, and Fib zones.
+Supports precomputed columns to accelerate backtesting walk-forward.
 """
 
 import logging
@@ -79,51 +80,59 @@ def compute_all_indicators(df: pd.DataFrame) -> dict:
     Compute all indicators on a DataFrame with OHLCV columns.
     Returns a dict of indicator values for the latest bar.
     """
-    if df is None or len(df) < 50:
-        logger.warning("Insufficient data for indicator computation")
+    if df is None or len(df) < 30:
         return {}
 
     result = {}
 
     try:
-        # === Core indicators ===
-        # RSI(14)
         df = df.copy()
-        df["rsi"] = _rsi(df["Close"], length=14)
+
+        # === Core indicators (support precomputed columns for speed) ===
+        
+        # RSI(14)
+        if "rsi" not in df.columns:
+            df["rsi"] = _rsi(df["Close"], length=14)
         result["rsi"] = _safe_last(df["rsi"])
 
         # Stochastic(14,3,3)
-        stoch = _stochastic(df["High"], df["Low"], df["Close"], k_period=14, d_period=3, smooth_k=3)
-        df["stoch_k"] = stoch["stoch_k"]
-        df["stoch_d"] = stoch["stoch_d"]
+        if "stoch_k" not in df.columns or "stoch_d" not in df.columns:
+            stoch = _stochastic(df["High"], df["Low"], df["Close"], k_period=14, d_period=3, smooth_k=3)
+            df["stoch_k"] = stoch["stoch_k"]
+            df["stoch_d"] = stoch["stoch_d"]
         result["stoch_k"] = _safe_last(df["stoch_k"])
         result["stoch_d"] = _safe_last(df["stoch_d"])
 
         # MACD(12,26,9)
-        macd = _macd(df["Close"], fast=12, slow=26, signal=9)
-        df["macd"] = macd["macd"]
-        df["macd_signal"] = macd["macd_signal"]
-        df["macd_hist"] = macd["macd_hist"]
+        if "macd" not in df.columns or "macd_signal" not in df.columns or "macd_hist" not in df.columns:
+            macd = _macd(df["Close"], fast=12, slow=26, signal=9)
+            df["macd"] = macd["macd"]
+            df["macd_signal"] = macd["macd_signal"]
+            df["macd_hist"] = macd["macd_hist"]
         result["macd"] = _safe_last(df["macd"])
         result["macd_signal"] = _safe_last(df["macd_signal"])
         result["macd_hist"] = _safe_last(df["macd_hist"])
 
         # Bollinger Bands(20,2)
-        bb = _bbands(df["Close"], length=20, std=2)
-        df["bb_upper"] = bb["bb_upper"]
-        df["bb_mid"] = bb["bb_mid"]
-        df["bb_lower"] = bb["bb_lower"]
+        if "bb_upper" not in df.columns or "bb_mid" not in df.columns or "bb_lower" not in df.columns:
+            bb = _bbands(df["Close"], length=20, std=2)
+            df["bb_upper"] = bb["bb_upper"]
+            df["bb_mid"] = bb["bb_mid"]
+            df["bb_lower"] = bb["bb_lower"]
         result["bb_upper"] = _safe_last(df["bb_upper"])
         result["bb_mid"] = _safe_last(df["bb_mid"])
         result["bb_lower"] = _safe_last(df["bb_lower"])
 
         # ATR(14)
-        df["atr"] = _atr(df["High"], df["Low"], df["Close"], length=14)
+        if "atr" not in df.columns:
+            df["atr"] = _atr(df["High"], df["Low"], df["Close"], length=14)
         result["atr"] = _safe_last(df["atr"])
 
         # MA50 and MA200
-        df["ma50"] = _sma(df["Close"], length=50)
-        df["ma200"] = _sma(df["Close"], length=200) if len(df) >= 200 else pd.Series([np.nan] * len(df), index=df.index)
+        if "ma50" not in df.columns:
+            df["ma50"] = _sma(df["Close"], length=50)
+        if "ma200" not in df.columns:
+            df["ma200"] = _sma(df["Close"], length=200) if len(df) >= 200 else pd.Series([np.nan] * len(df), index=df.index)
         result["ma50"] = _safe_last(df["ma50"])
         result["ma200"] = _safe_last(df["ma200"])
         result["price"] = _safe_last(df["Close"])
@@ -133,7 +142,8 @@ def compute_all_indicators(df: pd.DataFrame) -> dict:
         result["above_ma200"] = bool(result["price"] > result["ma200"]) if not np.isnan(result["ma200"]) else None
 
         # Volume vs 20-period average
-        df["vol_avg20"] = df["Volume"].rolling(20).mean()
+        if "vol_avg20" not in df.columns:
+            df["vol_avg20"] = df["Volume"].rolling(20).mean()
         result["volume"] = _safe_last(df["Volume"])
         result["vol_avg20"] = _safe_last(df["vol_avg20"])
         result["vol_ratio"] = round(result["volume"] / result["vol_avg20"], 2) if result["vol_avg20"] > 0 else 1.0
