@@ -4,8 +4,7 @@ import { useData } from '../App'
 import TimeframeBadge from './TimeframeBadge'
 
 export default function SignalTable({ market }) {
-  const { signals, loadTicker } = useData()
-  const [tickerDetails, setTickerDetails] = useState({})
+  const { signals, tickerData, loadTicker } = useData()
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState('ALL')
   const [sortKey, setSortKey] = useState('score')
@@ -53,28 +52,14 @@ export default function SignalTable({ market }) {
     setCurrentPage(1)
   }, [search, filter, market])
 
-  // Load details dynamically for the current page only to prevent network overload
+  // Load details dynamically in parallel (non-blocking)
   useEffect(() => {
-    async function loadPageDetails() {
-      const details = { ...tickerDetails }
-      let changed = false
-      for (const t of paginated) {
-        if (!details[t.ticker]) {
-          const data = await loadTicker(t.ticker)
-          if (data) {
-            details[t.ticker] = data
-            changed = true
-          }
-        }
-      }
-      if (changed) {
-        setTickerDetails(details)
+    for (const t of paginated) {
+      if (!tickerData[t.ticker]) {
+        loadTicker(t.ticker)
       }
     }
-    if (paginated.length > 0) {
-      loadPageDetails()
-    }
-  }, [currentPage, search, filter, market, signals])
+  }, [currentPage, search, filter, market, signals, tickerData])
 
   const handleSort = (key) => {
     if (sortKey === key) {
@@ -149,7 +134,7 @@ export default function SignalTable({ market }) {
           </thead>
           <tbody>
             {paginated.map((t, i) => {
-              const detail = tickerDetails[t.ticker]
+              const detail = tickerData[t.ticker]
               const daily = detail?.timeframes?.daily || {}
               const tl = daily.trade_levels || {}
 
@@ -182,6 +167,8 @@ export default function SignalTable({ market }) {
                         Object.keys(detail.timeframes).map(tf => (
                           <TimeframeBadge key={tf} timeframe={tf} />
                         ))
+                      ) : detail?.failed ? (
+                        <TimeframeBadge timeframe="daily" />
                       ) : (
                         <div className="spinner" style={{ width: 12, height: 12, borderWidth: 1.5 }} />
                       )}
@@ -193,7 +180,9 @@ export default function SignalTable({ market }) {
             {paginated.length === 0 && (
               <tr>
                 <td colSpan={9} style={{ textAlign: 'center', color: 'var(--text-muted)', padding: 40 }}>
-                  No signals matching criteria
+                  {tickers.length === 0 
+                    ? `No ${market || 'Stock'} data found. Please run the scanner to generate data.`
+                    : 'No signals matching criteria'}
                 </td>
               </tr>
             )}

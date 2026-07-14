@@ -331,9 +331,10 @@ def run():
         if signal in ("BOTTOM", "PEAK"):
             tl = daily_tf.get("trade_levels", {})
             emoji = "🟢" if signal == "BOTTOM" else "🔴"
+            price_str = f"{price:.2f}" if isinstance(price, (int, float)) else str(price)
             alert = (
                 f"{emoji} <b>{sig['ticker']} ({sig['market']})</b>: <b>{signal}</b> (Score: {score})\n"
-                f"Price: {price:.2f if isinstance(price, (int, float)) else price}\n"
+                f"Price: {price_str}\n"
             )
             if tl and tl.get("entry"):
                 alert += f"Entry: {tl['entry']:.2f} | SL: {tl['stop_loss']:.2f} | TP1: {tl['tp1']:.2f}\n"

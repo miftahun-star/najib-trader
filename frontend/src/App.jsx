@@ -49,6 +49,7 @@ function App() {
       return data
     } catch (e) {
       console.error(e)
+      setTickerData(prev => ({ ...prev, [ticker]: { failed: true } }))
       return null
     }
   }
