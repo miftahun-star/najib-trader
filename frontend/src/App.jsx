@@ -23,8 +23,8 @@ function App() {
     async function loadData() {
       try {
         const [indexRes, btRes] = await Promise.all([
-          fetch(`${DATA_BASE}/signals/index.json`),
-          fetch(`${DATA_BASE}/backtest.json`),
+          fetch(`${DATA_BASE}/signals/index.json?t=${Date.now()}`),
+          fetch(`${DATA_BASE}/backtest.json?t=${Date.now()}`),
         ])
         if (!indexRes.ok || !btRes.ok) throw new Error('Failed to fetch data')
         setSignals(await indexRes.json())
@@ -42,7 +42,7 @@ function App() {
     if (tickerData[ticker]) return tickerData[ticker]
     const safeName = ticker.replace('.', '_')
     try {
-      const res = await fetch(`${DATA_BASE}/signals/${safeName}.json`)
+      const res = await fetch(`${DATA_BASE}/signals/${safeName}.json?t=${Date.now()}`)
       if (!res.ok) throw new Error(`Failed to load ${ticker}`)
       const data = await res.json()
       setTickerData(prev => ({ ...prev, [ticker]: data }))
