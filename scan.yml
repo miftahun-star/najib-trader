@@ -1,0 +1,70 @@
+name: Signal Scanner
+
+on:
+  schedule:
+    # Run twice daily on market days (WIB/US hours)
+    - cron: '0 3,15 * * 1-5'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  scan-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run signal scan
+        run: python -m engine.run_scan
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Commit and push signal data to repo
+        run: |
+          git config user.name "Signal Scanner Bot"
+          git config user.email "bot@najibtrader.my.id"
+          git add data/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "📊 Signal scan update: $(date -u +'%Y-%m-%d %H:%M UTC')" && git push)
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: 'frontend/package-lock.json'
+
+      - name: Install Frontend dependencies
+        run: |
+          cd frontend
+          npm ci
+
+      - name: Copy fresh data to public directory
+        run: |
+          rm -rf frontend/public/data
+          cp -r data frontend/public/data
+
+      - name: Build Frontend
+        run: |
+          cd frontend
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: frontend/dist
+          branch: gh-pages
