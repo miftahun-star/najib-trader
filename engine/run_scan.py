@@ -77,9 +77,9 @@ def compute_yearly_trend(daily_df: pd.DataFrame) -> dict:
         if len(weekly) < 50:
             return trend
 
-        # Weekly MA200
-        import pandas_ta as ta
-        ma200 = ta.sma(weekly["Close"], length=min(200, len(weekly) - 1))
+        # Weekly MA200 (pure pandas)
+        ma_len = min(200, len(weekly) - 1)
+        ma200 = weekly["Close"].rolling(ma_len).mean()
         if ma200 is not None and not ma200.dropna().empty:
             current_price = weekly["Close"].iloc[-1]
             ma200_val = ma200.dropna().iloc[-1]
@@ -133,7 +133,7 @@ def process_ticker(ticker: str, daily_df: pd.DataFrame) -> dict:
     ticker_data = {
         "ticker": ticker,
         "market": market,
-        "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "last_updated": datetime.now(tz=__import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "data_stale": stale,
         "timeframes": {},
         "yearly_trend": {},
@@ -216,7 +216,7 @@ def process_ticker(ticker: str, daily_df: pd.DataFrame) -> dict:
 def run():
     """Main scan execution."""
     logger.info("=" * 60)
-    logger.info(f"SIGNAL SCAN STARTED — {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+    logger.info(f"SIGNAL SCAN STARTED — {datetime.now(tz=__import__("datetime").timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}")
     logger.info("=" * 60)
 
     # Ensure output dirs exist
@@ -256,7 +256,7 @@ def run():
 
     # 4. Write index.json (summary of all tickers)
     index_data = {
-        "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "last_updated": datetime.now(tz=__import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "ticker_count": len(all_signals),
         "tickers": [],
     }

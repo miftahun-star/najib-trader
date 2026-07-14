@@ -34,7 +34,7 @@ def run_backtest(df: pd.DataFrame, ticker: str, market: str, timeframe: str) -> 
         "avg_r_multiple": 0.0,
         "max_drawdown": 0.0,
         "r_multiples": [],
-        "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "last_updated": datetime.now(tz=__import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
 
     if df is None or len(df) < 200:
@@ -183,7 +183,7 @@ def aggregate_backtest(all_results: list) -> dict:
     Aggregate individual backtest results into market-level and overall stats.
     """
     output = {
-        "last_updated": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "last_updated": datetime.now(tz=__import__("datetime").timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "overall": {"win_rate": 0, "avg_r": 0, "max_dd": 0, "n_trades": 0},
         "markets": {
             "IHSG": {"win_rate": 0, "avg_r": 0, "max_dd": 0, "n_trades": 0, "by_timeframe": {}},

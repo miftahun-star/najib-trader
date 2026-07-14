@@ -1,5 +1,6 @@
 """
 indicators.py — Full technical indicator computation per §3.1.
+Pure pandas/numpy implementation — no external TA library dependency.
 Computes RSI, Stochastic, MACD, Bollinger Bands, ATR, volume analysis,
 moving averages, divergence detection, candle patterns, S/R levels, and Fib zones.
 """
@@ -9,10 +10,69 @@ from typing import Optional
 
 import numpy as np
 import pandas as pd
-import pandas_ta as ta
 
 logger = logging.getLogger(__name__)
 
+
+# === Core TA functions (pure pandas/numpy) ===
+
+def _rsi(series: pd.Series, length: int = 14) -> pd.Series:
+    """Relative Strength Index."""
+    delta = series.diff()
+    gain = delta.where(delta > 0, 0.0)
+    loss = -delta.where(delta < 0, 0.0)
+    avg_gain = gain.ewm(alpha=1/length, min_periods=length).mean()
+    avg_loss = loss.ewm(alpha=1/length, min_periods=length).mean()
+    rs = avg_gain / avg_loss.replace(0, np.nan)
+    return 100 - (100 / (1 + rs))
+
+
+def _stochastic(high: pd.Series, low: pd.Series, close: pd.Series,
+                k_period: int = 14, d_period: int = 3, smooth_k: int = 3) -> pd.DataFrame:
+    """Stochastic Oscillator (%K, %D)."""
+    lowest_low = low.rolling(k_period).min()
+    highest_high = high.rolling(k_period).max()
+    raw_k = 100 * (close - lowest_low) / (highest_high - lowest_low).replace(0, np.nan)
+    k = raw_k.rolling(smooth_k).mean()
+    d = k.rolling(d_period).mean()
+    return pd.DataFrame({"stoch_k": k, "stoch_d": d})
+
+
+def _macd(series: pd.Series, fast: int = 12, slow: int = 26, signal: int = 9) -> pd.DataFrame:
+    """MACD (Moving Average Convergence Divergence)."""
+    ema_fast = series.ewm(span=fast, adjust=False).mean()
+    ema_slow = series.ewm(span=slow, adjust=False).mean()
+    macd_line = ema_fast - ema_slow
+    signal_line = macd_line.ewm(span=signal, adjust=False).mean()
+    histogram = macd_line - signal_line
+    return pd.DataFrame({"macd": macd_line, "macd_signal": signal_line, "macd_hist": histogram})
+
+
+def _bbands(series: pd.Series, length: int = 20, std: float = 2.0) -> pd.DataFrame:
+    """Bollinger Bands."""
+    mid = series.rolling(length).mean()
+    stdev = series.rolling(length).std()
+    upper = mid + std * stdev
+    lower = mid - std * stdev
+    return pd.DataFrame({"bb_upper": upper, "bb_mid": mid, "bb_lower": lower})
+
+
+def _atr(high: pd.Series, low: pd.Series, close: pd.Series, length: int = 14) -> pd.Series:
+    """Average True Range."""
+    prev_close = close.shift(1)
+    tr1 = high - low
+    tr2 = (high - prev_close).abs()
+    tr3 = (low - prev_close).abs()
+    tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+    return tr.ewm(alpha=1/length, min_periods=length).mean()
+
+
+def _sma(series: pd.Series, length: int) -> pd.Series:
+    """Simple Moving Average."""
+    return series.rolling(length).mean()
+
+
+# === Main computation ===
 
 def compute_all_indicators(df: pd.DataFrame) -> dict:
     """
@@ -26,46 +86,44 @@ def compute_all_indicators(df: pd.DataFrame) -> dict:
     result = {}
 
     try:
-        # === Core indicators via pandas-ta ===
+        # === Core indicators ===
         # RSI(14)
-        df["rsi"] = ta.rsi(df["Close"], length=14)
+        df = df.copy()
+        df["rsi"] = _rsi(df["Close"], length=14)
         result["rsi"] = _safe_last(df["rsi"])
 
         # Stochastic(14,3,3)
-        stoch = ta.stoch(df["High"], df["Low"], df["Close"], k=14, d=3, smooth_k=3)
-        if stoch is not None and not stoch.empty:
-            df["stoch_k"] = stoch.iloc[:, 0]
-            df["stoch_d"] = stoch.iloc[:, 1]
-            result["stoch_k"] = _safe_last(df["stoch_k"])
-            result["stoch_d"] = _safe_last(df["stoch_d"])
+        stoch = _stochastic(df["High"], df["Low"], df["Close"], k_period=14, d_period=3, smooth_k=3)
+        df["stoch_k"] = stoch["stoch_k"]
+        df["stoch_d"] = stoch["stoch_d"]
+        result["stoch_k"] = _safe_last(df["stoch_k"])
+        result["stoch_d"] = _safe_last(df["stoch_d"])
 
         # MACD(12,26,9)
-        macd = ta.macd(df["Close"], fast=12, slow=26, signal=9)
-        if macd is not None and not macd.empty:
-            df["macd"] = macd.iloc[:, 0]
-            df["macd_signal"] = macd.iloc[:, 1]
-            df["macd_hist"] = macd.iloc[:, 2]
-            result["macd"] = _safe_last(df["macd"])
-            result["macd_signal"] = _safe_last(df["macd_signal"])
-            result["macd_hist"] = _safe_last(df["macd_hist"])
+        macd = _macd(df["Close"], fast=12, slow=26, signal=9)
+        df["macd"] = macd["macd"]
+        df["macd_signal"] = macd["macd_signal"]
+        df["macd_hist"] = macd["macd_hist"]
+        result["macd"] = _safe_last(df["macd"])
+        result["macd_signal"] = _safe_last(df["macd_signal"])
+        result["macd_hist"] = _safe_last(df["macd_hist"])
 
         # Bollinger Bands(20,2)
-        bb = ta.bbands(df["Close"], length=20, std=2)
-        if bb is not None and not bb.empty:
-            df["bb_upper"] = bb.iloc[:, 2]  # BBU
-            df["bb_mid"] = bb.iloc[:, 1]    # BBM
-            df["bb_lower"] = bb.iloc[:, 0]  # BBL
-            result["bb_upper"] = _safe_last(df["bb_upper"])
-            result["bb_mid"] = _safe_last(df["bb_mid"])
-            result["bb_lower"] = _safe_last(df["bb_lower"])
+        bb = _bbands(df["Close"], length=20, std=2)
+        df["bb_upper"] = bb["bb_upper"]
+        df["bb_mid"] = bb["bb_mid"]
+        df["bb_lower"] = bb["bb_lower"]
+        result["bb_upper"] = _safe_last(df["bb_upper"])
+        result["bb_mid"] = _safe_last(df["bb_mid"])
+        result["bb_lower"] = _safe_last(df["bb_lower"])
 
         # ATR(14)
-        df["atr"] = ta.atr(df["High"], df["Low"], df["Close"], length=14)
+        df["atr"] = _atr(df["High"], df["Low"], df["Close"], length=14)
         result["atr"] = _safe_last(df["atr"])
 
         # MA50 and MA200
-        df["ma50"] = ta.sma(df["Close"], length=50)
-        df["ma200"] = ta.sma(df["Close"], length=200) if len(df) >= 200 else pd.Series([np.nan] * len(df), index=df.index)
+        df["ma50"] = _sma(df["Close"], length=50)
+        df["ma200"] = _sma(df["Close"], length=200) if len(df) >= 200 else pd.Series([np.nan] * len(df), index=df.index)
         result["ma50"] = _safe_last(df["ma50"])
         result["ma200"] = _safe_last(df["ma200"])
         result["price"] = _safe_last(df["Close"])
@@ -129,12 +187,10 @@ def _find_swing_points(series: pd.Series, order: int = 5) -> tuple:
     indices = series.dropna().index
 
     for i in range(order, len(vals) - order):
-        # Swing high: higher than `order` neighbors on each side
         if all(vals[i] >= vals[i - j] for j in range(1, order + 1)) and \
            all(vals[i] >= vals[i + j] for j in range(1, order + 1)):
             highs.append((indices[i], vals[i]))
 
-        # Swing low: lower than `order` neighbors on each side
         if all(vals[i] <= vals[i - j] for j in range(1, order + 1)) and \
            all(vals[i] <= vals[i + j] for j in range(1, order + 1)):
             lows.append((indices[i], vals[i]))
@@ -155,7 +211,6 @@ def detect_divergence(df: pd.DataFrame, div_type: str) -> bool:
         rsi_highs, rsi_lows = _find_swing_points(df["rsi"], order=5)
 
         if div_type == "bullish":
-            # Bullish divergence: price makes lower low, RSI makes higher low
             if len(price_lows) >= 2 and len(rsi_lows) >= 2:
                 p1, p2 = price_lows[-2], price_lows[-1]
                 r1, r2 = rsi_lows[-2], rsi_lows[-1]
@@ -163,7 +218,6 @@ def detect_divergence(df: pd.DataFrame, div_type: str) -> bool:
                     return True
 
         elif div_type == "bearish":
-            # Bearish divergence: price makes higher high, RSI makes lower high
             if len(price_highs) >= 2 and len(rsi_highs) >= 2:
                 p1, p2 = price_highs[-2], price_highs[-1]
                 r1, r2 = rsi_highs[-2], rsi_highs[-1]
@@ -187,9 +241,9 @@ def detect_candle_patterns(df: pd.DataFrame) -> dict:
         if len(df) < 3:
             return patterns
 
-        c = df.iloc[-1]  # Current candle
-        p = df.iloc[-2]  # Previous candle
-        pp = df.iloc[-3]  # Two bars ago
+        c = df.iloc[-1]
+        p = df.iloc[-2]
+        pp = df.iloc[-3]
 
         body = abs(c["Close"] - c["Open"])
         upper_wick = c["High"] - max(c["Close"], c["Open"])
@@ -199,40 +253,40 @@ def detect_candle_patterns(df: pd.DataFrame) -> dict:
         if total_range == 0:
             return patterns
 
-        # Hammer (bullish): small body at top, long lower wick
+        # Hammer (bullish)
         if lower_wick >= 2 * body and upper_wick <= body * 0.5 and c["Close"] > c["Open"]:
             patterns = {"name": "hammer", "direction": "bullish"}
 
-        # Shooting star (bearish): small body at bottom, long upper wick
+        # Shooting star (bearish)
         elif upper_wick >= 2 * body and lower_wick <= body * 0.5 and c["Close"] < c["Open"]:
             patterns = {"name": "shooting_star", "direction": "bearish"}
 
         # Bullish engulfing
-        elif (p["Close"] < p["Open"] and  # prev was bearish
-              c["Close"] > c["Open"] and   # current is bullish
-              c["Open"] <= p["Close"] and  # current opens at/below prev close
-              c["Close"] >= p["Open"]):     # current closes at/above prev open
+        elif (p["Close"] < p["Open"] and
+              c["Close"] > c["Open"] and
+              c["Open"] <= p["Close"] and
+              c["Close"] >= p["Open"]):
             patterns = {"name": "bullish_engulfing", "direction": "bullish"}
 
         # Bearish engulfing
-        elif (p["Close"] > p["Open"] and  # prev was bullish
-              c["Close"] < c["Open"] and   # current is bearish
-              c["Open"] >= p["Close"] and  # current opens at/above prev close
-              c["Close"] <= p["Open"]):     # current closes at/below prev open
+        elif (p["Close"] > p["Open"] and
+              c["Close"] < c["Open"] and
+              c["Open"] >= p["Close"] and
+              c["Close"] <= p["Open"]):
             patterns = {"name": "bearish_engulfing", "direction": "bearish"}
 
-        # Morning star (3-bar bullish reversal)
-        elif (pp["Close"] < pp["Open"] and           # first bar bearish
-              abs(p["Close"] - p["Open"]) < abs(pp["Close"] - pp["Open"]) * 0.3 and  # middle is small
-              c["Close"] > c["Open"] and              # third bar bullish
-              c["Close"] > (pp["Open"] + pp["Close"]) / 2):  # closes above midpoint of first
+        # Morning star (3-bar bullish)
+        elif (pp["Close"] < pp["Open"] and
+              abs(p["Close"] - p["Open"]) < abs(pp["Close"] - pp["Open"]) * 0.3 and
+              c["Close"] > c["Open"] and
+              c["Close"] > (pp["Open"] + pp["Close"]) / 2):
             patterns = {"name": "morning_star", "direction": "bullish"}
 
-        # Evening star (3-bar bearish reversal)
-        elif (pp["Close"] > pp["Open"] and           # first bar bullish
-              abs(p["Close"] - p["Open"]) < abs(pp["Close"] - pp["Open"]) * 0.3 and  # middle is small
-              c["Close"] < c["Open"] and              # third bar bearish
-              c["Close"] < (pp["Open"] + pp["Close"]) / 2):  # closes below midpoint of first
+        # Evening star (3-bar bearish)
+        elif (pp["Close"] > pp["Open"] and
+              abs(p["Close"] - p["Open"]) < abs(pp["Close"] - pp["Open"]) * 0.3 and
+              c["Close"] < c["Open"] and
+              c["Close"] < (pp["Open"] + pp["Close"]) / 2):
             patterns = {"name": "evening_star", "direction": "bearish"}
 
     except Exception as e:
@@ -259,22 +313,18 @@ def detect_support_resistance(df: pd.DataFrame, lookback: int = 100) -> dict:
 
         current_price = data["Close"].iloc[-1]
 
-        # Find local lows and highs
         _, lows = _find_swing_points(data["Low"], order=3)
         highs, _ = _find_swing_points(data["High"], order=3)
 
-        # Cluster support levels (within 1×ATR)
         support_levels = _cluster_levels([l[1] for l in lows], atr)
         resistance_levels = _cluster_levels([h[1] for h in highs], atr)
 
-        # Only keep levels touched ≥2 times
         support_levels = [l for l in support_levels if l["touches"] >= 2]
         resistance_levels = [l for l in resistance_levels if l["touches"] >= 2]
 
         result["support"] = [round(l["level"], 2) for l in support_levels[:5]]
         result["resistance"] = [round(l["level"], 2) for l in resistance_levels[:5]]
 
-        # Check if price is near S/R (within 1×ATR)
         for s in result["support"]:
             if abs(current_price - s) <= atr:
                 result["near_support"] = True
@@ -337,7 +387,6 @@ def compute_fibonacci(df: pd.DataFrame, lookback: int = 100) -> dict:
         if diff <= 0:
             return result
 
-        # Standard retracement levels
         levels = {
             "0.0": round(swing_high, 2),
             "23.6": round(swing_high - 0.236 * diff, 2),
@@ -349,13 +398,11 @@ def compute_fibonacci(df: pd.DataFrame, lookback: int = 100) -> dict:
         }
         result["levels"] = levels
 
-        # Check if price is in golden zone (38.2-61.8%)
         fib_382 = levels["38.2"]
         fib_618 = levels["61.8"]
 
         if fib_618 <= current_price <= fib_382:
             result["in_zone"] = True
-            # Determine if this is a pullback in uptrend or downtrend
             mid = (swing_high + swing_low) / 2
             if current_price > mid:
                 result["zone_type"] = "pullback_in_uptrend"
@@ -382,9 +429,9 @@ def detect_bb_touch(df: pd.DataFrame) -> str:
             return "none"
 
         if close <= bb_lower:
-            return "lower"  # Potentially oversold
+            return "lower"
         elif close >= bb_upper:
-            return "upper"  # Potentially overbought
+            return "upper"
         else:
             return "none"
 
