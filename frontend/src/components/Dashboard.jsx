@@ -8,25 +8,45 @@ export default function Dashboard() {
   const [tickerDetails, setTickerDetails] = useState({})
   const [loaded, setLoaded] = useState(false)
 
+  const tickers = signals?.tickers || []
+  
+  // Identify active opportunities (BOTTOM / PEAK signals)
+  const activeTickers = tickers.filter(t => t.signal === 'BOTTOM' || t.signal === 'PEAK')
+
   useEffect(() => {
     if (!signals?.tickers) return
-    async function loadAll() {
-      const details = {}
-      for (const t of signals.tickers) {
-        const data = await loadTicker(t.ticker)
-        if (data) details[t.ticker] = data
-      }
-      setTickerDetails(details)
+    
+    if (activeTickers.length === 0) {
       setLoaded(true)
+      return
     }
-    loadAll()
+
+    async function loadActive() {
+      try {
+        // Fetch details in parallel for active signals only (prevents sequential fetching of 500+ items)
+        const promises = activeTickers.map(t => loadTicker(t.ticker))
+        const results = await Promise.all(promises)
+        const details = {}
+        activeTickers.forEach((t, index) => {
+          if (results[index]) {
+            details[t.ticker] = results[index]
+          }
+        })
+        setTickerDetails(details)
+      } catch (e) {
+        console.error(e)
+      } finally {
+        setLoaded(true)
+      }
+    }
+    
+    loadActive()
   }, [signals])
 
   if (!signals) return null
 
-  const tickers = signals.tickers || []
-  const ihsgTickers = tickers.filter(t => t.market === 'IHSG')
-  const usTickers = tickers.filter(t => t.market === 'US')
+  const ihsgActive = activeTickers.filter(t => t.market === 'IHSG')
+  const usActive = activeTickers.filter(t => t.market === 'US')
 
   const bottomCount = tickers.filter(t => t.signal === 'BOTTOM').length
   const peakCount = tickers.filter(t => t.signal === 'PEAK').length
@@ -67,38 +87,54 @@ export default function Dashboard() {
       {/* IHSG section */}
       <div style={{ marginBottom: 32 }}>
         <h2 className="section-title">
-          <span className="emoji">🇮🇩</span> IHSG Signals
+          <span className="emoji">🇮🇩</span> Active IHSG Opportunities
         </h2>
         {loaded ? (
           <div className="grid-3">
-            {ihsgTickers.map((t, i) => (
-              <div key={t.ticker} className={`fade-in fade-in-d${i + 1}`}>
-                <SignalCard data={tickerDetails[t.ticker]} />
-              </div>
-            ))}
-            {ihsgTickers.length === 0 && <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>No IHSG signals</p>}
+            {ihsgActive.map((t, i) => {
+              const detail = tickerDetails[t.ticker]
+              if (!detail || detail.failed) return null
+              return (
+                <div key={t.ticker} className={`fade-in fade-in-d${i + 1}`}>
+                  <SignalCard data={detail} />
+                </div>
+              )
+            })}
+            {ihsgActive.length === 0 && (
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>
+                No active buy/sell signals. View watchlists in the <Link to="/ihsg" style={{ color: 'var(--blue)' }}>IHSG List</Link>.
+              </p>
+            )}
           </div>
         ) : (
-          <div className="loading"><div className="spinner" />Loading…</div>
+          <div className="loading"><div className="spinner" />Loading opportunities…</div>
         )}
       </div>
 
       {/* US section */}
       <div>
         <h2 className="section-title">
-          <span className="emoji">🇺🇸</span> US Signals
+          <span className="emoji">🇺🇸</span> Active US Opportunities
         </h2>
         {loaded ? (
           <div className="grid-3">
-            {usTickers.map((t, i) => (
-              <div key={t.ticker} className={`fade-in fade-in-d${i + 1}`}>
-                <SignalCard data={tickerDetails[t.ticker]} />
-              </div>
-            ))}
-            {usTickers.length === 0 && <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>No US signals</p>}
+            {usActive.map((t, i) => {
+              const detail = tickerDetails[t.ticker]
+              if (!detail || detail.failed) return null
+              return (
+                <div key={t.ticker} className={`fade-in fade-in-d${i + 1}`}>
+                  <SignalCard data={detail} />
+                </div>
+              )
+            })}
+            {usActive.length === 0 && (
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>
+                No active buy/sell signals. View watchlists in the <Link to="/us" style={{ color: 'var(--blue)' }}>US Stock List</Link>.
+              </p>
+            )}
           </div>
         ) : (
-          <div className="loading"><div className="spinner" />Loading…</div>
+          <div className="loading"><div className="spinner" />Loading opportunities…</div>
         )}
       </div>
     </div>

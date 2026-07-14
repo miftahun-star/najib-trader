@@ -3,7 +3,7 @@ import ScoreGauge from './ScoreGauge'
 import TimeframeBadge from './TimeframeBadge'
 
 export default function SignalCard({ data }) {
-  if (!data) return null
+  if (!data || data.failed || !data.ticker) return null
 
   const { ticker, market, timeframes = {}, yearly_trend = {} } = data
   const daily = timeframes.daily || {}
