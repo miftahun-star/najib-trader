@@ -1,43 +1,43 @@
 {
   "ticker": "BKNG",
   "market": "US",
-  "last_updated": "2026-07-15T05:25:22Z",
+  "last_updated": "2026-07-15T16:17:03Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 43.2,
-      "reason": "Neutral zone (43.2) | Candle: bearish_engulfing (bearish)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 45.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 51.3972,
-        "stoch_k": 50.1268,
-        "stoch_d": 51.2554,
-        "macd": 2.6539,
-        "macd_signal": 3.234,
-        "macd_hist": -0.5801,
-        "bb_upper": 187.4095,
-        "bb_mid": 176.5005,
-        "bb_lower": 165.5915,
-        "atr": 6.4214,
-        "ma50": 168.3962,
-        "ma200": 186.7633,
-        "price": 175.8,
-        "vol_ratio": 0.6,
+        "rsi": 56.9301,
+        "stoch_k": 43.1744,
+        "stoch_d": 45.3779,
+        "macd": 2.4117,
+        "macd_signal": 2.9125,
+        "macd_hist": -0.5008,
+        "bb_upper": 186.9301,
+        "bb_mid": 177.3195,
+        "bb_lower": 167.7089,
+        "atr": 6.3841,
+        "ma50": 168.7725,
+        "ma200": 186.3377,
+        "price": 181.11,
+        "vol_ratio": 0.26,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -45,7 +45,7 @@
         "volume_climax": false,
         "near_support": false,
         "near_resistance": true,
-        "in_fib_zone": true
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -59,8 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        163.46,
-        149.83
+        164.15
       ],
       "resistance_levels": [
         180.28
@@ -77,46 +76,46 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 60.0,
-      "reason": "Neutral zone (60.0) | Bullish divergence detected",
+      "score": 58.5,
+      "reason": "Neutral zone (58.5) | Bullish divergence detected | Candle: hammer (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 48.6823,
-        "stoch_k": 68.2841,
-        "stoch_d": 69.4825,
-        "macd": -3.4921,
-        "macd_signal": -6.1369,
-        "macd_hist": 2.6448,
-        "bb_upper": 190.0896,
-        "bb_mid": 171.7997,
-        "bb_lower": 153.5097,
-        "atr": 13.5572,
-        "ma50": 191.1346,
+        "rsi": 51.5431,
+        "stoch_k": 72.3372,
+        "stoch_d": 70.8335,
+        "macd": -3.0685,
+        "macd_signal": -6.0522,
+        "macd_hist": 2.9837,
+        "bb_upper": 190.7495,
+        "bb_mid": 172.0652,
+        "bb_lower": 153.3808,
+        "atr": 13.8509,
+        "ma50": 191.2408,
         "ma200": NaN,
-        "price": 175.8,
-        "vol_ratio": 0.14,
+        "price": 181.11,
+        "vol_ratio": 0.33,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": true,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
