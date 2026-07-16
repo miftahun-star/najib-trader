@@ -1,7 +1,7 @@
 {
   "ticker": "OTIS",
   "market": "US",
-  "last_updated": "2026-07-16T05:35:27Z",
+  "last_updated": "2026-07-16T16:13:28Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
@@ -17,21 +17,21 @@
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 48.4744,
-        "stoch_k": 45.2279,
-        "stoch_d": 48.1243,
-        "macd": 0.082,
-        "macd_signal": 0.0423,
-        "macd_hist": 0.0397,
-        "bb_upper": 74.2577,
-        "bb_mid": 72.687,
-        "bb_lower": 71.1163,
-        "atr": 1.5985,
-        "ma50": 72.2585,
-        "ma200": 82.781,
-        "price": 72.2,
-        "vol_ratio": 1.08,
-        "above_ma50": false,
+        "rsi": 56.5199,
+        "stoch_k": 55.4056,
+        "stoch_d": 50.7334,
+        "macd": 0.195,
+        "macd_signal": 0.0728,
+        "macd_hist": 0.1222,
+        "bb_upper": 74.3654,
+        "bb_mid": 72.715,
+        "bb_lower": 71.0646,
+        "atr": 1.6322,
+        "ma50": 72.2314,
+        "ma200": 82.7063,
+        "price": 74.07,
+        "vol_ratio": 0.44,
+        "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
@@ -43,8 +43,8 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": false,
+        "near_support": true,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -67,49 +67,49 @@
         78.24
       ],
       "fib_levels": {
-        "0.0": 94.0,
-        "23.6": 88.13,
-        "38.2": 84.51,
-        "50.0": 81.58,
-        "61.8": 78.65,
-        "78.6": 74.47,
+        "0.0": 93.63,
+        "23.6": 87.86,
+        "38.2": 84.28,
+        "50.0": 81.4,
+        "61.8": 78.51,
+        "78.6": 74.4,
         "100.0": 69.16
       }
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 40.0,
-      "reason": "Neutral zone (40.0) | Bearish divergence detected",
+      "score": 46.0,
+      "reason": "Neutral zone (46.0) | Bearish divergence detected | Candle: bullish_engulfing (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 36.6609,
-        "stoch_k": 28.1152,
-        "stoch_d": 29.5161,
-        "macd": -3.6373,
-        "macd_signal": -3.8361,
-        "macd_hist": 0.1988,
-        "bb_upper": 85.0898,
-        "bb_mid": 75.6395,
-        "bb_lower": 66.1893,
-        "atr": 3.5587,
-        "ma50": 83.1614,
+        "rsi": 40.9308,
+        "stoch_k": 32.9166,
+        "stoch_d": 31.1166,
+        "macd": -3.4881,
+        "macd_signal": -3.8062,
+        "macd_hist": 0.3181,
+        "bb_upper": 85.0764,
+        "bb_mid": 75.733,
+        "bb_lower": 66.3896,
+        "atr": 3.5816,
+        "ma50": 83.1988,
         "ma200": NaN,
-        "price": 72.2,
-        "vol_ratio": 0.57,
+        "price": 74.07,
+        "vol_ratio": 0.66,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
