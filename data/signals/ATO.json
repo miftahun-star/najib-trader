@@ -1,36 +1,36 @@
 {
   "ticker": "ATO",
   "market": "US",
-  "last_updated": "2026-07-15T16:17:02Z",
+  "last_updated": "2026-07-16T05:35:14Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.8,
-      "reason": "Neutral zone (47.8)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 35.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 55.4454,
-        "stoch_k": 76.4763,
-        "stoch_d": 75.7466,
-        "macd": 1.2442,
-        "macd_signal": 0.6052,
-        "macd_hist": 0.6391,
-        "bb_upper": 180.3947,
-        "bb_mid": 174.1532,
-        "bb_lower": 167.9118,
-        "atr": 2.9633,
-        "ma50": 174.6061,
-        "ma200": 174.607,
-        "price": 177.195,
-        "vol_ratio": 0.21,
+        "rsi": 50.6817,
+        "stoch_k": 68.407,
+        "stoch_d": 73.0568,
+        "macd": 1.0675,
+        "macd_signal": 0.5698,
+        "macd_hist": 0.4977,
+        "bb_upper": 180.1335,
+        "bb_mid": 174.0425,
+        "bb_lower": 167.9515,
+        "atr": 3.0526,
+        "ma50": 174.5618,
+        "ma200": 174.596,
+        "price": 174.98,
+        "vol_ratio": 1.02,
         "above_ma50": true,
         "above_ma200": true
       },
@@ -43,9 +43,9 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
-        "near_resistance": true,
-        "in_fib_zone": true
+        "near_support": false,
+        "near_resistance": false,
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -77,39 +77,39 @@
       }
     },
     "weekly": {
-      "signal": "HOLD",
-      "score": 40.0,
-      "reason": "Neutral zone (40.0) | Bearish divergence detected",
+      "signal": "WATCH",
+      "score": 34.0,
+      "reason": "Depressed score (34.0) but not at confirmed range high | Bearish divergence detected | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 52.5166,
-        "stoch_k": 42.146,
-        "stoch_d": 37.2517,
-        "macd": 0.4436,
-        "macd_signal": 1.2777,
-        "macd_hist": -0.8341,
-        "bb_upper": 192.3622,
-        "bb_mid": 179.2376,
-        "bb_lower": 166.1131,
-        "atr": 6.0737,
-        "ma50": 172.8927,
+        "rsi": 49.7237,
+        "stoch_k": 39.0802,
+        "stoch_d": 36.2297,
+        "macd": 0.2669,
+        "macd_signal": 1.2424,
+        "macd_hist": -0.9755,
+        "bb_upper": 192.361,
+        "bb_mid": 179.1269,
+        "bb_lower": 165.8928,
+        "atr": 6.163,
+        "ma50": 172.8484,
         "ma200": NaN,
-        "price": 177.195,
-        "vol_ratio": 0.37,
+        "price": 174.98,
+        "vol_ratio": 0.54,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
@@ -132,7 +132,7 @@
       },
       "support_levels": [
         162.99,
-        131.48,
+        133.56,
         146.31
       ],
       "resistance_levels": [
