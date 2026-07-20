@@ -1,38 +1,38 @@
 {
   "ticker": "ZBH",
   "market": "US",
-  "last_updated": "2026-07-20T06:10:36Z",
+  "last_updated": "2026-07-20T16:22:50Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 49.2,
-      "reason": "Neutral zone (49.2)",
+      "signal": "WATCH",
+      "score": 34.8,
+      "reason": "Depressed score (34.8) but not at confirmed range high | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 50.0,
+        "divergence": 10.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 45.0
+        "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 53.6045,
-        "stoch_k": 67.602,
-        "stoch_d": 67.7437,
-        "macd": 1.2714,
-        "macd_signal": 1.0538,
-        "macd_hist": 0.2177,
-        "bb_upper": 94.8476,
-        "bb_mid": 89.6352,
-        "bb_lower": 84.4228,
-        "atr": 3.1007,
-        "ma50": 86.7449,
-        "ma200": 90.9403,
-        "price": 91.12,
-        "vol_ratio": 1.06,
+        "rsi": 50.7501,
+        "stoch_k": 66.2982,
+        "stoch_d": 67.0824,
+        "macd": 1.103,
+        "macd_signal": 1.0636,
+        "macd_hist": 0.0394,
+        "bb_upper": 94.8676,
+        "bb_mid": 89.7324,
+        "bb_lower": 84.5971,
+        "atr": 3.0633,
+        "ma50": 86.8862,
+        "ma200": 90.9002,
+        "price": 89.68,
+        "vol_ratio": 0.28,
         "above_ma50": true,
-        "above_ma200": true
+        "above_ma200": false
       },
       "patterns": {
         "candle": {
@@ -40,7 +40,7 @@
           "direction": null
         },
         "bullish_divergence": false,
-        "bearish_divergence": false,
+        "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
@@ -62,7 +62,8 @@
         83.43
       ],
       "resistance_levels": [
-        91.52
+        87.75,
+        95.29
       ],
       "fib_levels": {
         "0.0": 100.95,
@@ -87,20 +88,20 @@
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 51.8394,
-        "stoch_k": 59.3673,
-        "stoch_d": 59.5801,
-        "macd": -0.6794,
-        "macd_signal": -1.423,
-        "macd_hist": 0.7436,
-        "bb_upper": 96.6101,
-        "bb_mid": 88.6364,
-        "bb_lower": 80.6628,
-        "atr": 5.7998,
-        "ma50": 92.7022,
+        "rsi": 49.9417,
+        "stoch_k": 65.0732,
+        "stoch_d": 62.4495,
+        "macd": -0.5721,
+        "macd_signal": -1.2532,
+        "macd_hist": 0.6811,
+        "bb_upper": 96.0851,
+        "bb_mid": 88.4401,
+        "bb_lower": 80.7951,
+        "atr": 5.5696,
+        "ma50": 92.5313,
         "ma200": NaN,
-        "price": 91.12,
-        "vol_ratio": 1.26,
+        "price": 89.68,
+        "vol_ratio": 0.06,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -129,8 +130,8 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        85.76,
-        99.12
+        85.53,
+        98.36
       ],
       "resistance_levels": [
         105.54

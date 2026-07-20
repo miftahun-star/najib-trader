@@ -1,43 +1,43 @@
 {
   "ticker": "PPL",
   "market": "US",
-  "last_updated": "2026-07-20T06:10:30Z",
+  "last_updated": "2026-07-20T16:22:44Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0) | Candle: bearish_engulfing (bearish)",
+      "score": 53.0,
+      "reason": "Neutral zone (53.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 48.1631,
-        "stoch_k": 25.417,
-        "stoch_d": 26.8371,
-        "macd": 0.0065,
-        "macd_signal": 0.0443,
-        "macd_hist": -0.0378,
-        "bb_upper": 37.2166,
-        "bb_mid": 36.192,
-        "bb_lower": 35.1674,
-        "atr": 0.7157,
-        "ma50": 35.7502,
-        "ma200": 36.1166,
-        "price": 35.85,
-        "vol_ratio": 0.55,
-        "above_ma50": true,
+        "rsi": 44.9711,
+        "stoch_k": 22.2856,
+        "stoch_d": 25.7438,
+        "macd": -0.0399,
+        "macd_signal": 0.0275,
+        "macd_hist": -0.0673,
+        "bb_upper": 37.2063,
+        "bb_mid": 36.1967,
+        "bb_lower": 35.1872,
+        "atr": 0.7146,
+        "ma50": 35.7279,
+        "ma200": 36.1125,
+        "price": 35.475,
+        "vol_ratio": 0.18,
+        "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -77,46 +77,46 @@
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 37.0,
-      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected",
+      "score": 36.2,
+      "reason": "Depressed score (36.2) but not at confirmed range high | Bearish divergence detected | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 48.1293,
-        "stoch_k": 35.1249,
-        "stoch_d": 38.9913,
-        "macd": -0.0339,
-        "macd_signal": 0.1038,
-        "macd_hist": -0.1378,
-        "bb_upper": 39.5131,
-        "bb_mid": 36.7737,
-        "bb_lower": 34.0344,
-        "atr": 1.5811,
-        "ma50": 36.019,
+        "rsi": 46.4189,
+        "stoch_k": 27.6159,
+        "stoch_d": 34.9537,
+        "macd": -0.0903,
+        "macd_signal": 0.0647,
+        "macd_hist": -0.155,
+        "bb_upper": 39.388,
+        "bb_mid": 36.6496,
+        "bb_lower": 33.9112,
+        "atr": 1.5181,
+        "ma50": 36.0239,
         "ma200": NaN,
-        "price": 35.85,
-        "vol_ratio": 0.75,
+        "price": 35.475,
+        "vol_ratio": 0.04,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": true,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -130,19 +130,20 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        31.79
+        31.07,
+        34.3
       ],
       "resistance_levels": [
         36.56
       ],
       "fib_levels": {
         "0.0": 39.79,
-        "23.6": 37.31,
-        "38.2": 35.77,
-        "50.0": 34.53,
-        "61.8": 33.28,
-        "78.6": 31.51,
-        "100.0": 29.26
+        "23.6": 37.33,
+        "38.2": 35.81,
+        "50.0": 34.59,
+        "61.8": 33.36,
+        "78.6": 31.61,
+        "100.0": 29.38
       }
     }
   },
