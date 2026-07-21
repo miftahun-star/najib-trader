@@ -1,43 +1,43 @@
 {
   "ticker": "UNVR.JK",
   "market": "IHSG",
-  "last_updated": "2026-07-21T05:43:48Z",
+  "last_updated": "2026-07-21T16:19:05Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 57.8,
-      "reason": "Neutral zone (57.8) | Bullish divergence detected",
+      "score": 54.0,
+      "reason": "Neutral zone (54.0) | Bullish divergence detected | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 35.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 52.7618,
-        "stoch_k": 36.9143,
-        "stoch_d": 27.1827,
-        "macd": 12.5071,
-        "macd_signal": 19.6964,
-        "macd_hist": -7.1893,
-        "bb_upper": 1814.3572,
-        "bb_mid": 1731.75,
-        "bb_lower": 1649.1428,
+        "rsi": 51.9971,
+        "stoch_k": 35.8032,
+        "stoch_d": 26.8123,
+        "macd": 12.1082,
+        "macd_signal": 19.6166,
+        "macd_hist": -7.5084,
+        "bb_upper": 1814.3505,
+        "bb_mid": 1731.5,
+        "bb_lower": 1648.6495,
         "atr": 51.4921,
-        "ma50": 1658.0669,
-        "ma200": 1934.0904,
-        "price": 1715.0,
-        "vol_ratio": 0.54,
+        "ma50": 1657.9669,
+        "ma200": 1934.0654,
+        "price": 1710.0,
+        "vol_ratio": 1.16,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -45,7 +45,7 @@
         "volume_climax": false,
         "near_support": true,
         "near_resistance": true,
-        "in_fib_zone": true
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -90,20 +90,20 @@
         "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 48.0836,
-        "stoch_k": 71.8417,
-        "stoch_d": 76.8376,
-        "macd": -57.7038,
-        "macd_signal": -77.9261,
-        "macd_hist": 20.2223,
-        "bb_upper": 1914.1439,
-        "bb_mid": 1675.4279,
-        "bb_lower": 1436.712,
+        "rsi": 47.8737,
+        "stoch_k": 71.4807,
+        "stoch_d": 76.7173,
+        "macd": -58.1026,
+        "macd_signal": -78.0058,
+        "macd_hist": 19.9032,
+        "bb_upper": 1913.7299,
+        "bb_mid": 1675.1779,
+        "bb_lower": 1436.626,
         "atr": 157.2286,
-        "ma50": 1892.1308,
+        "ma50": 1892.0308,
         "ma200": NaN,
-        "price": 1715.0,
-        "vol_ratio": 0.32,
+        "price": 1710.0,
+        "vol_ratio": 0.42,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -152,7 +152,7 @@
   },
   "yearly_trend": {
     "bias": "bullish",
-    "ma200_position": "above",
+    "ma200_position": "below",
     "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
