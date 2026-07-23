@@ -1,47 +1,47 @@
 {
   "ticker": "HBAN",
   "market": "US",
-  "last_updated": "2026-07-23T05:48:33Z",
+  "last_updated": "2026-07-23T16:23:41Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 48.5,
-      "reason": "Neutral zone (48.5)",
+      "signal": "WATCH",
+      "score": 37.8,
+      "reason": "Depressed score (37.8) but not at confirmed range high | Bearish divergence detected | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 50.0,
-        "candle_pattern": 50.0,
-        "bb_touch": 50.0,
+        "divergence": 10.0,
+        "candle_pattern": 10.0,
+        "bb_touch": 85.0,
         "volume_climax": 65.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 60.9287,
-        "stoch_k": 67.7084,
-        "stoch_d": 70.7465,
-        "macd": 0.345,
-        "macd_signal": 0.3661,
-        "macd_hist": -0.0211,
-        "bb_upper": 18.4559,
-        "bb_mid": 17.9495,
-        "bb_lower": 17.4431,
-        "atr": 0.3859,
-        "ma50": 16.9017,
-        "ma200": 16.4952,
-        "price": 18.27,
-        "vol_ratio": 1.59,
+        "rsi": 44.4615,
+        "stoch_k": 50.0672,
+        "stoch_d": 61.6544,
+        "macd": 0.2575,
+        "macd_signal": 0.3444,
+        "macd_hist": -0.0869,
+        "bb_upper": 18.5021,
+        "bb_mid": 17.9343,
+        "bb_lower": 17.3664,
+        "atr": 0.4358,
+        "ma50": 16.9309,
+        "ma200": 16.4979,
+        "price": 17.275,
+        "vol_ratio": 1.54,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
-        "bearish_divergence": false,
-        "bb_touch": "none",
+        "bearish_divergence": true,
+        "bb_touch": "lower",
         "volume_climax": false,
         "near_support": false,
         "near_resistance": true,
@@ -64,7 +64,8 @@
       ],
       "resistance_levels": [
         15.9,
-        18.35
+        18.35,
+        17.39
       ],
       "fib_levels": {
         "0.0": 18.58,
@@ -78,45 +79,45 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 47.6,
-      "reason": "Neutral zone (47.6)",
+      "score": 41.0,
+      "reason": "Neutral zone (41.0) | Candle: bearish_engulfing (bearish)",
       "components": {
-        "rsi_stoch": 38.2,
+        "rsi_stoch": 49.9,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 61.8995,
-        "stoch_k": 89.4183,
-        "stoch_d": 88.2483,
-        "macd": 0.4559,
-        "macd_signal": 0.2187,
-        "macd_hist": 0.2371,
-        "bb_upper": 18.7037,
-        "bb_mid": 16.5006,
-        "bb_lower": 14.2975,
-        "atr": 0.9094,
-        "ma50": 16.5812,
+        "rsi": 53.6044,
+        "stoch_k": 80.0644,
+        "stoch_d": 85.1303,
+        "macd": 0.3765,
+        "macd_signal": 0.2029,
+        "macd_hist": 0.1736,
+        "bb_upper": 18.527,
+        "bb_mid": 16.4509,
+        "bb_lower": 14.3747,
+        "atr": 0.9476,
+        "ma50": 16.5613,
         "ma200": NaN,
-        "price": 18.27,
-        "vol_ratio": 0.7,
+        "price": 17.275,
+        "vol_ratio": 0.99,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
