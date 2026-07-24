@@ -1,36 +1,36 @@
 {
   "ticker": "HPE",
   "market": "US",
-  "last_updated": "2026-07-24T05:44:31Z",
+  "last_updated": "2026-07-24T16:37:34Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 40.0,
-      "reason": "Neutral zone (40.0) | Bearish divergence detected",
+      "signal": "WATCH",
+      "score": 37.0,
+      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 54.6521,
-        "stoch_k": 64.522,
-        "stoch_d": 56.0467,
-        "macd": 0.7896,
-        "macd_signal": 0.8806,
-        "macd_hist": -0.091,
-        "bb_upper": 50.2735,
-        "bb_mid": 45.813,
-        "bb_lower": 41.3525,
-        "atr": 2.765,
-        "ma50": 44.1837,
-        "ma200": 28.6171,
-        "price": 47.64,
-        "vol_ratio": 0.62,
+        "rsi": 57.4415,
+        "stoch_k": 70.2296,
+        "stoch_d": 63.425,
+        "macd": 0.9118,
+        "macd_signal": 0.8868,
+        "macd_hist": 0.025,
+        "bb_upper": 50.5855,
+        "bb_mid": 45.924,
+        "bb_lower": 41.2625,
+        "atr": 2.7009,
+        "ma50": 44.5601,
+        "ma200": 28.7398,
+        "price": 48.94,
+        "vol_ratio": 0.26,
         "above_ma50": true,
         "above_ma200": true
       },
@@ -44,7 +44,7 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -78,10 +78,10 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 49.8,
+      "reason": "Neutral zone (49.8)",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 49.1,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
@@ -89,20 +89,20 @@
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 69.9754,
-        "stoch_k": 57.5703,
-        "stoch_d": 54.8027,
-        "macd": 6.3584,
-        "macd_signal": 5.4719,
-        "macd_hist": 0.8865,
-        "bb_upper": 56.4869,
-        "bb_mid": 35.7552,
-        "bb_lower": 15.0234,
+        "rsi": 71.126,
+        "stoch_k": 58.7167,
+        "stoch_d": 55.1848,
+        "macd": 6.4621,
+        "macd_signal": 5.4927,
+        "macd_hist": 0.9695,
+        "bb_upper": 56.7163,
+        "bb_mid": 35.8202,
+        "bb_lower": 14.924,
         "atr": 5.0463,
-        "ma50": 27.8832,
+        "ma50": 27.9092,
         "ma200": NaN,
-        "price": 47.64,
-        "vol_ratio": 0.47,
+        "price": 48.94,
+        "vol_ratio": 0.51,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -148,9 +148,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "consolidating",
+    "bias": "bullish",
     "ma200_position": "above",
-    "structure": "contracting (LH+HL)",
+    "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
