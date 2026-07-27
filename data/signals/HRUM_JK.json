@@ -1,43 +1,43 @@
 {
   "ticker": "HRUM.JK",
   "market": "IHSG",
-  "last_updated": "2026-07-24T16:37:10Z",
+  "last_updated": "2026-07-27T06:21:24Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 42.5,
-      "reason": "Neutral zone (42.5) | Candle: bearish_engulfing (bearish)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 65.0,
+        "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
         "rsi": 53.3282,
-        "stoch_k": 73.5023,
-        "stoch_d": 81.5777,
-        "macd": 15.9036,
-        "macd_signal": 6.3455,
-        "macd_hist": 9.5581,
-        "bb_upper": 876.8022,
-        "bb_mid": 772.5,
-        "bb_lower": 668.1978,
-        "atr": 38.5358,
-        "ma50": 775.6,
-        "ma200": 1001.175,
+        "stoch_k": 66.6667,
+        "stoch_d": 74.8416,
+        "macd": 14.7705,
+        "macd_signal": 8.0305,
+        "macd_hist": 6.74,
+        "bb_upper": 880.4081,
+        "bb_mid": 776.0,
+        "bb_lower": 671.5919,
+        "atr": 37.2118,
+        "ma50": 773.9,
+        "ma200": 999.7,
         "price": 810.0,
-        "vol_ratio": 1.75,
+        "vol_ratio": 0.24,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -80,38 +80,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 46.2,
-      "reason": "Neutral zone (46.2) | Candle: shooting_star (bearish)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 25.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 44.0304,
-        "stoch_k": 43.1882,
-        "stoch_d": 36.2525,
-        "macd": -69.1559,
-        "macd_signal": -64.6395,
-        "macd_hist": -4.5164,
-        "bb_upper": 1112.5282,
-        "bb_mid": 877.75,
-        "bb_lower": 642.9718,
-        "atr": 110.9547,
-        "ma50": 993.2,
+        "rsi": 44.0307,
+        "stoch_k": 49.2871,
+        "stoch_d": 42.8621,
+        "macd": -64.7475,
+        "macd_signal": -64.6568,
+        "macd_hist": -0.0907,
+        "bb_upper": 1098.3535,
+        "bb_mid": 868.5,
+        "bb_lower": 638.6465,
+        "atr": 104.4565,
+        "ma50": 992.2,
         "ma200": NaN,
         "price": 810.0,
-        "vol_ratio": 0.77,
+        "vol_ratio": 0.03,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "shooting_star",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -133,12 +133,13 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        887.86,
+        955.0,
+        798.33,
         590.0
       ],
       "resistance_levels": [
-        1365.0,
-        913.33
+        913.33,
+        1326.67
       ],
       "fib_levels": {
         "0.0": 1480.0,
@@ -152,9 +153,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "consolidating",
+    "bias": "bullish",
     "ma200_position": "below",
-    "structure": "contracting (LH+HL)",
+    "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
