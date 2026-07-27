@@ -1,43 +1,43 @@
 {
   "ticker": "CBRE",
   "market": "US",
-  "last_updated": "2026-07-27T06:21:43Z",
+  "last_updated": "2026-07-27T16:55:10Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.8,
-      "reason": "Neutral zone (50.8) | Candle: morning_star (bullish)",
+      "score": 49.2,
+      "reason": "Neutral zone (49.2)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 15.0
+        "sr_fib": 45.0
       },
       "indicators": {
-        "rsi": 52.9072,
-        "stoch_k": 34.6226,
-        "stoch_d": 35.2404,
-        "macd": 0.8057,
-        "macd_signal": 1.1836,
-        "macd_hist": -0.3778,
-        "bb_upper": 144.5805,
-        "bb_mid": 138.954,
-        "bb_lower": 133.3275,
-        "atr": 4.1527,
-        "ma50": 134.3314,
-        "ma200": 148.1112,
-        "price": 139.46,
-        "vol_ratio": 0.9,
+        "rsi": 57.867,
+        "stoch_k": 52.367,
+        "stoch_d": 39.472,
+        "macd": 1.1215,
+        "macd_signal": 1.1712,
+        "macd_hist": -0.0497,
+        "bb_upper": 145.122,
+        "bb_mid": 139.2431,
+        "bb_lower": 133.3642,
+        "atr": 4.1725,
+        "ma50": 134.3821,
+        "ma200": 148.0636,
+        "price": 143.1825,
+        "vol_ratio": 0.43,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "morning_star",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -76,32 +76,32 @@
       }
     },
     "weekly": {
-      "signal": "HOLD",
-      "score": 57.8,
-      "reason": "Neutral zone (57.8) | Bullish divergence detected",
+      "signal": "WATCH",
+      "score": 62.2,
+      "reason": "Elevated score (62.2) but not at confirmed range low | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 35.0
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 48.3797,
-        "stoch_k": 50.9422,
-        "stoch_d": 51.1526,
-        "macd": -2.9135,
-        "macd_signal": -4.0451,
-        "macd_hist": 1.1316,
-        "bb_upper": 150.8565,
-        "bb_mid": 137.21,
-        "bb_lower": 123.5635,
-        "atr": 9.6715,
-        "ma50": 150.2244,
+        "rsi": 51.5843,
+        "stoch_k": 60.6439,
+        "stoch_d": 54.832,
+        "macd": -2.2987,
+        "macd_signal": -3.6957,
+        "macd_hist": 1.397,
+        "bb_upper": 151.4763,
+        "bb_mid": 137.6791,
+        "bb_lower": 123.8819,
+        "atr": 9.297,
+        "ma50": 149.9095,
         "ma200": NaN,
-        "price": 139.46,
-        "vol_ratio": 0.71,
+        "price": 143.1825,
+        "vol_ratio": 0.07,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -135,7 +135,7 @@
       ],
       "resistance_levels": [
         167.9,
-        141.18
+        142.26
       ],
       "fib_levels": {
         "0.0": 174.27,
@@ -150,7 +150,7 @@
   },
   "yearly_trend": {
     "bias": "bearish",
-    "ma200_position": "below",
+    "ma200_position": "above",
     "structure": "downtrend (LH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
