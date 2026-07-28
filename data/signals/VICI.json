@@ -1,37 +1,37 @@
 {
   "ticker": "VICI",
   "market": "US",
-  "last_updated": "2026-07-28T05:41:16Z",
+  "last_updated": "2026-07-28T16:30:35Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "WATCH",
-      "score": 63.0,
-      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
+      "signal": "HOLD",
+      "score": 57.8,
+      "reason": "Neutral zone (57.8) | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 35.0
       },
       "indicators": {
-        "rsi": 50.2479,
-        "stoch_k": 44.4759,
-        "stoch_d": 41.3912,
-        "macd": -0.1007,
-        "macd_signal": -0.1591,
-        "macd_hist": 0.0584,
-        "bb_upper": 27.323,
-        "bb_mid": 26.575,
-        "bb_lower": 25.827,
-        "atr": 0.5163,
-        "ma50": 27.0605,
-        "ma200": 27.7168,
-        "price": 26.75,
-        "vol_ratio": 0.74,
-        "above_ma50": false,
+        "rsi": 55.0837,
+        "stoch_k": 59.2309,
+        "stoch_d": 48.324,
+        "macd": -0.0514,
+        "macd_signal": -0.1375,
+        "macd_hist": 0.0862,
+        "bb_upper": 27.3154,
+        "bb_mid": 26.5733,
+        "bb_lower": 25.8311,
+        "atr": 0.543,
+        "ma50": 27.055,
+        "ma200": 27.7028,
+        "price": 27.145,
+        "vol_ratio": 0.46,
+        "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
@@ -44,8 +44,8 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": true,
-        "near_resistance": false,
-        "in_fib_zone": false
+        "near_resistance": true,
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -59,56 +59,56 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        26.69
+        26.64
       ],
       "resistance_levels": [
         28.6,
         27.43
       ],
       "fib_levels": {
-        "0.0": 29.24,
-        "23.6": 28.43,
-        "38.2": 27.93,
-        "50.0": 27.53,
-        "61.8": 27.12,
-        "78.6": 26.55,
+        "0.0": 29.02,
+        "23.6": 28.27,
+        "38.2": 27.8,
+        "50.0": 27.42,
+        "61.8": 27.04,
+        "78.6": 26.5,
         "100.0": 25.82
       }
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 63.0,
-      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
+      "score": 69.0,
+      "reason": "Elevated score (69.0) but not at confirmed range low | Bullish divergence detected | Candle: bullish_engulfing (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 45.2911,
-        "stoch_k": 30.1913,
-        "stoch_d": 26.0978,
-        "macd": -0.39,
-        "macd_signal": -0.3316,
-        "macd_hist": -0.0584,
-        "bb_upper": 28.8129,
-        "bb_mid": 27.3034,
-        "bb_lower": 25.7938,
-        "atr": 1.1428,
-        "ma50": 28.189,
+        "rsi": 47.777,
+        "stoch_k": 34.2965,
+        "stoch_d": 27.4662,
+        "macd": -0.3585,
+        "macd_signal": -0.3253,
+        "macd_hist": -0.0332,
+        "bb_upper": 28.8123,
+        "bb_mid": 27.3231,
+        "bb_lower": 25.8339,
+        "atr": 1.1759,
+        "ma50": 28.1969,
         "ma200": NaN,
-        "price": 26.75,
-        "vol_ratio": 0.16,
+        "price": 27.145,
+        "vol_ratio": 0.25,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
