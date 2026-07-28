@@ -1,65 +1,65 @@
 {
   "ticker": "HAS",
   "market": "US",
-  "last_updated": "2026-07-28T05:41:06Z",
+  "last_updated": "2026-07-28T16:30:26Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 46.8,
-      "reason": "Neutral zone (46.8) | Bearish divergence detected | Candle: hammer (bullish)",
+      "signal": "PEAK",
+      "score": 29.9,
+      "reason": "Low confluence score (29.9) at range high | Bearish divergence detected",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 40.6,
         "divergence": 10.0,
-        "candle_pattern": 75.0,
-        "bb_touch": 50.0,
+        "candle_pattern": 50.0,
+        "bb_touch": 15.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 66.6606,
-        "stoch_k": 76.857,
-        "stoch_d": 74.8973,
-        "macd": 1.2631,
-        "macd_signal": -0.1789,
-        "macd_hist": 1.442,
-        "bb_upper": 91.221,
-        "bb_mid": 82.191,
-        "bb_lower": 73.161,
-        "atr": 2.6318,
-        "ma50": 84.6246,
-        "ma200": 86.0426,
-        "price": 90.61,
-        "vol_ratio": 0.62,
+        "rsi": 72.1408,
+        "stoch_k": 86.0945,
+        "stoch_d": 78.9594,
+        "macd": 1.8945,
+        "macd_signal": 0.2358,
+        "macd_hist": 1.6587,
+        "bb_upper": 93.23,
+        "bb_mid": 82.6915,
+        "bb_lower": 72.153,
+        "atr": 2.7756,
+        "ma50": 84.6161,
+        "ma200": 86.146,
+        "price": 94.45,
+        "vol_ratio": 0.58,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": "hammer",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
-        "bb_touch": "none",
+        "bb_touch": "upper",
         "volume_climax": false,
-        "near_support": true,
-        "near_resistance": false,
+        "near_support": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
-        "entry": null,
-        "stop_loss": null,
-        "tp1": null,
-        "tp2": null,
-        "tp3": null,
-        "risk": null,
-        "rr_ratio": null,
-        "trailing_stop": null,
+        "entry": 94.45,
+        "stop_loss": 98.61,
+        "tp1": 90.29,
+        "tp2": 86.13,
+        "tp3": 92.92,
+        "risk": 4.16,
+        "rr_ratio": "1:1.0 / 1:2.0 / 1:0.4",
+        "trailing_stop": 101.39,
         "trailing_k": 2.5
       },
       "support_levels": [
-        88.48,
+        88.13,
         82.34
       ],
       "resistance_levels": [
@@ -79,38 +79,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 53.8,
-      "reason": "Neutral zone (53.8) | Candle: hammer (bullish)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 75.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 56.0801,
-        "stoch_k": 51.1802,
-        "stoch_d": 33.5237,
-        "macd": -0.301,
-        "macd_signal": 0.2406,
-        "macd_hist": -0.5416,
-        "bb_upper": 98.9544,
-        "bb_mid": 88.3172,
-        "bb_lower": 77.68,
-        "atr": 5.3713,
-        "ma50": 84.6084,
+        "rsi": 60.3355,
+        "stoch_k": 56.7851,
+        "stoch_d": 35.392,
+        "macd": 0.0053,
+        "macd_signal": 0.3019,
+        "macd_hist": -0.2966,
+        "bb_upper": 99.4548,
+        "bb_mid": 88.5092,
+        "bb_lower": 77.5636,
+        "atr": 5.6954,
+        "ma50": 84.6852,
         "ma200": NaN,
-        "price": 90.61,
-        "vol_ratio": 0.16,
+        "price": 94.45,
+        "vol_ratio": 0.31,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "hammer",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -132,7 +132,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        54.06
+        52.28
       ],
       "resistance_levels": [
         79.62,

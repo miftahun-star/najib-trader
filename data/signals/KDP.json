@@ -1,51 +1,51 @@
 {
   "ticker": "KDP",
   "market": "US",
-  "last_updated": "2026-07-28T05:41:08Z",
+  "last_updated": "2026-07-28T16:30:27Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "WATCH",
-      "score": 60.6,
-      "reason": "Elevated score (60.6) but not at confirmed range low | Candle: morning_star (bullish)",
+      "signal": "HOLD",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
-        "rsi_stoch": 62.0,
+        "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 65.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 44.603,
-        "stoch_k": 10.4375,
-        "stoch_d": 6.6406,
-        "macd": -0.2907,
-        "macd_signal": -0.0733,
-        "macd_hist": -0.2174,
-        "bb_upper": 33.617,
-        "bb_mid": 31.195,
-        "bb_lower": 28.773,
-        "atr": 0.82,
-        "ma50": 30.6666,
-        "ma200": 28.1305,
-        "price": 30.12,
-        "vol_ratio": 0.99,
-        "above_ma50": false,
+        "rsi": 52.1804,
+        "stoch_k": 29.3403,
+        "stoch_d": 14.7769,
+        "macd": -0.2228,
+        "macd_signal": -0.1032,
+        "macd_hist": -0.1197,
+        "bb_upper": 33.2372,
+        "bb_mid": 31.0717,
+        "bb_lower": 28.9063,
+        "atr": 0.8747,
+        "ma50": 30.7094,
+        "ma200": 28.1608,
+        "price": 31.035,
+        "vol_ratio": 0.41,
+        "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": "morning_star",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
-        "near_resistance": true,
-        "in_fib_zone": true
+        "near_support": false,
+        "near_resistance": false,
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -64,10 +64,9 @@
         29.8
       ],
       "resistance_levels": [
+        29.89,
         32.01,
-        29.43,
-        26.45,
-        30.57
+        26.45
       ],
       "fib_levels": {
         "0.0": 33.82,
@@ -81,31 +80,31 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 47.8,
-      "reason": "Neutral zone (47.8)",
+      "score": 52.2,
+      "reason": "Neutral zone (52.2)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 35.0
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 52.3896,
-        "stoch_k": 50.8385,
-        "stoch_d": 64.1758,
-        "macd": 0.8331,
-        "macd_signal": 0.783,
-        "macd_hist": 0.0501,
-        "bb_upper": 33.9901,
-        "bb_mid": 29.2737,
-        "bb_lower": 24.5573,
-        "atr": 1.6817,
-        "ma50": 28.1601,
+        "rsi": 55.7166,
+        "stoch_k": 55.7762,
+        "stoch_d": 65.8217,
+        "macd": 0.9061,
+        "macd_signal": 0.7976,
+        "macd_hist": 0.1085,
+        "bb_upper": 34.0879,
+        "bb_mid": 29.3194,
+        "bb_lower": 24.551,
+        "atr": 1.7814,
+        "ma50": 28.1784,
         "ma200": NaN,
-        "price": 30.12,
-        "vol_ratio": 0.22,
+        "price": 31.035,
+        "vol_ratio": 0.31,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -139,8 +138,7 @@
         31.35
       ],
       "resistance_levels": [
-        33.83,
-        29.24
+        32.81
       ],
       "fib_levels": {
         "0.0": 36.04,
@@ -155,7 +153,7 @@
   },
   "yearly_trend": {
     "bias": "bullish",
-    "ma200_position": "below",
+    "ma200_position": "above",
     "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
