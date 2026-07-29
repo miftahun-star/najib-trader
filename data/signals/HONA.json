@@ -1,49 +1,49 @@
 {
   "ticker": "HONA",
   "market": "US",
-  "last_updated": "2026-07-29T05:45:39Z",
+  "last_updated": "2026-07-29T16:18:22Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 50.8363,
-        "stoch_k": 42.1718,
-        "stoch_d": 26.5014,
-        "macd": -3.9805,
-        "macd_signal": -3.2122,
-        "macd_hist": -0.7683,
-        "bb_upper": 243.5132,
-        "bb_mid": 216.4875,
-        "bb_lower": 189.4618,
-        "atr": 14.8114,
+        "rsi": 45.1921,
+        "stoch_k": 47.0126,
+        "stoch_d": 37.3472,
+        "macd": -4.0702,
+        "macd_signal": -3.3838,
+        "macd_hist": -0.6864,
+        "bb_upper": 243.0693,
+        "bb_mid": 215.7147,
+        "bb_lower": 188.3602,
+        "atr": 14.4956,
         "ma50": NaN,
         "ma200": NaN,
-        "price": 215.9,
-        "vol_ratio": 0.61,
+        "price": 205.625,
+        "vol_ratio": 0.2,
         "above_ma50": null,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": false,
         "in_fib_zone": false
       },
@@ -58,7 +58,9 @@
         "trailing_stop": null,
         "trailing_k": 2.5
       },
-      "support_levels": [],
+      "support_levels": [
+        199.02
+      ],
       "resistance_levels": [],
       "fib_levels": {
         "0.0": 297.5,
