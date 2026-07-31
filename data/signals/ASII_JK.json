@@ -1,36 +1,36 @@
 {
   "ticker": "ASII.JK",
   "market": "IHSG",
-  "last_updated": "2026-07-30T16:22:40Z",
+  "last_updated": "2026-07-31T05:59:06Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "score": 47.8,
+      "reason": "Neutral zone (47.8)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 35.0
       },
       "indicators": {
-        "rsi": 50.1619,
-        "stoch_k": 40.3509,
-        "stoch_d": 39.1813,
-        "macd": 21.0168,
-        "macd_signal": 17.3079,
-        "macd_hist": 3.709,
-        "bb_upper": 5165.034,
-        "bb_mid": 4947.5,
-        "bb_lower": 4729.966,
-        "atr": 145.7431,
-        "ma50": 4908.4,
-        "ma200": 5782.7803,
-        "price": 4950.0,
-        "vol_ratio": 0.72,
+        "rsi": 59.1203,
+        "stoch_k": 49.445,
+        "stoch_d": 42.6025,
+        "macd": 34.0765,
+        "macd_signal": 20.6616,
+        "macd_hist": 13.4149,
+        "bb_upper": 5189.7928,
+        "bb_mid": 4964.5,
+        "bb_lower": 4739.2072,
+        "atr": 151.4043,
+        "ma50": 4891.9,
+        "ma200": 5781.8586,
+        "price": 5150.0,
+        "vol_ratio": 0.53,
         "above_ma50": true,
         "above_ma200": false
       },
@@ -44,8 +44,8 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": true,
-        "in_fib_zone": false
+        "near_resistance": false,
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -80,46 +80,46 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 56.8,
+      "reason": "Neutral zone (56.8) | Candle: bullish_engulfing (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 55.0
       },
       "indicators": {
-        "rsi": 40.894,
-        "stoch_k": 34.9392,
-        "stoch_d": 31.5793,
-        "macd": -259.002,
-        "macd_signal": -228.8723,
-        "macd_hist": -30.1297,
-        "bb_upper": 6347.0654,
-        "bb_mid": 5320.7185,
-        "bb_lower": 4294.3716,
-        "atr": 416.16,
-        "ma50": 5706.6618,
+        "rsi": 45.5634,
+        "stoch_k": 38.7487,
+        "stoch_d": 32.8491,
+        "macd": -243.0476,
+        "macd_signal": -225.6815,
+        "macd_hist": -17.3662,
+        "bb_upper": 6345.6912,
+        "bb_mid": 5330.7185,
+        "bb_lower": 4315.7458,
+        "atr": 426.8771,
+        "ma50": 5710.6618,
         "ma200": NaN,
-        "price": 4950.0,
-        "vol_ratio": 0.45,
+        "price": 5150.0,
+        "vol_ratio": 0.55,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": false,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -152,9 +152,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "volatile",
-    "ma200_position": "below",
-    "structure": "expanding (HH+LL)",
+    "bias": "bearish",
+    "ma200_position": "above",
+    "structure": "downtrend (LH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
