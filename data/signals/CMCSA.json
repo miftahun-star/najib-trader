@@ -1,50 +1,50 @@
 {
   "ticker": "CMCSA",
   "market": "US",
-  "last_updated": "2026-07-31T05:59:38Z",
+  "last_updated": "2026-07-31T16:42:30Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 52.6,
-      "reason": "Neutral zone (52.6)",
+      "score": 56.0,
+      "reason": "Neutral zone (56.0) | Candle: bullish_engulfing (bullish)",
       "components": {
-        "rsi_stoch": 48.1,
+        "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 50.9578,
-        "stoch_k": 81.4924,
-        "stoch_d": 69.7295,
-        "macd": -0.0074,
-        "macd_signal": -0.101,
-        "macd_hist": 0.0936,
-        "bb_upper": 24.7336,
-        "bb_mid": 23.4915,
-        "bb_lower": 22.2494,
-        "atr": 0.9584,
-        "ma50": 23.6067,
-        "ma200": 26.3852,
-        "price": 23.67,
-        "vol_ratio": 0.84,
+        "rsi": 53.1583,
+        "stoch_k": 77.963,
+        "stoch_d": 77.9067,
+        "macd": 0.0294,
+        "macd_signal": -0.0749,
+        "macd_hist": 0.1043,
+        "bb_upper": 24.7555,
+        "bb_mid": 23.501,
+        "bb_lower": 22.2465,
+        "atr": 0.9471,
+        "ma50": 23.5969,
+        "ma200": 26.3722,
+        "price": 23.98,
+        "vol_ratio": 0.26,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": true,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -91,20 +91,20 @@
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 42.431,
-        "stoch_k": 21.907,
-        "stoch_d": 18.9757,
-        "macd": -1.2969,
-        "macd_signal": -1.1752,
-        "macd_hist": -0.1217,
-        "bb_upper": 29.4228,
-        "bb_mid": 25.1477,
-        "bb_lower": 20.8726,
+        "rsi": 43.8698,
+        "stoch_k": 23.4611,
+        "stoch_d": 19.4937,
+        "macd": -1.2722,
+        "macd_signal": -1.1703,
+        "macd_hist": -0.1019,
+        "bb_upper": 29.4179,
+        "bb_mid": 25.1632,
+        "bb_lower": 20.9085,
         "atr": 1.8803,
-        "ma50": 26.7139,
+        "ma50": 26.7201,
         "ma200": NaN,
-        "price": 23.67,
-        "vol_ratio": 0.85,
+        "price": 23.98,
+        "vol_ratio": 0.9,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -151,9 +151,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "neutral",
+    "bias": "bearish",
     "ma200_position": "below",
-    "structure": "mixed",
+    "structure": "downtrend (LH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
