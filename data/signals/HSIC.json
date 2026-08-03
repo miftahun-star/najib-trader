@@ -1,50 +1,50 @@
 {
   "ticker": "HSIC",
   "market": "US",
-  "last_updated": "2026-08-03T06:14:11Z",
+  "last_updated": "2026-08-03T17:06:45Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 46.0,
-      "reason": "Neutral zone (46.0) | Bearish divergence detected | Candle: bullish_engulfing (bullish)",
+      "signal": "WATCH",
+      "score": 37.0,
+      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 55.7699,
-        "stoch_k": 38.916,
-        "stoch_d": 40.3901,
-        "macd": 0.923,
-        "macd_signal": 1.2886,
-        "macd_hist": -0.3656,
-        "bb_upper": 88.3353,
-        "bb_mid": 85.741,
-        "bb_lower": 83.1467,
-        "atr": 1.9325,
-        "ma50": 81.7948,
-        "ma200": 76.2745,
-        "price": 85.75,
-        "vol_ratio": 0.93,
+        "rsi": 60.2437,
+        "stoch_k": 45.1491,
+        "stoch_d": 41.7178,
+        "macd": 0.9725,
+        "macd_signal": 1.2254,
+        "macd_hist": -0.2529,
+        "bb_upper": 88.3837,
+        "bb_mid": 85.759,
+        "bb_lower": 83.1343,
+        "atr": 1.9359,
+        "ma50": 82.0698,
+        "ma200": 76.3925,
+        "price": 86.98,
+        "vol_ratio": 0.5,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": "bullish_engulfing",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -79,45 +79,45 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 48.6,
-      "reason": "Neutral zone (48.6)",
+      "score": 52.0,
+      "reason": "Neutral zone (52.0) | Candle: morning_star (bullish)",
       "components": {
-        "rsi_stoch": 43.1,
+        "rsi_stoch": 44.8,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 61.2532,
-        "stoch_k": 85.4974,
-        "stoch_d": 87.5171,
-        "macd": 3.066,
-        "macd_signal": 2.1857,
-        "macd_hist": 0.8803,
-        "bb_upper": 89.6802,
-        "bb_mid": 78.587,
-        "bb_lower": 67.4938,
-        "atr": 4.472,
-        "ma50": 75.1724,
+        "rsi": 62.854,
+        "stoch_k": 84.1409,
+        "stoch_d": 85.0384,
+        "macd": 3.1938,
+        "macd_signal": 2.3882,
+        "macd_hist": 0.8057,
+        "bb_upper": 90.6029,
+        "bb_mid": 79.3215,
+        "bb_lower": 68.0401,
+        "atr": 4.294,
+        "ma50": 75.52,
         "ma200": NaN,
-        "price": 85.75,
-        "vol_ratio": 1.08,
+        "price": 86.98,
+        "vol_ratio": 0.1,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "morning_star",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -135,7 +135,8 @@
         67.0
       ],
       "resistance_levels": [
-        77.28
+        77.28,
+        89.31
       ],
       "fib_levels": {
         "0.0": 89.34,
