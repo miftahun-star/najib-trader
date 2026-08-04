@@ -1,36 +1,36 @@
 {
   "ticker": "TPIA.JK",
   "market": "IHSG",
-  "last_updated": "2026-08-03T17:06:13Z",
+  "last_updated": "2026-08-04T05:41:46Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 53.6255,
-        "stoch_k": 61.6951,
-        "stoch_d": 60.1819,
-        "macd": 17.8295,
-        "macd_signal": -20.187,
-        "macd_hist": 38.0165,
-        "bb_upper": 2328.9218,
-        "bb_mid": 2015.75,
-        "bb_lower": 1702.5782,
-        "atr": 149.8681,
-        "ma50": 1906.9847,
-        "ma200": 5327.234,
-        "price": 2160.0,
-        "vol_ratio": 0.59,
+        "rsi": 48.7953,
+        "stoch_k": 44.7411,
+        "stoch_d": 52.5875,
+        "macd": 11.276,
+        "macd_signal": -8.241,
+        "macd_hist": 19.5171,
+        "bb_upper": 2335.7074,
+        "bb_mid": 2034.0,
+        "bb_lower": 1732.2926,
+        "atr": 143.5087,
+        "ma50": 1904.6785,
+        "ma200": 5271.1164,
+        "price": 2060.0,
+        "vol_ratio": 0.35,
         "above_ma50": true,
         "above_ma200": false
       },
@@ -44,7 +44,7 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -62,6 +62,7 @@
         1715.0
       ],
       "resistance_levels": [
+        2266.67,
         1957.5,
         6739.23
       ],
@@ -76,39 +77,39 @@
       }
     },
     "weekly": {
-      "signal": "WATCH",
-      "score": 61.1,
-      "reason": "Elevated score (61.1) but not at confirmed range low | Bullish divergence detected",
+      "signal": "HOLD",
+      "score": 54.9,
+      "reason": "Neutral zone (54.9) | Bullish divergence detected | Candle: bearish_engulfing (bearish)",
       "components": {
-        "rsi_stoch": 55.4,
+        "rsi_stoch": 54.5,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 33.5684,
-        "stoch_k": 15.6457,
-        "stoch_d": 13.5256,
-        "macd": -1217.2527,
-        "macd_signal": -1220.3322,
-        "macd_hist": 3.0796,
-        "bb_upper": 7029.9315,
-        "bb_mid": 3405.6999,
-        "bb_lower": -218.5316,
-        "atr": 696.9757,
-        "ma50": 5667.9002,
+        "rsi": 32.9087,
+        "stoch_k": 16.4033,
+        "stoch_d": 15.1644,
+        "macd": -1162.8581,
+        "macd_signal": -1208.8374,
+        "macd_hist": 45.9793,
+        "bb_upper": 6832.2886,
+        "bb_mid": 3253.3317,
+        "bb_lower": -325.6253,
+        "atr": 657.8884,
+        "ma50": 5534.2998,
         "ma200": NaN,
-        "price": 2160.0,
-        "vol_ratio": 1.0,
+        "price": 2060.0,
+        "vol_ratio": 0.24,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -130,8 +131,9 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        6869.88,
-        5266.34
+        6496.2,
+        5266.34,
+        7617.24
       ],
       "resistance_levels": [
         8220.14,

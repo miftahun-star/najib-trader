@@ -1,43 +1,43 @@
 {
   "ticker": "OTIS",
   "market": "US",
-  "last_updated": "2026-08-03T17:06:50Z",
+  "last_updated": "2026-08-04T05:42:24Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 49.2,
-      "reason": "Neutral zone (49.2) | Candle: shooting_star (bearish)",
+      "score": 53.0,
+      "reason": "Neutral zone (53.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 25.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 48.1613,
-        "stoch_k": 39.6992,
-        "stoch_d": 46.817,
-        "macd": -0.0748,
-        "macd_signal": -0.013,
-        "macd_hist": -0.0618,
-        "bb_upper": 74.7408,
-        "bb_mid": 72.581,
-        "bb_lower": 70.4212,
-        "atr": 1.7926,
-        "ma50": 72.0118,
-        "ma200": 81.6802,
-        "price": 72.06,
-        "vol_ratio": 0.26,
-        "above_ma50": true,
+        "rsi": 47.6723,
+        "stoch_k": 46.2155,
+        "stoch_d": 54.269,
+        "macd": -0.0483,
+        "macd_signal": 0.0025,
+        "macd_hist": -0.0507,
+        "bb_upper": 74.8343,
+        "bb_mid": 72.6525,
+        "bb_lower": 70.4707,
+        "atr": 1.802,
+        "ma50": 71.996,
+        "ma200": 81.7672,
+        "price": 71.95,
+        "vol_ratio": 0.86,
+        "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "shooting_star",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -67,49 +67,49 @@
         78.24
       ],
       "fib_levels": {
-        "0.0": 85.86,
-        "23.6": 81.92,
-        "38.2": 79.48,
-        "50.0": 77.51,
-        "61.8": 75.54,
-        "78.6": 72.73,
+        "0.0": 87.04,
+        "23.6": 82.82,
+        "38.2": 80.21,
+        "50.0": 78.1,
+        "61.8": 75.99,
+        "78.6": 72.99,
         "100.0": 69.16
       }
     },
     "weekly": {
-      "signal": "WATCH",
-      "score": 36.2,
-      "reason": "Depressed score (36.2) but not at confirmed range high | Bearish divergence detected | Candle: shooting_star (bearish)",
+      "signal": "HOLD",
+      "score": 40.0,
+      "reason": "Neutral zone (40.0) | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 25.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 36.9031,
-        "stoch_k": 28.0899,
-        "stoch_d": 28.4507,
-        "macd": -3.1842,
-        "macd_signal": -3.5614,
-        "macd_hist": 0.3772,
-        "bb_upper": 79.97,
-        "bb_mid": 73.9774,
-        "bb_lower": 67.9848,
-        "atr": 3.6713,
-        "ma50": 82.3237,
+        "rsi": 36.5297,
+        "stoch_k": 28.4482,
+        "stoch_d": 29.529,
+        "macd": -3.3223,
+        "macd_signal": -3.6557,
+        "macd_hist": 0.3334,
+        "bb_upper": 80.6569,
+        "bb_mid": 74.3274,
+        "bb_lower": 67.998,
+        "atr": 3.8253,
+        "ma50": 82.6273,
         "ma200": NaN,
-        "price": 72.06,
-        "vol_ratio": 0.06,
+        "price": 71.95,
+        "vol_ratio": 1.0,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "shooting_star",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
@@ -149,9 +149,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
+    "bias": "volatile",
     "ma200_position": "below",
-    "structure": "uptrend (HH+HL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }

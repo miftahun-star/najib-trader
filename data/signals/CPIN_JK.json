@@ -1,50 +1,50 @@
 {
   "ticker": "CPIN.JK",
   "market": "IHSG",
-  "last_updated": "2026-08-03T17:06:14Z",
+  "last_updated": "2026-08-04T05:41:47Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "WATCH",
-      "score": 60.8,
-      "reason": "Elevated score (60.8) but not at confirmed range low | Bullish divergence detected | Candle: hammer (bullish)",
+      "signal": "HOLD",
+      "score": 53.0,
+      "reason": "Neutral zone (53.0)",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 90.0,
-        "candle_pattern": 75.0,
+        "divergence": 50.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 54.4091,
-        "stoch_k": 72.2222,
-        "stoch_d": 54.4312,
-        "macd": -20.159,
-        "macd_signal": -52.7035,
-        "macd_hist": 32.5445,
-        "bb_upper": 3302.4661,
-        "bb_mid": 3150.5,
-        "bb_lower": 2998.5339,
-        "atr": 99.9333,
-        "ma50": 3365.1517,
-        "ma200": 4027.523,
-        "price": 3290.0,
-        "vol_ratio": 0.94,
+        "rsi": 46.0524,
+        "stoch_k": 49.4444,
+        "stoch_d": 63.7963,
+        "macd": -23.3186,
+        "macd_signal": -41.8534,
+        "macd_hist": 18.5348,
+        "bb_upper": 3300.2221,
+        "bb_mid": 3153.5,
+        "bb_lower": 3006.7779,
+        "atr": 102.9527,
+        "ma50": 3326.5951,
+        "ma200": 4013.2011,
+        "price": 3150.0,
+        "vol_ratio": 0.47,
         "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "hammer",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
-        "bullish_divergence": true,
+        "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
+        "near_support": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -59,7 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        3068.57,
+        3073.75,
         3805.94
       ],
       "resistance_levels": [
@@ -79,40 +79,40 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 54.1,
-      "reason": "Neutral zone (54.1)",
+      "score": 57.9,
+      "reason": "Neutral zone (57.9) | Bullish divergence detected | Candle: bearish_engulfing (bearish)",
       "components": {
-        "rsi_stoch": 55.7,
-        "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "rsi_stoch": 54.7,
+        "divergence": 90.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 38.9823,
-        "stoch_k": 15.4055,
-        "stoch_d": 11.2396,
-        "macd": -268.7994,
-        "macd_signal": -234.6342,
-        "macd_hist": -34.1653,
-        "bb_upper": 4516.3283,
-        "bb_mid": 3659.0198,
-        "bb_lower": 2801.7112,
-        "atr": 272.9523,
-        "ma50": 4073.8159,
+        "rsi": 36.096,
+        "stoch_k": 16.2093,
+        "stoch_d": 14.2177,
+        "macd": -268.2115,
+        "macd_signal": -241.3497,
+        "macd_hist": -26.8619,
+        "bb_upper": 4510.7461,
+        "bb_mid": 3626.8203,
+        "bb_lower": 2742.8944,
+        "atr": 269.1683,
+        "ma50": 4050.4237,
         "ma200": NaN,
-        "price": 3290.0,
-        "vol_ratio": 0.87,
+        "price": 3150.0,
+        "vol_ratio": 0.37,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
-        "bullish_divergence": false,
+        "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
