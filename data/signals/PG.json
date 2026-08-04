@@ -1,49 +1,49 @@
 {
   "ticker": "PG",
   "market": "US",
-  "last_updated": "2026-08-04T05:42:25Z",
+  "last_updated": "2026-08-04T16:49:08Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 51.5,
-      "reason": "Neutral zone (51.5) | Candle: hammer (bullish)",
+      "score": 55.2,
+      "reason": "Neutral zone (55.2) | Candle: bullish_engulfing (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 75.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 35.0
+        "sr_fib": 45.0
       },
       "indicators": {
-        "rsi": 44.3678,
-        "stoch_k": 34.4956,
-        "stoch_d": 41.8194,
-        "macd": -0.3071,
-        "macd_signal": 0.1332,
-        "macd_hist": -0.4403,
-        "bb_upper": 151.0945,
-        "bb_mid": 147.2853,
-        "bb_lower": 143.4761,
-        "atr": 3.598,
-        "ma50": 146.3712,
-        "ma200": 145.8646,
-        "price": 144.49,
-        "vol_ratio": 1.06,
-        "above_ma50": false,
-        "above_ma200": false
+        "rsi": 50.1816,
+        "stoch_k": 38.8848,
+        "stoch_d": 35.0273,
+        "macd": -0.3459,
+        "macd_signal": -0.0505,
+        "macd_hist": -0.2953,
+        "bb_upper": 150.1835,
+        "bb_mid": 146.8859,
+        "bb_lower": 143.5883,
+        "atr": 3.5134,
+        "ma50": 146.5335,
+        "ma200": 145.8832,
+        "price": 146.865,
+        "vol_ratio": 0.31,
+        "above_ma50": true,
+        "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": "hammer",
+          "name": "bullish_engulfing",
           "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": true,
         "in_fib_zone": true
       },
@@ -59,56 +59,56 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        141.32
+        141.23
       ],
       "resistance_levels": [
         152.25,
         145.25
       ],
       "fib_levels": {
-        "0.0": 154.82,
-        "23.6": 150.81,
-        "38.2": 148.33,
-        "50.0": 146.33,
-        "61.8": 144.32,
-        "78.6": 141.47,
+        "0.0": 153.68,
+        "23.6": 149.94,
+        "38.2": 147.63,
+        "50.0": 145.76,
+        "61.8": 143.89,
+        "78.6": 141.22,
         "100.0": 137.83
       }
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 63.0,
-      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
+      "score": 66.8,
+      "reason": "Elevated score (66.8) but not at confirmed range low | Bullish divergence detected | Candle: hammer (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 46.5154,
-        "stoch_k": 58.7881,
-        "stoch_d": 64.5642,
-        "macd": -0.1191,
-        "macd_signal": -0.2984,
-        "macd_hist": 0.1792,
-        "bb_upper": 151.2207,
-        "bb_mid": 145.2304,
-        "bb_lower": 139.2402,
-        "atr": 6.9915,
-        "ma50": 147.08,
+        "rsi": 49.9956,
+        "stoch_k": 53.8124,
+        "stoch_d": 58.6737,
+        "macd": -0.0983,
+        "macd_signal": -0.2583,
+        "macd_hist": 0.16,
+        "bb_upper": 151.3148,
+        "bb_mid": 145.4666,
+        "bb_lower": 139.6185,
+        "atr": 6.7313,
+        "ma50": 146.9346,
         "ma200": NaN,
-        "price": 144.49,
-        "vol_ratio": 1.19,
+        "price": 146.865,
+        "vol_ratio": 0.28,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -134,7 +134,8 @@
       ],
       "resistance_levels": [
         154.69,
-        168.57
+        164.87,
+        172.27
       ],
       "fib_levels": {
         "0.0": 172.58,
