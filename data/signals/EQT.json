@@ -1,49 +1,49 @@
 {
   "ticker": "EQT",
   "market": "US",
-  "last_updated": "2026-08-05T05:40:24Z",
+  "last_updated": "2026-08-05T16:29:18Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 53.6533,
-        "stoch_k": 74.3467,
-        "stoch_d": 72.7327,
-        "macd": 0.2762,
-        "macd_signal": -0.067,
-        "macd_hist": 0.3432,
-        "bb_upper": 54.8519,
-        "bb_mid": 51.287,
-        "bb_lower": 47.7221,
-        "atr": 1.4048,
-        "ma50": 52.3434,
-        "ma200": 56.1836,
-        "price": 52.77,
-        "vol_ratio": 0.79,
-        "above_ma50": true,
+        "rsi": 47.7172,
+        "stoch_k": 65.4667,
+        "stoch_d": 71.28,
+        "macd": 0.1971,
+        "macd_signal": -0.0142,
+        "macd_hist": 0.2113,
+        "bb_upper": 54.8777,
+        "bb_mid": 51.3103,
+        "bb_lower": 47.7428,
+        "atr": 1.4416,
+        "ma50": 52.2175,
+        "ma200": 56.1778,
+        "price": 51.625,
+        "vol_ratio": 0.29,
+        "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": false,
         "in_fib_zone": false
       },
@@ -79,31 +79,31 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 55.2,
-      "reason": "Neutral zone (55.2)",
+      "score": 52.2,
+      "reason": "Neutral zone (52.2)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 85.0
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 45.6159,
-        "stoch_k": 41.0,
-        "stoch_d": 30.8549,
-        "macd": -1.4657,
-        "macd_signal": -1.1435,
-        "macd_hist": -0.3222,
-        "bb_upper": 63.8682,
-        "bb_mid": 55.2606,
-        "bb_lower": 46.6531,
-        "atr": 3.4064,
-        "ma50": 55.5956,
+        "rsi": 43.438,
+        "stoch_k": 37.7819,
+        "stoch_d": 29.7822,
+        "macd": -1.557,
+        "macd_signal": -1.1617,
+        "macd_hist": -0.3953,
+        "bb_upper": 63.8955,
+        "bb_mid": 55.2034,
+        "bb_lower": 46.5113,
+        "atr": 3.4536,
+        "ma50": 55.5727,
         "ma200": NaN,
-        "price": 52.77,
-        "vol_ratio": 0.32,
+        "price": 51.625,
+        "vol_ratio": 0.37,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -116,7 +116,7 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": false,
         "in_fib_zone": true
       },
@@ -132,8 +132,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        49.54,
-        43.0
+        47.36
       ],
       "resistance_levels": [
         57.18
