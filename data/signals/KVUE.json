@@ -1,50 +1,50 @@
 {
   "ticker": "KVUE",
   "market": "US",
-  "last_updated": "2026-08-06T05:42:28Z",
+  "last_updated": "2026-08-07T04:50:35Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 52.2,
-      "reason": "Neutral zone (52.2) | Candle: hammer (bullish)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0) | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 75.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
-        "volume_climax": 65.0,
-        "sr_fib": 30.0
+        "volume_climax": 50.0,
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 59.0706,
-        "stoch_k": 55.087,
-        "stoch_d": 47.4796,
-        "macd": 0.2105,
-        "macd_signal": 0.2233,
-        "macd_hist": -0.0127,
+        "rsi": 50.7134,
+        "stoch_k": 57.4333,
+        "stoch_d": 52.8299,
+        "macd": 0.1807,
+        "macd_signal": 0.2148,
+        "macd_hist": -0.034,
         "bb_upper": 19.8543,
         "bb_mid": 19.2245,
         "bb_lower": 18.5947,
-        "atr": 0.5069,
-        "ma50": 18.647,
-        "ma200": 17.3422,
-        "price": 19.67,
-        "vol_ratio": 1.58,
+        "atr": 0.52,
+        "ma50": 18.6808,
+        "ma200": 17.3643,
+        "price": 19.18,
+        "vol_ratio": 1.18,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": "hammer",
-          "direction": "bullish"
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
+        "near_support": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -78,38 +78,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 59.0,
-      "reason": "Neutral zone (59.0) | Candle: hammer (bullish)",
+      "score": 55.2,
+      "reason": "Neutral zone (55.2)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 75.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 63.54,
-        "stoch_k": 78.836,
-        "stoch_d": 75.3065,
-        "macd": 0.5204,
-        "macd_signal": 0.3336,
-        "macd_hist": 0.1868,
-        "bb_upper": 20.1276,
-        "bb_mid": 18.1088,
-        "bb_lower": 16.09,
-        "atr": 0.8955,
-        "ma50": 17.3959,
+        "rsi": 59.7208,
+        "stoch_k": 74.1222,
+        "stoch_d": 73.7352,
+        "macd": 0.4813,
+        "macd_signal": 0.3258,
+        "macd_hist": 0.1556,
+        "bb_upper": 20.034,
+        "bb_mid": 18.0843,
+        "bb_lower": 16.1346,
+        "atr": 0.8966,
+        "ma50": 17.3861,
         "ma200": NaN,
-        "price": 19.67,
-        "vol_ratio": 0.97,
+        "price": 19.18,
+        "vol_ratio": 1.22,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "hammer",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -150,7 +150,7 @@
   },
   "yearly_trend": {
     "bias": "bullish",
-    "ma200_position": "above",
+    "ma200_position": "below",
     "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
