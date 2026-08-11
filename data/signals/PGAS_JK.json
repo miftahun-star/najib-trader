@@ -1,43 +1,43 @@
 {
   "ticker": "PGAS.JK",
   "market": "IHSG",
-  "last_updated": "2026-08-11T04:14:39Z",
+  "last_updated": "2026-08-11T15:54:02Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 44.0,
+      "reason": "Neutral zone (44.0) | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 50.9922,
-        "stoch_k": 33.3333,
-        "stoch_d": 31.746,
-        "macd": 1.2691,
-        "macd_signal": -0.5288,
-        "macd_hist": 1.7979,
-        "bb_upper": 1543.8728,
-        "bb_mid": 1510.0,
-        "bb_lower": 1476.1272,
-        "atr": 34.6545,
-        "ma50": 1500.2226,
-        "ma200": 1712.2365,
-        "price": 1510.0,
-        "vol_ratio": 0.23,
-        "above_ma50": true,
+        "rsi": 46.2717,
+        "stoch_k": 26.9841,
+        "stoch_d": 29.6296,
+        "macd": -0.3264,
+        "macd_signal": -0.8479,
+        "macd_hist": 0.5216,
+        "bb_upper": 1544.0338,
+        "bb_mid": 1509.0,
+        "bb_lower": 1473.9662,
+        "atr": 35.7259,
+        "ma50": 1499.8226,
+        "ma200": 1712.1365,
+        "price": 1490.0,
+        "vol_ratio": 1.0,
+        "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -64,7 +64,7 @@
         1626.84
       ],
       "resistance_levels": [
-        1555.0,
+        1570.0,
         1784.42
       ],
       "fib_levels": {
@@ -90,20 +90,20 @@
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 41.4378,
-        "stoch_k": 35.1224,
-        "stoch_d": 34.0855,
-        "macd": -74.7808,
-        "macd_signal": -65.8652,
-        "macd_hist": -8.9156,
-        "bb_upper": 1848.8112,
-        "bb_mid": 1601.8029,
-        "bb_lower": 1354.7945,
-        "atr": 106.3133,
-        "ma50": 1701.7337,
+        "rsi": 40.2664,
+        "stoch_k": 33.5713,
+        "stoch_d": 33.5685,
+        "macd": -76.3763,
+        "macd_signal": -66.1843,
+        "macd_hist": -10.192,
+        "bb_upper": 1849.532,
+        "bb_mid": 1600.8029,
+        "bb_lower": 1352.0737,
+        "atr": 107.3852,
+        "ma50": 1701.3337,
         "ma200": NaN,
-        "price": 1510.0,
-        "vol_ratio": 0.17,
+        "price": 1490.0,
+        "vol_ratio": 0.32,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -150,9 +150,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "consolidating",
+    "bias": "bearish",
     "ma200_position": "below",
-    "structure": "contracting (LH+HL)",
+    "structure": "downtrend (LH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
