@@ -1,50 +1,50 @@
 {
   "ticker": "INKP.JK",
   "market": "IHSG",
-  "last_updated": "2026-08-11T15:54:08Z",
+  "last_updated": "2026-08-12T04:44:06Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 53.8,
-      "reason": "Neutral zone (53.8)",
+      "score": 55.2,
+      "reason": "Neutral zone (55.2) | Candle: bullish_engulfing (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
-        "volume_climax": 65.0,
-        "sr_fib": 65.0
+        "volume_climax": 50.0,
+        "sr_fib": 45.0
       },
       "indicators": {
-        "rsi": 60.7665,
-        "stoch_k": 61.4379,
-        "stoch_d": 61.4379,
-        "macd": 230.6645,
-        "macd_signal": 211.3411,
-        "macd_hist": 19.3234,
-        "bb_upper": 8693.1127,
-        "bb_mid": 8047.5,
-        "bb_lower": 7401.8873,
-        "atr": 290.1117,
-        "ma50": 7558.091,
-        "ma200": 8523.1781,
-        "price": 8300.0,
-        "vol_ratio": 1.7,
+        "rsi": 65.9319,
+        "stoch_k": 66.6667,
+        "stoch_d": 63.1808,
+        "macd": 237.8362,
+        "macd_signal": 216.6401,
+        "macd_hist": 21.196,
+        "bb_upper": 8711.1871,
+        "bb_mid": 8102.5,
+        "bb_lower": 7493.8129,
+        "atr": 292.6037,
+        "ma50": 7575.2518,
+        "ma200": 8529.4468,
+        "price": 8525.0,
+        "vol_ratio": 0.67,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": true
       },
       "trade_levels": {
@@ -63,7 +63,8 @@
         7559.02
       ],
       "resistance_levels": [
-        10125.34
+        10125.34,
+        8678.79
       ],
       "fib_levels": {
         "0.0": 10362.77,
@@ -77,38 +78,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 44.8,
-      "reason": "Neutral zone (44.8)",
+      "score": 53.0,
+      "reason": "Neutral zone (53.0) | Candle: hammer (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 15.0
+        "sr_fib": 45.0
       },
       "indicators": {
-        "rsi": 50.9036,
-        "stoch_k": 61.6788,
-        "stoch_d": 52.1568,
-        "macd": -202.0616,
-        "macd_signal": -241.5818,
-        "macd_hist": 39.5202,
-        "bb_upper": 10293.9788,
-        "bb_mid": 8265.1205,
-        "bb_lower": 6236.2623,
+        "rsi": 52.9111,
+        "stoch_k": 64.2059,
+        "stoch_d": 52.9992,
+        "macd": -184.1129,
+        "macd_signal": -237.9921,
+        "macd_hist": 53.8791,
+        "bb_upper": 10308.5357,
+        "bb_mid": 8276.3705,
+        "bb_lower": 6244.2054,
         "atr": 826.5846,
-        "ma50": 8412.741,
+        "ma50": 8417.241,
         "ma200": NaN,
-        "price": 8300.0,
-        "vol_ratio": 0.39,
-        "above_ma50": false,
+        "price": 8525.0,
+        "vol_ratio": 0.5,
+        "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -148,9 +149,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
+    "bias": "consolidating",
     "ma200_position": "above",
-    "structure": "uptrend (HH+HL)",
+    "structure": "contracting (LH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
