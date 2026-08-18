@@ -1,43 +1,43 @@
 {
   "ticker": "TRGP",
   "market": "US",
-  "last_updated": "2026-08-17T03:44:01Z",
+  "last_updated": "2026-08-18T03:39:16Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 57.0,
-      "reason": "Neutral zone (57.0) | Bullish divergence detected",
+      "signal": "WATCH",
+      "score": 60.7,
+      "reason": "Elevated score (60.7) but not at confirmed range low | Bullish divergence detected | Candle: hammer (bullish)",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 49.5,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 55.8408,
-        "stoch_k": 60.3122,
-        "stoch_d": 44.3832,
-        "macd": -0.5822,
-        "macd_signal": -0.9937,
-        "macd_hist": 0.4116,
-        "bb_upper": 285.8354,
-        "bb_mid": 269.5428,
-        "bb_lower": 253.2501,
-        "atr": 7.6528,
-        "ma50": 268.69,
-        "ma200": 226.3156,
-        "price": 275.79,
-        "vol_ratio": 0.63,
+        "rsi": 57.3212,
+        "stoch_k": 80.3661,
+        "stoch_d": 59.9048,
+        "macd": 0.2559,
+        "macd_signal": -0.7438,
+        "macd_hist": 0.9997,
+        "bb_upper": 285.2748,
+        "bb_mid": 269.388,
+        "bb_lower": 253.5012,
+        "atr": 7.4091,
+        "ma50": 268.9263,
+        "ma200": 226.9587,
+        "price": 277.94,
+        "vol_ratio": 0.81,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -60,11 +60,11 @@
       },
       "support_levels": [
         254.6,
-        235.09
+        230.06,
+        240.11
       ],
       "resistance_levels": [
-        271.18,
-        251.19
+        271.18
       ],
       "fib_levels": {
         "0.0": 289.68,
@@ -77,39 +77,39 @@
       }
     },
     "weekly": {
-      "signal": "WATCH",
-      "score": 37.0,
-      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected",
+      "signal": "HOLD",
+      "score": 40.8,
+      "reason": "Neutral zone (40.8) | Bearish divergence detected | Candle: hammer (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 59.6521,
-        "stoch_k": 54.391,
-        "stoch_d": 65.082,
-        "macd": 15.195,
-        "macd_signal": 17.3259,
-        "macd_hist": -2.1309,
-        "bb_upper": 290.1013,
-        "bb_mid": 260.5905,
-        "bb_lower": 231.0798,
-        "atr": 16.4783,
-        "ma50": 215.9073,
+        "rsi": 60.2897,
+        "stoch_k": 56.4394,
+        "stoch_d": 56.9565,
+        "macd": 15.0009,
+        "macd_signal": 16.8602,
+        "macd_hist": -1.8594,
+        "bb_upper": 291.5097,
+        "bb_mid": 262.3857,
+        "bb_lower": 233.2618,
+        "atr": 15.6042,
+        "ma50": 218.2875,
         "ma200": NaN,
-        "price": 275.79,
-        "vol_ratio": 0.67,
+        "price": 277.94,
+        "vol_ratio": 0.16,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
@@ -150,9 +150,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
+    "bias": "volatile",
     "ma200_position": "above",
-    "structure": "uptrend (HH+HL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }

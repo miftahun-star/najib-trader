@@ -1,36 +1,36 @@
 {
   "ticker": "HLT",
   "market": "US",
-  "last_updated": "2026-08-17T03:43:55Z",
+  "last_updated": "2026-08-18T03:39:06Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 49.2,
-      "reason": "Neutral zone (49.2)",
+      "score": 52.2,
+      "reason": "Neutral zone (52.2)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 45.0
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 52.8176,
-        "stoch_k": 56.0223,
-        "stoch_d": 38.7105,
-        "macd": -2.4483,
-        "macd_signal": -3.3435,
-        "macd_hist": 0.8952,
-        "bb_upper": 330.8955,
-        "bb_mid": 321.3845,
-        "bb_lower": 311.8735,
-        "atr": 8.2923,
-        "ma50": 331.3724,
-        "ma200": 308.1075,
-        "price": 327.21,
-        "vol_ratio": 0.92,
+        "rsi": 51.8794,
+        "stoch_k": 65.4805,
+        "stoch_d": 51.4548,
+        "macd": -1.8743,
+        "macd_signal": -3.0497,
+        "macd_hist": 1.1753,
+        "bb_upper": 331.368,
+        "bb_mid": 321.6245,
+        "bb_lower": 311.881,
+        "atr": 7.985,
+        "ma50": 331.2674,
+        "ma200": 308.409,
+        "price": 326.12,
+        "vol_ratio": 0.93,
         "above_ma50": false,
         "above_ma200": true
       },
@@ -44,7 +44,7 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": true,
+        "near_resistance": false,
         "in_fib_zone": true
       },
       "trade_levels": {
@@ -77,38 +77,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 46.0,
-      "reason": "Neutral zone (46.0) | Bearish divergence detected | Candle: bullish_engulfing (bullish)",
+      "score": 40.0,
+      "reason": "Neutral zone (40.0) | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 54.3679,
-        "stoch_k": 27.3633,
-        "stoch_d": 27.3883,
-        "macd": 6.4446,
-        "macd_signal": 9.4863,
-        "macd_hist": -3.0417,
-        "bb_upper": 351.3119,
-        "bb_mid": 328.0116,
-        "bb_lower": 304.7112,
-        "atr": 16.4897,
-        "ma50": 301.9341,
+        "rsi": 53.7196,
+        "stoch_k": 29.98,
+        "stoch_d": 27.8354,
+        "macd": 5.946,
+        "macd_signal": 8.7764,
+        "macd_hist": -2.8304,
+        "bb_upper": 349.7056,
+        "bb_mid": 329.0771,
+        "bb_lower": 308.4487,
+        "atr": 15.5968,
+        "ma50": 303.0187,
         "ma200": NaN,
-        "price": 327.21,
-        "vol_ratio": 0.93,
+        "price": 326.12,
+        "vol_ratio": 0.21,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "bullish_engulfing",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
@@ -148,9 +148,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
+    "bias": "volatile",
     "ma200_position": "above",
-    "structure": "uptrend (HH+HL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
