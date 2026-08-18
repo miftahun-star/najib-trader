@@ -1,49 +1,49 @@
 {
   "ticker": "BBNI.JK",
   "market": "IHSG",
-  "last_updated": "2026-08-18T03:38:28Z",
+  "last_updated": "2026-08-18T15:24:13Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 52.2,
-      "reason": "Neutral zone (52.2)",
+      "score": 43.2,
+      "reason": "Neutral zone (43.2) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 65.0
+        "sr_fib": 45.0
       },
       "indicators": {
-        "rsi": 57.66,
-        "stoch_k": 75.0,
-        "stoch_d": 64.8148,
-        "macd": 35.2673,
-        "macd_signal": 31.5277,
-        "macd_hist": 3.7396,
-        "bb_upper": 3701.1578,
-        "bb_mid": 3581.0,
-        "bb_lower": 3460.8422,
-        "atr": 80.4065,
-        "ma50": 3487.2,
-        "ma200": 3829.9732,
-        "price": 3650.0,
-        "vol_ratio": 0.17,
+        "rsi": 52.6181,
+        "stoch_k": 66.6667,
+        "stoch_d": 62.037,
+        "macd": 30.481,
+        "macd_signal": 30.5705,
+        "macd_hist": -0.0895,
+        "bb_upper": 3693.822,
+        "bb_mid": 3578.0,
+        "bb_lower": 3462.178,
+        "atr": 81.8351,
+        "ma50": 3486.0,
+        "ma200": 3829.6732,
+        "price": 3590.0,
+        "vol_ratio": 0.72,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": true,
         "in_fib_zone": true
       },
@@ -78,38 +78,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 59.0,
-      "reason": "Neutral zone (59.0) | Candle: bullish_engulfing (bullish)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0) | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 49.3624,
-        "stoch_k": 67.4326,
-        "stoch_d": 62.1537,
-        "macd": -78.9913,
-        "macd_signal": -103.4483,
-        "macd_hist": 24.457,
-        "bb_upper": 3978.9603,
-        "bb_mid": 3605.5,
-        "bb_lower": 3232.0397,
-        "atr": 235.6359,
-        "ma50": 3822.6894,
+        "rsi": 47.4522,
+        "stoch_k": 65.305,
+        "stoch_d": 61.4444,
+        "macd": -83.7776,
+        "macd_signal": -104.4056,
+        "macd_hist": 20.6279,
+        "bb_upper": 3975.4188,
+        "bb_mid": 3602.5,
+        "bb_lower": 3229.5812,
+        "atr": 237.0652,
+        "ma50": 3821.4894,
         "ma200": NaN,
-        "price": 3650.0,
-        "vol_ratio": 0.02,
+        "price": 3590.0,
+        "vol_ratio": 0.1,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "bullish_engulfing",
-          "direction": "bullish"
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -149,9 +149,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "consolidating",
+    "bias": "bullish",
     "ma200_position": "below",
-    "structure": "contracting (LH+HL)",
+    "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
