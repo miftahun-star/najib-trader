@@ -1,15 +1,15 @@
 {
   "ticker": "IBM",
   "market": "US",
-  "last_updated": "2026-08-17T03:43:56Z",
+  "last_updated": "2026-08-18T03:39:07Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 46.9,
-      "reason": "Neutral zone (46.9)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
-        "rsi_stoch": 49.6,
+        "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
@@ -17,20 +17,20 @@
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 48.6161,
-        "stoch_k": 80.3423,
-        "stoch_d": 85.2153,
-        "macd": -2.6369,
-        "macd_signal": -5.6311,
-        "macd_hist": 2.9942,
-        "bb_upper": 247.672,
-        "bb_mid": 224.6142,
-        "bb_lower": 201.5565,
-        "atr": 8.9481,
-        "ma50": 250.7141,
-        "ma200": 264.015,
-        "price": 234.32,
-        "vol_ratio": 0.54,
+        "rsi": 44.5758,
+        "stoch_k": 69.5259,
+        "stoch_d": 78.8288,
+        "macd": -2.7748,
+        "macd_signal": -5.0599,
+        "macd_hist": 2.285,
+        "bb_upper": 247.7528,
+        "bb_mid": 225.4826,
+        "bb_lower": 203.2124,
+        "atr": 8.8033,
+        "ma50": 249.2987,
+        "ma200": 263.636,
+        "price": 228.85,
+        "vol_ratio": 0.89,
         "above_ma50": false,
         "above_ma200": false
       },
@@ -59,7 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        215.58
+        213.46
       ],
       "resistance_levels": [
         230.32,
@@ -77,40 +77,40 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 54.0,
+      "reason": "Neutral zone (54.0) | Bullish divergence detected | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "divergence": 90.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 45.9829,
-        "stoch_k": 24.852,
-        "stoch_d": 18.7538,
-        "macd": -7.372,
-        "macd_signal": -4.8223,
-        "macd_hist": -2.5497,
-        "bb_upper": 299.9105,
-        "bb_mid": 246.5915,
-        "bb_lower": 193.2725,
-        "atr": 26.7472,
-        "ma50": 265.1109,
+        "rsi": 44.7776,
+        "stoch_k": 26.5633,
+        "stoch_d": 23.604,
+        "macd": -7.9498,
+        "macd_signal": -5.4486,
+        "macd_hist": -2.5012,
+        "bb_upper": 299.7092,
+        "bb_mid": 245.8044,
+        "bb_lower": 191.8995,
+        "atr": 25.3311,
+        "ma50": 264.8432,
         "ma200": NaN,
-        "price": 234.32,
-        "vol_ratio": 0.61,
+        "price": 228.85,
+        "vol_ratio": 0.17,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
-        "bullish_divergence": false,
+        "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
@@ -130,11 +130,13 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        229.29
+        217.4,
+        282.77
       ],
       "resistance_levels": [
         311.23,
-        241.17
+        226.83,
+        255.52
       ],
       "fib_levels": {
         "0.0": 330.09,

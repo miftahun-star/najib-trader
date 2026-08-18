@@ -1,7 +1,7 @@
 {
   "ticker": "INKP.JK",
   "market": "IHSG",
-  "last_updated": "2026-08-17T03:43:35Z",
+  "last_updated": "2026-08-18T03:38:35Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
@@ -17,22 +17,22 @@
         "sr_fib": 45.0
       },
       "indicators": {
-        "rsi": 65.5864,
-        "stoch_k": 69.4496,
-        "stoch_d": 66.5983,
-        "macd": 230.5416,
-        "macd_signal": 220.6324,
-        "macd_hist": 9.9092,
-        "bb_upper": 8747.6209,
-        "bb_mid": 8175.0,
-        "bb_lower": 7602.3791,
-        "atr": 276.4032,
-        "ma50": 7631.7946,
-        "ma200": 8540.3674,
-        "price": 8500.0,
-        "vol_ratio": 0.53,
+        "rsi": 68.4938,
+        "stoch_k": 73.403,
+        "stoch_d": 69.7153,
+        "macd": 237.8425,
+        "macd_signal": 224.0744,
+        "macd_hist": 13.768,
+        "bb_upper": 8793.9667,
+        "bb_mid": 8216.25,
+        "bb_lower": 7638.5333,
+        "atr": 272.7316,
+        "ma50": 7671.7303,
+        "ma200": 8547.6308,
+        "price": 8625.0,
+        "vol_ratio": 0.33,
         "above_ma50": true,
-        "above_ma200": false
+        "above_ma200": true
       },
       "patterns": {
         "candle": {
@@ -77,46 +77,46 @@
       }
     },
     "weekly": {
-      "signal": "HOLD",
-      "score": 49.2,
-      "reason": "Neutral zone (49.2)",
+      "signal": "WATCH",
+      "score": 61.2,
+      "reason": "Elevated score (61.2) but not at confirmed range low | Candle: morning_star (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 45.0
+        "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 52.6956,
-        "stoch_k": 63.9251,
-        "stoch_d": 52.9056,
-        "macd": -186.2222,
-        "macd_signal": -238.56,
-        "macd_hist": 52.3378,
-        "bb_upper": 10306.6724,
-        "bb_mid": 8275.1205,
-        "bb_lower": 6243.5687,
-        "atr": 826.597,
-        "ma50": 8416.741,
+        "rsi": 53.8257,
+        "stoch_k": 75.4579,
+        "stoch_d": 63.3644,
+        "macd": -125.2627,
+        "macd_signal": -215.9006,
+        "macd_hist": 90.6379,
+        "bb_upper": 10184.0593,
+        "bb_mid": 8230.2768,
+        "bb_lower": 6276.4943,
+        "atr": 783.6065,
+        "ma50": 8432.9339,
         "ma200": NaN,
-        "price": 8500.0,
-        "vol_ratio": 0.73,
+        "price": 8625.0,
+        "vol_ratio": 0.05,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "morning_star",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
+        "near_support": true,
+        "near_resistance": false,
         "in_fib_zone": true
       },
       "trade_levels": {
@@ -131,10 +131,11 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        7116.98
+        6217.8,
+        8037.95
       ],
       "resistance_levels": [
-        7817.65,
+        7649.4,
         10523.53
       ],
       "fib_levels": {
