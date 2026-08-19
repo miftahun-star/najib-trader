@@ -1,36 +1,36 @@
 {
   "ticker": "EG",
   "market": "US",
-  "last_updated": "2026-08-18T15:24:48Z",
+  "last_updated": "2026-08-19T03:41:12Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "score": 45.9,
+      "reason": "Neutral zone (45.9) | Bearish divergence detected",
       "components": {
-        "rsi_stoch": 50.0,
-        "divergence": 50.0,
+        "rsi_stoch": 53.4,
+        "divergence": 10.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 50.5957,
-        "stoch_k": 21.1548,
-        "stoch_d": 13.534,
-        "macd": 0.2802,
-        "macd_signal": 2.1294,
-        "macd_hist": -1.8492,
-        "bb_upper": 394.1215,
-        "bb_mid": 375.4312,
-        "bb_lower": 356.741,
-        "atr": 7.6923,
-        "ma50": 362.8336,
-        "ma200": 336.5492,
-        "price": 371.065,
-        "vol_ratio": 0.11,
+        "rsi": 48.4567,
+        "stoch_k": 17.2795,
+        "stoch_d": 15.4363,
+        "macd": 0.2413,
+        "macd_signal": 2.4223,
+        "macd_hist": -2.181,
+        "bb_upper": 395.1784,
+        "bb_mid": 375.367,
+        "bb_lower": 355.5556,
+        "atr": 8.2131,
+        "ma50": 360.2533,
+        "ma200": 335.9402,
+        "price": 367.38,
+        "vol_ratio": 0.54,
         "above_ma50": true,
         "above_ma200": true
       },
@@ -40,12 +40,12 @@
           "direction": null
         },
         "bullish_divergence": false,
-        "bearish_divergence": false,
+        "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": true,
         "near_resistance": false,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -59,12 +59,13 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        365.53,
+        363.32,
+        314.85,
         332.42
       ],
       "resistance_levels": [
         356.04,
-        381.26
+        379.04
       ],
       "fib_levels": {
         "0.0": 401.07,
@@ -78,45 +79,45 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 41.0,
+      "reason": "Neutral zone (41.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 59.4963,
-        "stoch_k": 66.3182,
-        "stoch_d": 70.8355,
-        "macd": 11.5429,
-        "macd_signal": 9.7263,
-        "macd_hist": 1.8166,
-        "bb_upper": 392.7443,
-        "bb_mid": 355.2355,
-        "bb_lower": 317.7267,
-        "atr": 16.6884,
-        "ma50": 338.5484,
+        "rsi": 57.6102,
+        "stoch_k": 64.8928,
+        "stoch_d": 70.6724,
+        "macd": 11.2906,
+        "macd_signal": 9.7043,
+        "macd_hist": 1.5863,
+        "bb_upper": 392.4627,
+        "bb_mid": 355.1118,
+        "bb_lower": 317.7608,
+        "atr": 17.0282,
+        "ma50": 338.4989,
         "ma200": NaN,
-        "price": 371.065,
-        "vol_ratio": 0.02,
+        "price": 367.38,
+        "vol_ratio": 0.25,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
