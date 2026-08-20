@@ -1,37 +1,37 @@
 {
   "ticker": "PTBA.JK",
   "market": "IHSG",
-  "last_updated": "2026-08-20T03:40:22Z",
+  "last_updated": "2026-08-20T15:27:11Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 47.1046,
-        "stoch_k": 62.963,
-        "stoch_d": 59.2593,
-        "macd": -10.7307,
-        "macd_signal": -15.2247,
-        "macd_hist": 4.494,
-        "bb_upper": 2413.2819,
-        "bb_mid": 2358.5,
-        "bb_lower": 2303.7181,
-        "atr": 40.9756,
-        "ma50": 2387.7936,
-        "ma200": 2466.1319,
-        "price": 2360.0,
-        "vol_ratio": 0.16,
-        "above_ma50": false,
+        "rsi": 54.8701,
+        "stoch_k": 77.7778,
+        "stoch_d": 64.1975,
+        "macd": -7.5398,
+        "macd_signal": -14.5865,
+        "macd_hist": 7.0467,
+        "bb_upper": 2418.3473,
+        "bb_mid": 2360.5,
+        "bb_lower": 2302.6527,
+        "atr": 42.4041,
+        "ma50": 2388.5936,
+        "ma200": 2466.3319,
+        "price": 2400.0,
+        "vol_ratio": 0.68,
+        "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
@@ -43,7 +43,7 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": true,
         "in_fib_zone": false
       },
@@ -81,38 +81,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 44.8,
-      "reason": "Neutral zone (44.8)",
+      "score": 50.8,
+      "reason": "Neutral zone (50.8) | Candle: bullish_engulfing (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 42.3929,
-        "stoch_k": 21.2978,
-        "stoch_d": 19.0788,
-        "macd": -48.8858,
-        "macd_signal": -21.9353,
-        "macd_hist": -26.9505,
-        "bb_upper": 2869.6021,
-        "bb_mid": 2519.5749,
-        "bb_lower": 2169.5477,
-        "atr": 127.3714,
-        "ma50": 2432.9707,
+        "rsi": 45.3749,
+        "stoch_k": 24.0072,
+        "stoch_d": 19.9819,
+        "macd": -45.6949,
+        "macd_signal": -21.2971,
+        "macd_hist": -24.3978,
+        "bb_upper": 2868.2036,
+        "bb_mid": 2521.5749,
+        "bb_lower": 2174.9462,
+        "atr": 128.086,
+        "ma50": 2433.7707,
         "ma200": NaN,
-        "price": 2360.0,
-        "vol_ratio": 0.28,
+        "price": 2400.0,
+        "vol_ratio": 0.35,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -152,7 +152,7 @@
   },
   "yearly_trend": {
     "bias": "consolidating",
-    "ma200_position": "below",
+    "ma200_position": "above",
     "structure": "contracting (LH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
