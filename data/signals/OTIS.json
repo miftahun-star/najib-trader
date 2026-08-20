@@ -1,15 +1,15 @@
 {
   "ticker": "OTIS",
   "market": "US",
-  "last_updated": "2026-08-19T15:24:35Z",
+  "last_updated": "2026-08-20T03:40:57Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 50.6,
+      "reason": "Neutral zone (50.6)",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 53.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
@@ -17,21 +17,21 @@
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 50.4009,
-        "stoch_k": 20.4042,
-        "stoch_d": 26.1346,
-        "macd": -0.0995,
-        "macd_signal": 0.0532,
-        "macd_hist": -0.1527,
-        "bb_upper": 74.3968,
-        "bb_mid": 72.117,
-        "bb_lower": 69.8372,
-        "atr": 1.7056,
-        "ma50": 72.0026,
-        "ma200": 80.2276,
-        "price": 72.28,
-        "vol_ratio": 0.26,
-        "above_ma50": true,
+        "rsi": 48.7934,
+        "stoch_k": 17.5632,
+        "stoch_d": 25.3989,
+        "macd": -0.1655,
+        "macd_signal": 0.0247,
+        "macd_hist": -0.1902,
+        "bb_upper": 74.2893,
+        "bb_mid": 72.2312,
+        "bb_lower": 70.1731,
+        "atr": 1.6941,
+        "ma50": 72.0163,
+        "ma200": 80.3385,
+        "price": 71.95,
+        "vol_ratio": 0.92,
+        "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
@@ -59,10 +59,11 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        70.13
+        70.13,
+        74.85
       ],
       "resistance_levels": [
-        74.34,
+        74.29,
         77.77
       ],
       "fib_levels": {
@@ -76,39 +77,39 @@
       }
     },
     "weekly": {
-      "signal": "HOLD",
-      "score": 43.0,
-      "reason": "Neutral zone (43.0) | Bearish divergence detected",
+      "signal": "WATCH",
+      "score": 37.0,
+      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 40.0859,
-        "stoch_k": 54.6295,
-        "stoch_d": 45.5317,
-        "macd": -2.6712,
-        "macd_signal": -3.2324,
-        "macd_hist": 0.5612,
-        "bb_upper": 78.9351,
-        "bb_mid": 73.275,
-        "bb_lower": 67.6148,
+        "rsi": 39.3972,
+        "stoch_k": 52.99,
+        "stoch_d": 44.9852,
+        "macd": -2.6975,
+        "macd_signal": -3.2376,
+        "macd_hist": 0.5401,
+        "bb_upper": 78.9327,
+        "bb_mid": 73.2585,
+        "bb_lower": 67.5842,
         "atr": 3.5614,
-        "ma50": 81.3699,
+        "ma50": 81.3633,
         "ma200": NaN,
-        "price": 72.28,
-        "vol_ratio": 0.48,
+        "price": 71.95,
+        "vol_ratio": 0.62,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
