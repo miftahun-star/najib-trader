@@ -1,36 +1,36 @@
 {
   "ticker": "SMCI",
   "market": "US",
-  "last_updated": "2026-08-24T03:48:19Z",
+  "last_updated": "2026-08-24T15:32:59Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 49.2,
-      "reason": "Neutral zone (49.2)",
+      "score": 44.8,
+      "reason": "Neutral zone (44.8)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 45.0
+        "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 61.7413,
-        "stoch_k": 61.5627,
-        "stoch_d": 64.7676,
-        "macd": 2.2492,
-        "macd_signal": 1.7542,
-        "macd_hist": 0.495,
-        "bb_upper": 41.7651,
-        "bb_mid": 32.8465,
-        "bb_lower": 23.9279,
-        "atr": 2.4674,
-        "ma50": 30.4834,
-        "ma200": 31.4535,
-        "price": 37.24,
-        "vol_ratio": 0.66,
+        "rsi": 54.6387,
+        "stoch_k": 55.4649,
+        "stoch_d": 60.3082,
+        "macd": 2.0394,
+        "macd_signal": 1.8113,
+        "macd_hist": 0.2281,
+        "bb_upper": 41.9553,
+        "bb_mid": 33.1065,
+        "bb_lower": 24.2577,
+        "atr": 2.5162,
+        "ma50": 30.5442,
+        "ma200": 31.3915,
+        "price": 35.01,
+        "vol_ratio": 0.37,
         "above_ma50": true,
         "above_ma200": true
       },
@@ -67,48 +67,48 @@
       ],
       "fib_levels": {
         "0.0": 51.4,
-        "23.6": 44.31,
-        "38.2": 39.92,
-        "50.0": 36.37,
-        "61.8": 32.82,
-        "78.6": 27.77,
-        "100.0": 21.34
+        "23.6": 44.41,
+        "38.2": 40.09,
+        "50.0": 36.6,
+        "61.8": 33.1,
+        "78.6": 28.13,
+        "100.0": 21.79
       }
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 44.8,
-      "reason": "Neutral zone (44.8)",
+      "score": 41.0,
+      "reason": "Neutral zone (41.0) | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 15.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 55.025,
-        "stoch_k": 45.2891,
-        "stoch_d": 34.4159,
-        "macd": 0.2023,
-        "macd_signal": -0.6859,
-        "macd_hist": 0.8882,
-        "bb_upper": 43.2831,
-        "bb_mid": 31.894,
-        "bb_lower": 20.5049,
-        "atr": 6.3611,
-        "ma50": 34.2966,
+        "rsi": 52.6324,
+        "stoch_k": 49.9048,
+        "stoch_d": 43.3222,
+        "macd": 0.3944,
+        "macd_signal": -0.4629,
+        "macd_hist": 0.8573,
+        "bb_upper": 43.4038,
+        "bb_mid": 32.3815,
+        "bb_lower": 21.3592,
+        "atr": 6.1318,
+        "ma50": 34.0968,
         "ma200": NaN,
-        "price": 37.24,
-        "vol_ratio": 0.94,
+        "price": 35.01,
+        "vol_ratio": 0.08,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -116,7 +116,7 @@
         "volume_climax": false,
         "near_support": false,
         "near_resistance": true,
-        "in_fib_zone": true
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -133,8 +133,8 @@
         24.6
       ],
       "resistance_levels": [
-        49.45,
         36.44,
+        49.07,
         62.53
       ],
       "fib_levels": {
@@ -149,9 +149,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "volatile",
-    "ma200_position": "above",
-    "structure": "expanding (HH+LL)",
+    "bias": "bearish",
+    "ma200_position": "below",
+    "structure": "downtrend (LH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }

@@ -1,37 +1,37 @@
 {
   "ticker": "ORCL",
   "market": "US",
-  "last_updated": "2026-08-24T03:48:17Z",
+  "last_updated": "2026-08-24T15:32:56Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 52.7656,
-        "stoch_k": 45.4001,
-        "stoch_d": 52.0275,
-        "macd": 1.277,
-        "macd_signal": 0.4254,
-        "macd_hist": 0.8515,
-        "bb_upper": 163.6316,
-        "bb_mid": 140.792,
-        "bb_lower": 117.9524,
-        "atr": 7.0477,
-        "ma50": 145.2134,
-        "ma200": 172.0946,
-        "price": 146.47,
-        "vol_ratio": 0.67,
-        "above_ma50": true,
+        "rsi": 49.6517,
+        "stoch_k": 36.0778,
+        "stoch_d": 43.9459,
+        "macd": 1.0579,
+        "macd_signal": 0.5519,
+        "macd_hist": 0.506,
+        "bb_upper": 162.573,
+        "bb_mid": 141.9522,
+        "bb_lower": 121.3315,
+        "atr": 6.9164,
+        "ma50": 144.4063,
+        "ma200": 171.5812,
+        "price": 143.105,
+        "vol_ratio": 0.23,
+        "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
@@ -43,7 +43,7 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": true,
         "in_fib_zone": false
       },
@@ -59,8 +59,8 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        177.7,
-        135.59
+        136.2,
+        177.7
       ],
       "resistance_levels": [
         148.63,
@@ -77,32 +77,32 @@
       }
     },
     "weekly": {
-      "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "signal": "WATCH",
+      "score": 63.0,
+      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 50.0,
+        "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 44.836,
-        "stoch_k": 24.8389,
-        "stoch_d": 19.1566,
-        "macd": -11.711,
-        "macd_signal": -10.3375,
-        "macd_hist": -1.3735,
-        "bb_upper": 224.8647,
-        "bb_mid": 164.1871,
-        "bb_lower": 103.5095,
-        "atr": 21.3055,
-        "ma50": 189.1185,
+        "rsi": 43.87,
+        "stoch_k": 23.8714,
+        "stoch_d": 23.149,
+        "macd": -11.3826,
+        "macd_signal": -10.5473,
+        "macd_hist": -0.8353,
+        "bb_upper": 224.6808,
+        "bb_mid": 164.4618,
+        "bb_lower": 104.2427,
+        "atr": 20.1558,
+        "ma50": 186.2029,
         "ma200": NaN,
-        "price": 146.47,
-        "vol_ratio": 0.68,
+        "price": 143.105,
+        "vol_ratio": 0.04,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -111,7 +111,7 @@
           "name": null,
           "direction": null
         },
-        "bullish_divergence": false,
+        "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
@@ -149,9 +149,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "volatile",
+    "bias": "bearish",
     "ma200_position": "below",
-    "structure": "expanding (HH+LL)",
+    "structure": "downtrend (LH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
