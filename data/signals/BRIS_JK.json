@@ -1,37 +1,37 @@
 {
   "ticker": "BRIS.JK",
   "market": "IHSG",
-  "last_updated": "2026-08-24T03:47:59Z",
+  "last_updated": "2026-08-24T15:32:30Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.8,
-      "reason": "Neutral zone (47.8)",
+      "score": 44.8,
+      "reason": "Neutral zone (44.8)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 35.0
+        "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 48.6161,
-        "stoch_k": 33.3333,
-        "stoch_d": 26.0819,
-        "macd": -5.2688,
-        "macd_signal": -3.9143,
-        "macd_hist": -1.3545,
-        "bb_upper": 1833.2183,
-        "bb_mid": 1792.0,
-        "bb_lower": 1750.7817,
-        "atr": 44.7437,
-        "ma50": 1789.1,
-        "ma200": 2057.0845,
-        "price": 1785.0,
-        "vol_ratio": 0.55,
-        "above_ma50": false,
+        "rsi": 51.6381,
+        "stoch_k": 40.3509,
+        "stoch_d": 28.4211,
+        "macd": -3.6733,
+        "macd_signal": -3.5952,
+        "macd_hist": -0.0781,
+        "bb_upper": 1834.4729,
+        "bb_mid": 1793.0,
+        "bb_lower": 1751.5271,
+        "atr": 45.1008,
+        "ma50": 1789.5,
+        "ma200": 2057.1845,
+        "price": 1805.0,
+        "vol_ratio": 1.32,
+        "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
@@ -44,7 +44,7 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": true
       },
       "trade_levels": {
@@ -78,38 +78,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 44.0,
-      "reason": "Neutral zone (44.0) | Candle: bearish_engulfing (bearish)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 41.9671,
-        "stoch_k": 54.3651,
-        "stoch_d": 56.6138,
-        "macd": -89.1069,
-        "macd_signal": -106.3094,
-        "macd_hist": 17.2026,
-        "bb_upper": 1987.7882,
-        "bb_mid": 1825.7561,
-        "bb_lower": 1663.7241,
-        "atr": 133.81,
-        "ma50": 2108.9337,
+        "rsi": 42.9293,
+        "stoch_k": 55.9524,
+        "stoch_d": 57.1429,
+        "macd": -87.5114,
+        "macd_signal": -105.9903,
+        "macd_hist": 18.4789,
+        "bb_upper": 1987.9739,
+        "bb_mid": 1826.7561,
+        "bb_lower": 1665.5384,
+        "atr": 134.1673,
+        "ma50": 2109.3337,
         "ma200": NaN,
-        "price": 1785.0,
-        "vol_ratio": 0.09,
+        "price": 1805.0,
+        "vol_ratio": 0.22,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -150,9 +150,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "neutral",
+    "bias": "consolidating",
     "ma200_position": "below",
-    "structure": "mixed",
+    "structure": "contracting (LH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
