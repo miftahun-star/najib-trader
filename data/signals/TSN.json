@@ -1,50 +1,50 @@
 {
   "ticker": "TSN",
   "market": "US",
-  "last_updated": "2026-08-25T03:43:21Z",
+  "last_updated": "2026-08-25T15:36:53Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 41.0,
-      "reason": "Neutral zone (41.0) | Candle: bearish_engulfing (bearish)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 48.2923,
-        "stoch_k": 64.0571,
-        "stoch_d": 65.4709,
-        "macd": -0.0958,
-        "macd_signal": -0.1598,
-        "macd_hist": 0.064,
-        "bb_upper": 61.2363,
-        "bb_mid": 58.3905,
-        "bb_lower": 55.5447,
-        "atr": 1.5074,
-        "ma50": 57.973,
-        "ma200": 59.8299,
-        "price": 57.87,
-        "vol_ratio": 0.71,
+        "rsi": 45.6555,
+        "stoch_k": 53.7301,
+        "stoch_d": 62.0522,
+        "macd": -0.1436,
+        "macd_signal": -0.1566,
+        "macd_hist": 0.013,
+        "bb_upper": 60.7547,
+        "bb_mid": 58.2,
+        "bb_lower": 55.6453,
+        "atr": 1.4615,
+        "ma50": 57.9718,
+        "ma200": 59.8611,
+        "price": 57.37,
+        "vol_ratio": 0.14,
         "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -77,39 +77,39 @@
       }
     },
     "weekly": {
-      "signal": "WATCH",
-      "score": 34.8,
-      "reason": "Depressed score (34.8) but not at confirmed range high | Bearish divergence detected",
+      "signal": "PEAK",
+      "score": 28.8,
+      "reason": "Low confluence score (28.8) at range high | Bearish divergence detected | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 45.424,
-        "stoch_k": 29.3092,
-        "stoch_d": 27.34,
-        "macd": -0.6462,
-        "macd_signal": -0.3482,
-        "macd_hist": -0.298,
-        "bb_upper": 66.8217,
-        "bb_mid": 60.0808,
-        "bb_lower": 53.3399,
-        "atr": 3.2413,
-        "ma50": 58.5749,
+        "rsi": 44.0515,
+        "stoch_k": 27.8934,
+        "stoch_d": 26.8681,
+        "macd": -0.6861,
+        "macd_signal": -0.3562,
+        "macd_hist": -0.3299,
+        "bb_upper": 66.8348,
+        "bb_mid": 60.0558,
+        "bb_lower": 53.2767,
+        "atr": 3.2981,
+        "ma50": 58.5649,
         "ma200": NaN,
-        "price": 57.87,
-        "vol_ratio": 0.16,
+        "price": 57.37,
+        "vol_ratio": 0.19,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
@@ -120,14 +120,14 @@
         "in_fib_zone": true
       },
       "trade_levels": {
-        "entry": null,
-        "stop_loss": null,
-        "tp1": null,
-        "tp2": null,
-        "tp3": null,
-        "risk": null,
-        "rr_ratio": null,
-        "trailing_stop": null,
+        "entry": 57.37,
+        "stop_loss": 62.32,
+        "tp1": 52.42,
+        "tp2": 47.47,
+        "tp3": 56.79,
+        "risk": 4.95,
+        "rr_ratio": "1:1.0 / 1:2.0 / 1:0.1",
+        "trailing_stop": 65.62,
         "trailing_k": 2.5
       },
       "support_levels": [

@@ -1,50 +1,50 @@
 {
   "ticker": "LULU",
   "market": "US",
-  "last_updated": "2026-08-25T03:43:14Z",
+  "last_updated": "2026-08-25T15:36:45Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 57.0,
-      "reason": "Neutral zone (57.0) | Bullish divergence detected",
+      "score": 54.0,
+      "reason": "Neutral zone (54.0) | Bullish divergence detected | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 54.3622,
-        "stoch_k": 36.3914,
-        "stoch_d": 29.1993,
-        "macd": 0.2633,
-        "macd_signal": 0.5323,
-        "macd_hist": -0.269,
-        "bb_upper": 128.4319,
-        "bb_mid": 121.4175,
-        "bb_lower": 114.4031,
-        "atr": 4.2201,
-        "ma50": 117.648,
-        "ma200": 155.0783,
-        "price": 122.78,
-        "vol_ratio": 1.05,
-        "above_ma50": true,
+        "rsi": 46.2766,
+        "stoch_k": 40.4375,
+        "stoch_d": 35.0126,
+        "macd": 0.0076,
+        "macd_signal": 0.4273,
+        "macd_hist": -0.4198,
+        "bb_upper": 128.4997,
+        "bb_mid": 121.272,
+        "bb_lower": 114.0443,
+        "atr": 4.323,
+        "ma50": 117.6208,
+        "ma200": 154.8274,
+        "price": 117.41,
+        "vol_ratio": 0.57,
+        "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -59,7 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        112.24
+        112.65
       ],
       "resistance_levels": [
         122.02,
@@ -79,44 +79,44 @@
     "weekly": {
       "signal": "HOLD",
       "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "reason": "Neutral zone (47.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 42.0058,
-        "stoch_k": 52.6604,
-        "stoch_d": 54.5207,
-        "macd": -12.174,
-        "macd_signal": -15.0258,
-        "macd_hist": 2.8518,
-        "bb_upper": 150.2077,
-        "bb_mid": 124.7415,
-        "bb_lower": 99.2753,
-        "atr": 11.7313,
-        "ma50": 157.2518,
+        "rsi": 39.2286,
+        "stoch_k": 47.0137,
+        "stoch_d": 52.6384,
+        "macd": -12.6023,
+        "macd_signal": -15.1114,
+        "macd_hist": 2.5091,
+        "bb_upper": 150.1387,
+        "bb_mid": 124.473,
+        "bb_lower": 98.8073,
+        "atr": 11.9593,
+        "ma50": 157.1444,
         "ma200": NaN,
-        "price": 122.78,
-        "vol_ratio": 0.18,
+        "price": 117.41,
+        "vol_ratio": 0.27,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
+        "near_support": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
