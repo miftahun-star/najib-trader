@@ -1,36 +1,36 @@
 {
   "ticker": "ESS",
   "market": "US",
-  "last_updated": "2026-08-27T13:26:27Z",
+  "last_updated": "2026-08-28T00:11:57Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "WATCH",
-      "score": 61.5,
-      "reason": "Elevated score (61.5) but not at confirmed range low | Bullish divergence detected",
+      "score": 63.0,
+      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 65.0,
-        "sr_fib": 50.0
+        "volume_climax": 50.0,
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 50.308,
-        "stoch_k": 76.6374,
-        "stoch_d": 80.7639,
-        "macd": 0.3226,
-        "macd_signal": -0.2845,
-        "macd_hist": 0.6071,
-        "bb_upper": 292.8672,
-        "bb_mid": 286.341,
-        "bb_lower": 279.8147,
-        "atr": 5.1001,
-        "ma50": 288.6659,
-        "ma200": 262.6291,
-        "price": 288.17,
-        "vol_ratio": 1.94,
+        "rsi": 41.4749,
+        "stoch_k": 47.7155,
+        "stoch_d": 69.7537,
+        "macd": -0.3039,
+        "macd_signal": -0.2883,
+        "macd_hist": -0.0155,
+        "bb_upper": 292.9874,
+        "bb_mid": 286.286,
+        "bb_lower": 279.5846,
+        "atr": 5.269,
+        "ma50": 288.719,
+        "ma200": 262.7685,
+        "price": 280.76,
+        "vol_ratio": 1.23,
         "above_ma50": false,
         "above_ma200": true
       },
@@ -44,7 +44,7 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": true,
-        "near_resistance": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -64,53 +64,52 @@
         290.86
       ],
       "resistance_levels": [
-        288.52,
-        300.63,
+        294.59,
         267.62
       ],
       "fib_levels": {
         "0.0": 303.35,
-        "23.6": 289.25,
-        "38.2": 280.52,
-        "50.0": 273.47,
-        "61.8": 266.42,
-        "78.6": 256.38,
-        "100.0": 243.59
+        "23.6": 289.39,
+        "38.2": 280.76,
+        "50.0": 273.78,
+        "61.8": 266.8,
+        "78.6": 256.86,
+        "100.0": 244.2
       }
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 53.2,
-      "reason": "Neutral zone (53.2) | Bullish divergence detected | Candle: shooting_star (bearish)",
+      "score": 51.0,
+      "reason": "Neutral zone (51.0) | Bullish divergence detected | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 25.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 60.2105,
-        "stoch_k": 59.4762,
-        "stoch_d": 61.5924,
-        "macd": 9.0387,
-        "macd_signal": 9.0992,
-        "macd_hist": -0.0604,
-        "bb_upper": 307.7797,
-        "bb_mid": 279.0442,
-        "bb_lower": 250.3088,
-        "atr": 10.6509,
-        "ma50": 261.4493,
+        "rsi": 54.113,
+        "stoch_k": 52.2259,
+        "stoch_d": 59.1756,
+        "macd": 8.4476,
+        "macd_signal": 8.981,
+        "macd_hist": -0.5333,
+        "bb_upper": 307.1032,
+        "bb_mid": 278.6737,
+        "bb_lower": 250.2443,
+        "atr": 11.1664,
+        "ma50": 261.3011,
         "ma200": NaN,
-        "price": 288.17,
-        "vol_ratio": 0.74,
+        "price": 280.76,
+        "vol_ratio": 0.95,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "shooting_star",
+          "name": "bearish_engulfing",
           "direction": "bearish"
         },
         "bullish_divergence": true,
@@ -133,8 +132,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        243.88,
-        274.3
+        249.41
       ],
       "resistance_levels": [
         259.46,

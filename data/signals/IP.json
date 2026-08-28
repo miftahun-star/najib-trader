@@ -1,49 +1,49 @@
 {
   "ticker": "IP",
   "market": "US",
-  "last_updated": "2026-08-27T13:26:30Z",
+  "last_updated": "2026-08-28T00:12:00Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 56.0,
-      "reason": "Neutral zone (56.0) | Candle: bullish_engulfing (bullish)",
+      "score": 53.0,
+      "reason": "Neutral zone (53.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 56.4928,
-        "stoch_k": 58.1583,
-        "stoch_d": 55.1149,
-        "macd": 0.5881,
-        "macd_signal": 0.716,
-        "macd_hist": -0.1279,
-        "bb_upper": 42.2841,
-        "bb_mid": 40.9864,
-        "bb_lower": 39.6888,
-        "atr": 1.287,
-        "ma50": 39.0559,
-        "ma200": 37.4514,
-        "price": 41.39,
-        "vol_ratio": 0.85,
+        "rsi": 48.0929,
+        "stoch_k": 41.6552,
+        "stoch_d": 52.5701,
+        "macd": 0.4624,
+        "macd_signal": 0.6652,
+        "macd_hist": -0.2028,
+        "bb_upper": 41.9731,
+        "bb_mid": 40.8472,
+        "bb_lower": 39.7214,
+        "atr": 1.3072,
+        "ma50": 39.1386,
+        "ma200": 37.4693,
+        "price": 39.88,
+        "vol_ratio": 1.05,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": "bullish_engulfing",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": false,
         "in_fib_zone": false
       },
@@ -64,9 +64,9 @@
         28.6
       ],
       "resistance_levels": [
+        37.8,
         33.58,
-        36.73,
-        38.88
+        41.92
       ],
       "fib_levels": {
         "0.0": 44.32,
@@ -80,45 +80,45 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 50.8,
-      "reason": "Neutral zone (50.8)",
+      "score": 41.8,
+      "reason": "Neutral zone (41.8) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 55.0
+        "sr_fib": 35.0
       },
       "indicators": {
-        "rsi": 58.5409,
-        "stoch_k": 79.0787,
-        "stoch_d": 78.7399,
-        "macd": 0.9891,
-        "macd_signal": 0.0989,
-        "macd_hist": 0.8902,
-        "bb_upper": 44.5186,
-        "bb_mid": 36.4047,
-        "bb_lower": 28.2908,
-        "atr": 3.0191,
-        "ma50": 38.4633,
+        "rsi": 54.3612,
+        "stoch_k": 75.2454,
+        "stoch_d": 77.4621,
+        "macd": 0.8687,
+        "macd_signal": 0.0748,
+        "macd_hist": 0.7939,
+        "bb_upper": 44.2741,
+        "bb_mid": 36.3292,
+        "bb_lower": 28.3842,
+        "atr": 3.0676,
+        "ma50": 38.4331,
         "ma200": NaN,
-        "price": 41.39,
-        "vol_ratio": 0.38,
+        "price": 39.88,
+        "vol_ratio": 0.52,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": true,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": true
       },
       "trade_levels": {
@@ -138,7 +138,7 @@
         48.62
       ],
       "resistance_levels": [
-        47.65,
+        46.99,
         54.88,
         38.22
       ],
