@@ -1,45 +1,117 @@
 {
   "ticker": "ICBP.JK",
   "market": "IHSG",
-  "last_updated": "2026-08-28T23:48:14Z",
+  "last_updated": "2026-08-31T09:09:12Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.6,
-      "reason": "Neutral zone (47.6)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0) | Candle: evening_star (bearish)",
       "components": {
-        "rsi_stoch": 30.6,
+        "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
-        "volume_climax": 65.0,
-        "sr_fib": 50.0
+        "volume_climax": 80.0,
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 76.1063,
-        "stoch_k": 91.4835,
-        "stoch_d": 88.093,
-        "macd": 245.8589,
-        "macd_signal": 232.9802,
-        "macd_hist": 12.8787,
-        "bb_upper": 8078.3945,
-        "bb_mid": 7493.75,
-        "bb_lower": 6909.1055,
-        "atr": 165.4683,
-        "ma50": 6983.6917,
-        "ma200": 7293.1981,
-        "price": 7950.0,
-        "vol_ratio": 1.65,
+        "rsi": 53.9806,
+        "stoch_k": 73.1602,
+        "stoch_d": 85.2203,
+        "macd": 219.5805,
+        "macd_signal": 233.1222,
+        "macd_hist": -13.5417,
+        "bb_upper": 8073.3049,
+        "bb_mid": 7570.0,
+        "bb_lower": 7066.6951,
+        "atr": 194.0773,
+        "ma50": 7038.8325,
+        "ma200": 7286.6667,
+        "price": 7550.0,
+        "vol_ratio": 2.01,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
+        "bearish_divergence": false,
+        "bb_touch": "none",
+        "volume_climax": true,
+        "near_support": true,
+        "near_resistance": false,
+        "in_fib_zone": false
+      },
+      "trade_levels": {
+        "entry": null,
+        "stop_loss": null,
+        "tp1": null,
+        "tp2": null,
+        "tp3": null,
+        "risk": null,
+        "rr_ratio": null,
+        "trailing_stop": null,
+        "trailing_k": 2.5
+      },
+      "support_levels": [
+        6441.18,
+        7525.0
+      ],
+      "resistance_levels": [
+        6930.45,
+        7775.0
+      ],
+      "fib_levels": {
+        "0.0": 8000.0,
+        "23.6": 7456.79,
+        "38.2": 7120.74,
+        "50.0": 6849.13,
+        "61.8": 6577.53,
+        "78.6": 6190.84,
+        "100.0": 5698.27
+      }
+    },
+    "weekly": {
+      "signal": "HOLD",
+      "score": 51.5,
+      "reason": "Neutral zone (51.5) | Bullish divergence detected | Candle: bearish_engulfing (bearish)",
+      "components": {
+        "rsi_stoch": 37.5,
+        "divergence": 90.0,
+        "candle_pattern": 10.0,
+        "bb_touch": 50.0,
+        "volume_climax": 50.0,
+        "sr_fib": 50.0
+      },
+      "indicators": {
+        "rsi": 55.5164,
+        "stoch_k": 89.9836,
+        "stoch_d": 92.4549,
+        "macd": 70.847,
+        "macd_signal": -118.6238,
+        "macd_hist": 189.4708,
+        "bb_upper": 7953.2342,
+        "bb_mid": 6876.3006,
+        "bb_lower": 5799.367,
+        "atr": 410.9269,
+        "ma50": 7470.2243,
+        "ma200": NaN,
+        "price": 7550.0,
+        "vol_ratio": 0.45,
+        "above_ma50": true,
+        "above_ma200": null
+      },
+      "patterns": {
+        "candle": {
+          "name": "bearish_engulfing",
+          "direction": "bearish"
+        },
+        "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
@@ -59,91 +131,19 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        6307.36,
-        6575.0
-      ],
-      "resistance_levels": [
-        6985.56,
-        7775.0
-      ],
-      "fib_levels": {
-        "0.0": 8000.0,
-        "23.6": 7456.79,
-        "38.2": 7120.74,
-        "50.0": 6849.13,
-        "61.8": 6577.53,
-        "78.6": 6190.84,
-        "100.0": 5698.27
-      }
-    },
-    "weekly": {
-      "signal": "WATCH",
-      "score": 60.4,
-      "reason": "Elevated score (60.4) but not at confirmed range low | Bullish divergence detected | Candle: morning_star (bullish)",
-      "components": {
-        "rsi_stoch": 33.3,
-        "divergence": 90.0,
-        "candle_pattern": 90.0,
-        "bb_touch": 15.0,
-        "volume_climax": 50.0,
-        "sr_fib": 70.0
-      },
-      "indicators": {
-        "rsi": 63.3656,
-        "stoch_k": 93.3284,
-        "stoch_d": 93.5682,
-        "macd": 49.0428,
-        "macd_signal": -166.0039,
-        "macd_hist": 215.0468,
-        "bb_upper": 7882.1466,
-        "bb_mid": 6849.8331,
-        "bb_lower": 5817.5195,
-        "atr": 392.5264,
-        "ma50": 7505.8004,
-        "ma200": NaN,
-        "price": 7950.0,
-        "vol_ratio": 0.93,
-        "above_ma50": true,
-        "above_ma200": null
-      },
-      "patterns": {
-        "candle": {
-          "name": "morning_star",
-          "direction": "bullish"
-        },
-        "bullish_divergence": true,
-        "bearish_divergence": false,
-        "bb_touch": "upper",
-        "volume_climax": false,
-        "near_support": true,
-        "near_resistance": false,
-        "in_fib_zone": false
-      },
-      "trade_levels": {
-        "entry": null,
-        "stop_loss": null,
-        "tp1": null,
-        "tp2": null,
-        "tp3": null,
-        "risk": null,
-        "rr_ratio": null,
-        "trailing_stop": null,
-        "trailing_k": 2.5
-      },
-      "support_levels": [
-        9594.51,
+        9760.81,
         8210.79
       ],
       "resistance_levels": [
         11081.43
       ],
       "fib_levels": {
-        "0.0": 12090.96,
-        "23.6": 10582.29,
-        "38.2": 9648.95,
-        "50.0": 8894.61,
-        "61.8": 8140.28,
-        "78.6": 7066.3,
+        "0.0": 12067.48,
+        "23.6": 10564.35,
+        "38.2": 9634.44,
+        "50.0": 8882.88,
+        "61.8": 8131.31,
+        "78.6": 7061.28,
         "100.0": 5698.27
       }
     }
