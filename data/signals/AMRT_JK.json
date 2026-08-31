@@ -1,36 +1,36 @@
 {
   "ticker": "AMRT.JK",
   "market": "IHSG",
-  "last_updated": "2026-08-31T09:09:14Z",
+  "last_updated": "2026-08-31T20:33:08Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 45.2,
-      "reason": "Neutral zone (45.2) | Bearish divergence detected",
+      "score": 55.2,
+      "reason": "Neutral zone (55.2)",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 10.0,
+        "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 44.5344,
-        "stoch_k": 25.0,
-        "stoch_d": 38.0952,
-        "macd": -1.5251,
-        "macd_signal": 3.417,
-        "macd_hist": -4.9421,
+        "rsi": 45.1298,
+        "stoch_k": 35.7143,
+        "stoch_d": 52.8188,
+        "macd": 2.1196,
+        "macd_signal": 4.6526,
+        "macd_hist": -2.533,
         "bb_upper": 1446.8769,
         "bb_mid": 1376.25,
         "bb_lower": 1305.6231,
-        "atr": 50.3854,
-        "ma50": 1380.5,
-        "ma200": 1559.2438,
-        "price": 1335.0,
-        "vol_ratio": 1.4,
+        "atr": 52.3381,
+        "ma50": 1381.6,
+        "ma200": 1562.3155,
+        "price": 1340.0,
+        "vol_ratio": 1.32,
         "above_ma50": false,
         "above_ma200": false
       },
@@ -40,7 +40,7 @@
           "direction": null
         },
         "bullish_divergence": false,
-        "bearish_divergence": true,
+        "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": true,
@@ -76,38 +76,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 44.1365,
-        "stoch_k": 65.0585,
-        "stoch_d": 70.014,
-        "macd": -61.3181,
-        "macd_signal": -82.0988,
-        "macd_hist": 20.7807,
-        "bb_upper": 1510.4938,
-        "bb_mid": 1352.4065,
-        "bb_lower": 1194.3193,
-        "atr": 132.1181,
-        "ma50": 1592.2455,
+        "rsi": 44.3692,
+        "stoch_k": 69.5179,
+        "stoch_d": 70.6331,
+        "macd": -62.5308,
+        "macd_signal": -87.294,
+        "macd_hist": 24.7632,
+        "bb_upper": 1528.1641,
+        "bb_mid": 1359.8476,
+        "bb_lower": 1191.5311,
+        "atr": 140.3619,
+        "ma50": 1604.3382,
         "ma200": NaN,
-        "price": 1335.0,
-        "vol_ratio": 0.15,
+        "price": 1340.0,
+        "vol_ratio": 0.35,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -134,7 +134,8 @@
         2660.99
       ],
       "resistance_levels": [
-        1932.36
+        1932.36,
+        2482.73
       ],
       "fib_levels": {
         "0.0": 3493.75,
@@ -148,9 +149,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "consolidating",
+    "bias": "bullish",
     "ma200_position": "below",
-    "structure": "contracting (LH+HL)",
+    "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
