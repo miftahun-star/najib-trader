@@ -1,46 +1,46 @@
 {
   "ticker": "VEEV",
   "market": "US",
-  "last_updated": "2026-09-04T07:35:49Z",
+  "last_updated": "2026-09-04T17:58:21Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 49.6,
-      "reason": "Neutral zone (49.6)",
+      "signal": "WATCH",
+      "score": 34.0,
+      "reason": "Depressed score (34.0) but not at confirmed range high | Bearish divergence detected | Candle: evening_star (bearish)",
       "components": {
-        "rsi_stoch": 48.0,
-        "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "rsi_stoch": 50.0,
+        "divergence": 10.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 72.4145,
-        "stoch_k": 75.9562,
-        "stoch_d": 76.2884,
-        "macd": 18.9893,
-        "macd_signal": 16.9234,
-        "macd_hist": 2.0659,
-        "bb_upper": 289.8722,
-        "bb_mid": 251.6285,
-        "bb_lower": 213.3848,
-        "atr": 10.9129,
-        "ma50": 215.2036,
-        "ma200": 198.6765,
-        "price": 280.72,
-        "vol_ratio": 0.73,
+        "rsi": 65.8542,
+        "stoch_k": 71.8888,
+        "stoch_d": 74.0994,
+        "macd": 18.4246,
+        "macd_signal": 17.5903,
+        "macd_hist": 0.8343,
+        "bb_upper": 293.7665,
+        "bb_mid": 257.184,
+        "bb_lower": 220.6015,
+        "atr": 10.8109,
+        "ma50": 220.0026,
+        "ma200": 198.6215,
+        "price": 275.0,
+        "vol_ratio": 0.3,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
-        "bearish_divergence": false,
+        "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
@@ -63,8 +63,8 @@
         180.67
       ],
       "resistance_levels": [
-        173.34,
         197.33,
+        172.53,
         253.49
       ],
       "fib_levels": {
@@ -79,31 +79,31 @@
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 31.6,
-      "reason": "Depressed score (31.6) but not at confirmed range high | Bearish divergence detected",
+      "score": 35.2,
+      "reason": "Depressed score (35.2) but not at confirmed range high | Bearish divergence detected",
       "components": {
-        "rsi_stoch": 34.4,
+        "rsi_stoch": 37.2,
         "divergence": 10.0,
         "candle_pattern": 50.0,
         "bb_touch": 15.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 73.4293,
-        "stoch_k": 90.1776,
-        "stoch_d": 91.7715,
-        "macd": 16.9537,
-        "macd_signal": 3.1792,
-        "macd_hist": 13.7746,
-        "bb_upper": 274.5295,
-        "bb_mid": 194.852,
-        "bb_lower": 115.1745,
+        "rsi": 71.9948,
+        "stoch_k": 88.8703,
+        "stoch_d": 91.3358,
+        "macd": 16.4974,
+        "macd_signal": 3.0879,
+        "macd_hist": 13.4095,
+        "bb_upper": 272.9767,
+        "bb_mid": 194.566,
+        "bb_lower": 116.1553,
         "atr": 21.5655,
-        "ma50": 213.4936,
+        "ma50": 213.3792,
         "ma200": NaN,
-        "price": 280.72,
-        "vol_ratio": 0.44,
+        "price": 275.0,
+        "vol_ratio": 0.59,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -117,7 +117,7 @@
         "bb_touch": "upper",
         "volume_climax": false,
         "near_support": true,
-        "near_resistance": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
