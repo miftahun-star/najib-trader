@@ -1,36 +1,36 @@
 {
   "ticker": "CFG",
   "market": "US",
-  "last_updated": "2026-09-03T18:17:14Z",
+  "last_updated": "2026-09-04T07:35:36Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "score": 46.1,
+      "reason": "Neutral zone (46.1) | Bearish divergence detected",
       "components": {
-        "rsi_stoch": 50.0,
-        "divergence": 50.0,
+        "rsi_stoch": 58.0,
+        "divergence": 10.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "volume_climax": 65.0,
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 50.279,
-        "stoch_k": 25.6093,
-        "stoch_d": 16.1654,
-        "macd": -0.4965,
-        "macd_signal": -0.2117,
-        "macd_hist": -0.2848,
-        "bb_upper": 75.4933,
-        "bb_mid": 71.5053,
-        "bb_lower": 67.5172,
-        "atr": 1.5766,
-        "ma50": 71.2403,
-        "ma200": 63.1052,
-        "price": 70.955,
-        "vol_ratio": 0.48,
+        "rsi": 44.9536,
+        "stoch_k": 13.5973,
+        "stoch_d": 9.9078,
+        "macd": -0.628,
+        "macd_signal": -0.2247,
+        "macd_hist": -0.4033,
+        "bb_upper": 75.5054,
+        "bb_mid": 71.443,
+        "bb_lower": 67.3806,
+        "atr": 1.4974,
+        "ma50": 71.2154,
+        "ma200": 63.099,
+        "price": 69.78,
+        "vol_ratio": 1.68,
         "above_ma50": false,
         "above_ma200": true
       },
@@ -40,11 +40,11 @@
           "direction": null
         },
         "bullish_divergence": false,
-        "bearish_divergence": false,
+        "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
+        "near_support": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -59,14 +59,14 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        68.91,
+        69.46,
         59.62,
         62.84
       ],
       "resistance_levels": [
         65.02,
-        74.69,
-        72.53
+        71.7,
+        74.69
       ],
       "fib_levels": {
         "0.0": 75.33,
@@ -80,31 +80,31 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 60.852,
-        "stoch_k": 67.7071,
-        "stoch_d": 76.1556,
-        "macd": 3.2773,
-        "macd_signal": 3.4506,
-        "macd_hist": -0.1733,
-        "bb_upper": 76.371,
-        "bb_mid": 67.8113,
-        "bb_lower": 59.2516,
-        "atr": 3.471,
-        "ma50": 61.1561,
+        "rsi": 58.5949,
+        "stoch_k": 64.1566,
+        "stoch_d": 74.634,
+        "macd": 3.1546,
+        "macd_signal": 3.42,
+        "macd_hist": -0.2654,
+        "bb_upper": 76.188,
+        "bb_mid": 67.7291,
+        "bb_lower": 59.2701,
+        "atr": 3.442,
+        "ma50": 61.1232,
         "ma200": NaN,
-        "price": 70.955,
-        "vol_ratio": 0.75,
+        "price": 69.78,
+        "vol_ratio": 0.67,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -118,7 +118,7 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -151,9 +151,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "volatile",
+    "bias": "bullish",
     "ma200_position": "above",
-    "structure": "expanding (HH+LL)",
+    "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }

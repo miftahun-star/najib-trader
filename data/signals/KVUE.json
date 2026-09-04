@@ -1,7 +1,7 @@
 {
   "ticker": "KVUE",
   "market": "US",
-  "last_updated": "2026-09-03T18:17:22Z",
+  "last_updated": "2026-09-04T07:35:42Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
@@ -17,21 +17,21 @@
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 49.4823,
-        "stoch_k": 31.114,
-        "stoch_d": 30.6357,
-        "macd": 0.0267,
-        "macd_signal": 0.0554,
-        "macd_hist": -0.0287,
-        "bb_upper": 19.418,
-        "bb_mid": 19.0333,
-        "bb_lower": 18.6486,
-        "atr": 0.3763,
-        "ma50": 19.033,
-        "ma200": 17.5659,
-        "price": 18.99,
-        "vol_ratio": 0.63,
-        "above_ma50": false,
+        "rsi": 52.0785,
+        "stoch_k": 26.4641,
+        "stoch_d": 34.3748,
+        "macd": 0.0305,
+        "macd_signal": 0.0608,
+        "macd_hist": -0.0303,
+        "bb_upper": 19.4312,
+        "bb_mid": 19.0423,
+        "bb_lower": 18.6535,
+        "atr": 0.3713,
+        "ma50": 19.0366,
+        "ma200": 17.5668,
+        "price": 19.13,
+        "vol_ratio": 1.0,
+        "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
@@ -78,38 +78,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 55.2,
-      "reason": "Neutral zone (55.2)",
+      "score": 59.0,
+      "reason": "Neutral zone (59.0) | Candle: hammer (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 58.2211,
-        "stoch_k": 75.9321,
-        "stoch_d": 76.7038,
-        "macd": 0.4722,
-        "macd_signal": 0.4187,
-        "macd_hist": 0.0535,
-        "bb_upper": 20.2028,
-        "bb_mid": 18.3083,
-        "bb_lower": 16.4137,
-        "atr": 0.7987,
-        "ma50": 17.2616,
+        "rsi": 60.3392,
+        "stoch_k": 77.0021,
+        "stoch_d": 76.9632,
+        "macd": 0.4815,
+        "macd_signal": 0.4202,
+        "macd_hist": 0.0613,
+        "bb_upper": 20.217,
+        "bb_mid": 18.3138,
+        "bb_lower": 16.4105,
+        "atr": 0.7966,
+        "ma50": 17.2638,
         "ma200": NaN,
-        "price": 18.99,
-        "vol_ratio": 0.84,
+        "price": 19.13,
+        "vol_ratio": 0.71,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -150,7 +150,7 @@
   },
   "yearly_trend": {
     "bias": "consolidating",
-    "ma200_position": "below",
+    "ma200_position": "above",
     "structure": "contracting (LH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
