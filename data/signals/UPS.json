@@ -1,38 +1,38 @@
 {
   "ticker": "UPS",
   "market": "US",
-  "last_updated": "2026-09-08T07:39:07Z",
+  "last_updated": "2026-09-08T18:14:22Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.8,
-      "reason": "Neutral zone (50.8)",
+      "score": 53.2,
+      "reason": "Neutral zone (53.2)",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 51.2,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 55.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 42.789,
-        "stoch_k": 27.6142,
-        "stoch_d": 30.5432,
-        "macd": -0.6726,
-        "macd_signal": -0.7509,
-        "macd_hist": 0.0783,
-        "bb_upper": 105.8049,
-        "bb_mid": 103.325,
-        "bb_lower": 100.8451,
-        "atr": 2.1135,
-        "ma50": 106.5208,
-        "ma200": 101.9115,
-        "price": 102.29,
-        "vol_ratio": 0.74,
+        "rsi": 39.0426,
+        "stoch_k": 19.0181,
+        "stoch_d": 25.4613,
+        "macd": -0.829,
+        "macd_signal": -0.7666,
+        "macd_hist": -0.0625,
+        "bb_upper": 105.9138,
+        "bb_mid": 103.2197,
+        "bb_lower": 100.5257,
+        "atr": 2.0711,
+        "ma50": 106.4114,
+        "ma200": 101.9732,
+        "price": 100.97,
+        "vol_ratio": 0.46,
         "above_ma50": false,
-        "above_ma200": true
+        "above_ma200": false
       },
       "patterns": {
         "candle": {
@@ -45,7 +45,7 @@
         "volume_climax": false,
         "near_support": true,
         "near_resistance": false,
-        "in_fib_zone": true
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -63,7 +63,7 @@
         93.03
       ],
       "resistance_levels": [
-        107.37
+        107.9
       ],
       "fib_levels": {
         "0.0": 116.56,
@@ -76,32 +76,32 @@
       }
     },
     "weekly": {
-      "signal": "WATCH",
-      "score": 37.8,
-      "reason": "Depressed score (37.8) but not at confirmed range high | Bearish divergence detected",
+      "signal": "HOLD",
+      "score": 42.1,
+      "reason": "Neutral zone (42.1) | Bearish divergence detected",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 56.9,
         "divergence": 10.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 35.0
+        "sr_fib": 55.0
       },
       "indicators": {
-        "rsi": 48.601,
-        "stoch_k": 27.2911,
-        "stoch_d": 36.0281,
-        "macd": 1.2271,
-        "macd_signal": 2.0754,
-        "macd_hist": -0.8483,
-        "bb_upper": 114.4206,
-        "bb_mid": 104.7405,
-        "bb_lower": 95.0603,
-        "atr": 5.778,
-        "ma50": 99.1919,
+        "rsi": 46.9866,
+        "stoch_k": 14.4445,
+        "stoch_d": 26.7928,
+        "macd": 0.8377,
+        "macd_signal": 1.828,
+        "macd_hist": -0.9902,
+        "bb_upper": 114.425,
+        "bb_mid": 104.6092,
+        "bb_lower": 94.7935,
+        "atr": 5.4738,
+        "ma50": 99.6401,
         "ma200": NaN,
-        "price": 102.29,
-        "vol_ratio": 0.76,
+        "price": 100.97,
+        "vol_ratio": 0.07,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -114,7 +114,7 @@
         "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": false,
         "in_fib_zone": true
       },
@@ -134,8 +134,9 @@
         95.5
       ],
       "resistance_levels": [
-        115.36,
-        95.2
+        112.26,
+        95.2,
+        123.12
       ],
       "fib_levels": {
         "0.0": 127.96,
@@ -149,9 +150,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "volatile",
+    "bias": "bearish",
     "ma200_position": "above",
-    "structure": "expanding (HH+LL)",
+    "structure": "downtrend (LH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
