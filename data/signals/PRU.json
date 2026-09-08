@@ -1,50 +1,50 @@
 {
   "ticker": "PRU",
   "market": "US",
-  "last_updated": "2026-09-08T07:39:03Z",
+  "last_updated": "2026-09-08T18:14:18Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "WATCH",
-      "score": 37.0,
-      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected",
+      "score": 34.0,
+      "reason": "Depressed score (34.0) but not at confirmed range high | Bearish divergence detected | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 56.889,
-        "stoch_k": 61.669,
-        "stoch_d": 39.5253,
-        "macd": 0.6657,
-        "macd_signal": 0.8378,
-        "macd_hist": -0.1721,
-        "bb_upper": 124.5371,
-        "bb_mid": 120.8846,
-        "bb_lower": 117.2321,
-        "atr": 2.5472,
-        "ma50": 117.9796,
-        "ma200": 105.4981,
-        "price": 122.02,
-        "vol_ratio": 0.92,
+        "rsi": 51.3039,
+        "stoch_k": 65.5599,
+        "stoch_d": 56.3015,
+        "macd": 0.5941,
+        "macd_signal": 0.7891,
+        "macd_hist": -0.1949,
+        "bb_upper": 124.5239,
+        "bb_mid": 120.8602,
+        "bb_lower": 117.1966,
+        "atr": 2.5034,
+        "ma50": 118.2439,
+        "ma200": 105.6054,
+        "price": 120.23,
+        "vol_ratio": 0.28,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -78,45 +78,45 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 56.0,
-      "reason": "Neutral zone (56.0) | Candle: morning_star (bullish)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 67.4138,
-        "stoch_k": 79.6035,
-        "stoch_d": 81.3788,
-        "macd": 5.814,
-        "macd_signal": 4.5948,
-        "macd_hist": 1.2192,
-        "bb_upper": 129.986,
-        "bb_mid": 109.8866,
-        "bb_lower": 89.7871,
-        "atr": 5.3636,
-        "ma50": 104.4748,
+        "rsi": 63.9728,
+        "stoch_k": 79.0413,
+        "stoch_d": 80.1261,
+        "macd": 5.6794,
+        "macd_signal": 4.8107,
+        "macd_hist": 0.8687,
+        "bb_upper": 130.0071,
+        "bb_mid": 111.3039,
+        "bb_lower": 92.6007,
+        "atr": 5.1186,
+        "ma50": 104.8963,
         "ma200": NaN,
-        "price": 122.02,
-        "vol_ratio": 0.89,
+        "price": 120.23,
+        "vol_ratio": 0.05,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "morning_star",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -134,7 +134,8 @@
         91.79
       ],
       "resistance_levels": [
-        108.18
+        103.5,
+        115.99
       ],
       "fib_levels": {
         "0.0": 126.26,
