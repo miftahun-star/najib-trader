@@ -1,45 +1,45 @@
 {
   "ticker": "PNW",
   "market": "US",
-  "last_updated": "2026-09-10T07:43:37Z",
+  "last_updated": "2026-09-10T18:00:49Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0) | Candle: bearish_engulfing (bearish)",
+      "signal": "WATCH",
+      "score": 63.0,
+      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "divergence": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 37.2416,
-        "stoch_k": 25.3507,
-        "stoch_d": 25.4391,
-        "macd": -1.16,
-        "macd_signal": -1.2618,
-        "macd_hist": 0.1018,
-        "bb_upper": 101.3233,
-        "bb_mid": 98.6175,
-        "bb_lower": 95.9117,
-        "atr": 1.6137,
-        "ma50": 102.0563,
-        "ma200": 97.1616,
-        "price": 97.18,
-        "vol_ratio": 0.94,
+        "rsi": 35.4117,
+        "stoch_k": 22.5456,
+        "stoch_d": 25.4087,
+        "macd": -1.1721,
+        "macd_signal": -1.2438,
+        "macd_hist": 0.0718,
+        "bb_upper": 101.1257,
+        "bb_mid": 98.4358,
+        "bb_lower": 95.7458,
+        "atr": 1.5888,
+        "ma50": 101.8709,
+        "ma200": 97.2109,
+        "price": 96.765,
+        "vol_ratio": 0.19,
         "above_ma50": false,
-        "above_ma200": true
+        "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
-        "bullish_divergence": false,
+        "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
@@ -59,7 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        98.23
+        98.25
       ],
       "resistance_levels": [
         102.98,
@@ -67,41 +67,41 @@
       ],
       "fib_levels": {
         "0.0": 110.16,
-        "23.6": 106.92,
-        "38.2": 104.91,
-        "50.0": 103.29,
-        "61.8": 101.67,
-        "78.6": 99.36,
-        "100.0": 96.42
+        "23.6": 106.91,
+        "38.2": 104.9,
+        "50.0": 103.27,
+        "61.8": 101.64,
+        "78.6": 99.33,
+        "100.0": 96.38
       }
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 46.2,
-      "reason": "Neutral zone (46.2) | Bearish divergence detected",
+      "score": 48.6,
+      "reason": "Neutral zone (48.6) | Bearish divergence detected",
       "components": {
-        "rsi_stoch": 65.8,
+        "rsi_stoch": 66.9,
         "divergence": 10.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 44.7672,
-        "stoch_k": 7.3558,
-        "stoch_d": 10.7427,
-        "macd": 0.4651,
-        "macd_signal": 1.7532,
-        "macd_hist": -1.2881,
-        "bb_upper": 108.8844,
-        "bb_mid": 101.5628,
-        "bb_lower": 94.2411,
-        "atr": 3.8059,
-        "ma50": 95.7734,
+        "rsi": 44.02,
+        "stoch_k": 6.4432,
+        "stoch_d": 10.4386,
+        "macd": 0.432,
+        "macd_signal": 1.7466,
+        "macd_hist": -1.3146,
+        "bb_upper": 108.9181,
+        "bb_mid": 101.542,
+        "bb_lower": 94.1659,
+        "atr": 3.8123,
+        "ma50": 95.7651,
         "ma200": NaN,
-        "price": 97.18,
-        "vol_ratio": 0.34,
+        "price": 96.765,
+        "vol_ratio": 0.37,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -116,7 +116,7 @@
         "volume_climax": false,
         "near_support": true,
         "near_resistance": false,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
