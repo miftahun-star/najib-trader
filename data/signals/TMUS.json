@@ -1,37 +1,37 @@
 {
   "ticker": "TMUS",
   "market": "US",
-  "last_updated": "2026-09-11T07:39:37Z",
+  "last_updated": "2026-09-11T18:04:21Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "score": 47.8,
+      "reason": "Neutral zone (47.8)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 35.0
       },
       "indicators": {
-        "rsi": 44.7224,
-        "stoch_k": 25.0781,
-        "stoch_d": 39.0733,
-        "macd": 0.1031,
-        "macd_signal": 0.4387,
-        "macd_hist": -0.3356,
-        "bb_upper": 186.7855,
-        "bb_mid": 181.1305,
-        "bb_lower": 175.4755,
-        "atr": 4.7273,
-        "ma50": 180.7995,
-        "ma200": 192.016,
-        "price": 177.16,
-        "vol_ratio": 1.15,
-        "above_ma50": false,
+        "rsi": 53.9615,
+        "stoch_k": 30.3601,
+        "stoch_d": 29.7894,
+        "macd": 0.338,
+        "macd_signal": 0.4186,
+        "macd_hist": -0.0805,
+        "bb_upper": 186.9607,
+        "bb_mid": 181.2036,
+        "bb_lower": 175.4465,
+        "atr": 4.871,
+        "ma50": 181.0339,
+        "ma200": 191.9092,
+        "price": 183.79,
+        "vol_ratio": 0.44,
+        "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
@@ -43,9 +43,9 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": false,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -76,38 +76,38 @@
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 63.0,
-      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
+      "score": 66.8,
+      "reason": "Elevated score (66.8) but not at confirmed range low | Bullish divergence detected | Candle: hammer (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 42.5419,
-        "stoch_k": 46.3724,
-        "stoch_d": 49.6379,
-        "macd": -5.3668,
-        "macd_signal": -6.0412,
-        "macd_hist": 0.6743,
-        "bb_upper": 194.6631,
-        "bb_mid": 182.8294,
-        "bb_lower": 170.9956,
-        "atr": 11.856,
-        "ma50": 195.6127,
+        "rsi": 47.09,
+        "stoch_k": 53.0674,
+        "stoch_d": 51.8696,
+        "macd": -4.838,
+        "macd_signal": -5.9354,
+        "macd_hist": 1.0974,
+        "bb_upper": 194.6936,
+        "bb_mid": 183.1609,
+        "bb_lower": 171.6281,
+        "atr": 11.9017,
+        "ma50": 195.7453,
         "ma200": NaN,
-        "price": 177.16,
-        "vol_ratio": 0.5,
+        "price": 183.79,
+        "vol_ratio": 0.57,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -148,9 +148,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bearish",
+    "bias": "consolidating",
     "ma200_position": "below",
-    "structure": "downtrend (LH+LL)",
+    "structure": "contracting (LH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
