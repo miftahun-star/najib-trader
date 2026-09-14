@@ -1,43 +1,43 @@
 {
   "ticker": "DDOG",
   "market": "US",
-  "last_updated": "2026-09-14T08:24:44Z",
+  "last_updated": "2026-09-14T19:43:08Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 49.2,
-      "reason": "Neutral zone (49.2) | Candle: bearish_engulfing (bearish)",
+      "score": 53.0,
+      "reason": "Neutral zone (53.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 85.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 44.3042,
-        "stoch_k": 39.9863,
-        "stoch_d": 31.9264,
-        "macd": -7.9609,
-        "macd_signal": -7.7249,
-        "macd_hist": -0.236,
-        "bb_upper": 254.823,
-        "bb_mid": 229.152,
-        "bb_lower": 203.481,
-        "atr": 12.5159,
-        "ma50": 246.5396,
-        "ma200": 177.4113,
-        "price": 221.21,
-        "vol_ratio": 0.5,
+        "rsi": 49.5652,
+        "stoch_k": 43.8291,
+        "stoch_d": 38.7647,
+        "macd": -6.776,
+        "macd_signal": -7.5351,
+        "macd_hist": 0.7591,
+        "bb_upper": 250.4529,
+        "bb_mid": 227.9235,
+        "bb_lower": 205.3941,
+        "atr": 12.548,
+        "ma50": 245.9502,
+        "ma200": 177.7735,
+        "price": 230.89,
+        "vol_ratio": 0.53,
         "above_ma50": false,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -45,7 +45,7 @@
         "volume_climax": false,
         "near_support": true,
         "near_resistance": false,
-        "in_fib_zone": true
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -59,8 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        218.9,
-        126.16
+        218.9
       ],
       "resistance_levels": [
         275.56
@@ -80,7 +79,7 @@
       "score": 60.3,
       "reason": "Elevated score (60.3) but not at confirmed range low | Bullish divergence detected",
       "components": {
-        "rsi_stoch": 51.7,
+        "rsi_stoch": 51.4,
         "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
@@ -88,20 +87,20 @@
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 52.8014,
-        "stoch_k": 18.6576,
-        "stoch_d": 28.5762,
-        "macd": 19.09,
-        "macd_signal": 24.9327,
-        "macd_hist": -5.8427,
-        "bb_upper": 288.1836,
-        "bb_mid": 231.6335,
-        "bb_lower": 175.0834,
-        "atr": 28.7157,
-        "ma50": 175.1839,
+        "rsi": 55.1778,
+        "stoch_k": 18.8525,
+        "stoch_d": 20.5151,
+        "macd": 17.6318,
+        "macd_signal": 23.4704,
+        "macd_hist": -5.8386,
+        "bb_upper": 273.0939,
+        "bb_mid": 236.1515,
+        "bb_lower": 199.2091,
+        "atr": 27.5909,
+        "ma50": 176.7653,
         "ma200": NaN,
-        "price": 221.21,
-        "vol_ratio": 0.58,
+        "price": 230.89,
+        "vol_ratio": 0.08,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -148,9 +147,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
+    "bias": "volatile",
     "ma200_position": "above",
-    "structure": "uptrend (HH+HL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
