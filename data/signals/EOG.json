@@ -1,37 +1,37 @@
 {
   "ticker": "EOG",
   "market": "US",
-  "last_updated": "2026-09-21T08:26:29Z",
+  "last_updated": "2026-09-21T19:50:49Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 53.4,
-      "reason": "Neutral zone (53.4)",
+      "score": 53.6,
+      "reason": "Neutral zone (53.6)",
       "components": {
-        "rsi_stoch": 51.9,
+        "rsi_stoch": 56.6,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 80.0,
-        "sr_fib": 50.0
+        "volume_climax": 50.0,
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 47.0421,
-        "stoch_k": 18.5194,
-        "stoch_d": 41.391,
-        "macd": 0.7185,
-        "macd_signal": 1.1924,
-        "macd_hist": -0.4739,
-        "bb_upper": 152.6435,
-        "bb_mid": 147.015,
-        "bb_lower": 141.3865,
-        "atr": 3.8764,
-        "ma50": 144.1389,
-        "ma200": 129.184,
-        "price": 144.23,
-        "vol_ratio": 2.46,
-        "above_ma50": true,
+        "rsi": 42.9622,
+        "stoch_k": 14.6817,
+        "stoch_d": 26.5177,
+        "macd": 0.2492,
+        "macd_signal": 1.0038,
+        "macd_hist": -0.7546,
+        "bb_upper": 151.8225,
+        "bb_mid": 146.438,
+        "bb_lower": 141.0534,
+        "atr": 3.8673,
+        "ma50": 144.3068,
+        "ma200": 129.3595,
+        "price": 141.509,
+        "vol_ratio": 0.51,
+        "above_ma50": false,
         "above_ma200": true
       },
       "patterns": {
@@ -42,10 +42,10 @@
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
-        "volume_climax": true,
+        "volume_climax": false,
         "near_support": true,
         "near_resistance": true,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -77,32 +77,32 @@
       }
     },
     "weekly": {
-      "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "signal": "WATCH",
+      "score": 37.0,
+      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 50.0,
+        "divergence": 10.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 55.3209,
-        "stoch_k": 70.0391,
-        "stoch_d": 71.8945,
-        "macd": 5.4143,
-        "macd_signal": 5.4511,
-        "macd_hist": -0.0368,
-        "bb_upper": 153.3707,
-        "bb_mid": 139.1179,
-        "bb_lower": 124.8652,
-        "atr": 9.008,
-        "ma50": 125.0478,
+        "rsi": 53.2286,
+        "stoch_k": 65.22,
+        "stoch_d": 68.2028,
+        "macd": 4.9238,
+        "macd_signal": 5.347,
+        "macd_hist": -0.4231,
+        "bb_upper": 153.2109,
+        "bb_mid": 139.7398,
+        "bb_lower": 126.2687,
+        "atr": 8.6325,
+        "ma50": 125.7892,
         "ma200": NaN,
-        "price": 144.23,
-        "vol_ratio": 1.38,
+        "price": 141.509,
+        "vol_ratio": 0.11,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -112,7 +112,7 @@
           "direction": null
         },
         "bullish_divergence": false,
-        "bearish_divergence": false,
+        "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
@@ -135,8 +135,9 @@
         127.74
       ],
       "resistance_levels": [
-        122.82,
-        149.3
+        126.37,
+        149.3,
+        112.18
       ],
       "fib_levels": {
         "0.0": 154.16,
@@ -150,9 +151,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
+    "bias": "consolidating",
     "ma200_position": "above",
-    "structure": "uptrend (HH+HL)",
+    "structure": "contracting (LH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }

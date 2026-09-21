@@ -1,36 +1,36 @@
 {
   "ticker": "GPC",
   "market": "US",
-  "last_updated": "2026-09-21T08:26:30Z",
+  "last_updated": "2026-09-21T19:50:51Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "WATCH",
-      "score": 63.4,
-      "reason": "Elevated score (63.4) but not at confirmed range low",
+      "signal": "HOLD",
+      "score": 58.3,
+      "reason": "Neutral zone (58.3)",
       "components": {
-        "rsi_stoch": 60.6,
+        "rsi_stoch": 65.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 85.0,
-        "volume_climax": 80.0,
-        "sr_fib": 70.0
+        "volume_climax": 50.0,
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 39.7459,
-        "stoch_k": 11.4824,
-        "stoch_d": 13.787,
-        "macd": 0.0171,
-        "macd_signal": 1.1898,
-        "macd_hist": -1.1727,
-        "bb_upper": 139.5375,
-        "bb_mid": 134.2472,
-        "bb_lower": 128.9569,
-        "atr": 3.1876,
-        "ma50": 130.1482,
-        "ma200": 117.9884,
-        "price": 128.08,
-        "vol_ratio": 2.58,
+        "rsi": 37.2328,
+        "stoch_k": 7.9729,
+        "stoch_d": 11.1518,
+        "macd": -0.4313,
+        "macd_signal": 0.8656,
+        "macd_hist": -1.2969,
+        "bb_upper": 140.1933,
+        "bb_mid": 133.937,
+        "bb_lower": 127.6806,
+        "atr": 3.2132,
+        "ma50": 130.1896,
+        "ma200": 117.9998,
+        "price": 126.72,
+        "vol_ratio": 0.58,
         "above_ma50": false,
         "above_ma200": true
       },
@@ -42,8 +42,8 @@
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "lower",
-        "volume_climax": true,
-        "near_support": true,
+        "volume_climax": false,
+        "near_support": false,
         "near_resistance": false,
         "in_fib_zone": false
       },
@@ -78,10 +78,10 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 55.7,
-      "reason": "Neutral zone (55.7) | Bullish divergence detected",
+      "score": 57.0,
+      "reason": "Neutral zone (57.0) | Bullish divergence detected",
       "components": {
-        "rsi_stoch": 43.3,
+        "rsi_stoch": 50.0,
         "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
@@ -89,20 +89,20 @@
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 54.9898,
-        "stoch_k": 85.3379,
-        "stoch_d": 91.5176,
-        "macd": 5.5822,
-        "macd_signal": 3.8533,
-        "macd_hist": 1.7288,
-        "bb_upper": 150.5028,
-        "bb_mid": 118.7359,
-        "bb_lower": 86.9691,
-        "atr": 7.9857,
-        "ma50": 119.6353,
+        "rsi": 53.7046,
+        "stoch_k": 74.3119,
+        "stoch_d": 84.4724,
+        "macd": 5.0513,
+        "macd_signal": 4.0914,
+        "macd_hist": 0.9599,
+        "bb_upper": 150.9646,
+        "bb_mid": 119.9324,
+        "bb_lower": 88.9001,
+        "atr": 7.6686,
+        "ma50": 119.6541,
         "ma200": NaN,
-        "price": 128.08,
-        "vol_ratio": 0.89,
+        "price": 126.72,
+        "vol_ratio": 0.09,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -131,7 +131,8 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        105.82
+        111.69,
+        94.08
       ],
       "resistance_levels": [
         128.48
