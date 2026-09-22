@@ -1,38 +1,38 @@
 {
   "ticker": "BBRI.JK",
   "market": "IHSG",
-  "last_updated": "2026-09-21T19:50:14Z",
+  "last_updated": "2026-09-22T08:07:06Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 53.5086,
-        "stoch_k": 43.5626,
-        "stoch_d": 52.604,
-        "macd": 53.5291,
-        "macd_signal": 70.8913,
-        "macd_hist": -17.3622,
-        "bb_upper": 3494.2894,
-        "bb_mid": 3312.5,
-        "bb_lower": 3130.7106,
-        "atr": 72.7834,
-        "ma50": 3139.8,
-        "ma200": 3224.5169,
-        "price": 3300.0,
-        "vol_ratio": 0.55,
+        "rsi": 44.2219,
+        "stoch_k": 23.8095,
+        "stoch_d": 40.0206,
+        "macd": 39.1047,
+        "macd_signal": 64.534,
+        "macd_hist": -25.4293,
+        "bb_upper": 3493.3038,
+        "bb_mid": 3313.0,
+        "bb_lower": 3132.6962,
+        "atr": 75.4417,
+        "ma50": 3146.2,
+        "ma200": 3222.5439,
+        "price": 3190.0,
+        "vol_ratio": 0.91,
         "above_ma50": true,
-        "above_ma200": true
+        "above_ma200": false
       },
       "patterns": {
         "candle": {
@@ -44,7 +44,7 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -77,38 +77,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 50.1,
-      "reason": "Neutral zone (50.1)",
+      "score": 44.8,
+      "reason": "Neutral zone (44.8) | Candle: bearish_engulfing (bearish)",
       "components": {
-        "rsi_stoch": 46.8,
+        "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 55.0
       },
       "indicators": {
-        "rsi": 55.7822,
-        "stoch_k": 82.5926,
-        "stoch_d": 86.0432,
-        "macd": 23.0796,
-        "macd_signal": -34.3723,
-        "macd_hist": 57.4519,
-        "bb_upper": 3444.069,
-        "bb_mid": 3046.0,
-        "bb_lower": 2647.931,
-        "atr": 185.3432,
-        "ma50": 3254.9183,
+        "rsi": 51.3061,
+        "stoch_k": 78.0658,
+        "stoch_d": 84.5343,
+        "macd": 14.3047,
+        "macd_signal": -36.1273,
+        "macd_hist": 50.432,
+        "bb_upper": 3426.6538,
+        "bb_mid": 3040.5,
+        "bb_lower": 2654.3462,
+        "atr": 191.0601,
+        "ma50": 3252.7183,
         "ma200": NaN,
-        "price": 3300.0,
-        "vol_ratio": 0.09,
-        "above_ma50": true,
+        "price": 3190.0,
+        "vol_ratio": 0.23,
+        "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
