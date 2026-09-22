@@ -1,50 +1,50 @@
 {
   "ticker": "CBRE",
   "market": "US",
-  "last_updated": "2026-09-22T08:07:38Z",
+  "last_updated": "2026-09-22T18:27:49Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 42.2,
-      "reason": "Neutral zone (42.2) | Bearish divergence detected",
+      "signal": "WATCH",
+      "score": 36.2,
+      "reason": "Depressed score (36.2) but not at confirmed range high | Bearish divergence detected | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 49.2949,
-        "stoch_k": 25.7676,
-        "stoch_d": 17.6412,
-        "macd": -1.8082,
-        "macd_signal": -1.4289,
-        "macd_hist": -0.3794,
-        "bb_upper": 153.6805,
-        "bb_mid": 144.1515,
-        "bb_lower": 134.6225,
-        "atr": 4.2239,
-        "ma50": 144.9652,
-        "ma200": 146.3189,
-        "price": 143.21,
-        "vol_ratio": 1.14,
+        "rsi": 45.8659,
+        "stoch_k": 30.8769,
+        "stoch_d": 23.3205,
+        "macd": -1.7311,
+        "macd_signal": -1.4893,
+        "macd_hist": -0.2418,
+        "bb_upper": 152.4869,
+        "bb_mid": 143.6073,
+        "bb_lower": 134.7276,
+        "atr": 4.2708,
+        "ma50": 145.0255,
+        "ma200": 146.2127,
+        "price": 141.045,
+        "vol_ratio": 0.41,
         "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": false,
+        "near_support": true,
+        "near_resistance": true,
         "in_fib_zone": true
       },
       "trade_levels": {
@@ -77,39 +77,39 @@
       }
     },
     "weekly": {
-      "signal": "BOTTOM",
-      "score": 71.2,
-      "reason": "High confluence score (71.2) at range low | Bullish divergence detected | Candle: morning_star (bullish)",
+      "signal": "WATCH",
+      "score": 60.8,
+      "reason": "Elevated score (60.8) but not at confirmed range low | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 85.0
+        "sr_fib": 55.0
       },
       "indicators": {
-        "rsi": 49.4935,
-        "stoch_k": 44.7262,
-        "stoch_d": 54.707,
-        "macd": 0.1911,
-        "macd_signal": -0.229,
-        "macd_hist": 0.4201,
-        "bb_upper": 156.2053,
-        "bb_mid": 140.136,
-        "bb_lower": 124.0667,
-        "atr": 9.0369,
-        "ma50": 147.8108,
+        "rsi": 47.3754,
+        "stoch_k": 42.1488,
+        "stoch_d": 53.8479,
+        "macd": 0.0184,
+        "macd_signal": -0.2635,
+        "macd_hist": 0.2819,
+        "bb_upper": 156.0389,
+        "bb_mid": 140.0278,
+        "bb_lower": 124.0166,
+        "atr": 9.1062,
+        "ma50": 147.7675,
         "ma200": NaN,
-        "price": 143.21,
-        "vol_ratio": 0.21,
+        "price": 141.045,
+        "vol_ratio": 0.29,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "morning_star",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -120,14 +120,14 @@
         "in_fib_zone": true
       },
       "trade_levels": {
-        "entry": 143.21,
-        "stop_loss": 129.65,
-        "tp1": 156.77,
-        "tp2": 170.33,
-        "tp3": 149.13,
-        "risk": 13.56,
-        "rr_ratio": "1:1.0 / 1:2.0 / 1:0.4",
-        "trailing_stop": 120.62,
+        "entry": null,
+        "stop_loss": null,
+        "tp1": null,
+        "tp2": null,
+        "tp3": null,
+        "risk": null,
+        "rr_ratio": null,
+        "trailing_stop": null,
         "trailing_k": 2.5
       },
       "support_levels": [
@@ -150,7 +150,7 @@
   },
   "yearly_trend": {
     "bias": "bullish",
-    "ma200_position": "above",
+    "ma200_position": "below",
     "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
