@@ -1,38 +1,38 @@
 {
   "ticker": "GOOG",
   "market": "US",
-  "last_updated": "2026-09-23T08:10:19Z",
+  "last_updated": "2026-09-23T18:46:31Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "WATCH",
-      "score": 39.5,
-      "reason": "Depressed score (39.5) but not at confirmed range high",
+      "signal": "HOLD",
+      "score": 53.0,
+      "reason": "Neutral zone (53.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
-        "bb_touch": 15.0,
+        "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 15.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 58.6161,
-        "stoch_k": 78.6386,
-        "stoch_d": 75.6387,
-        "macd": 0.2237,
-        "macd_signal": -1.6964,
-        "macd_hist": 1.9201,
-        "bb_upper": 350.2938,
-        "bb_mid": 338.8156,
-        "bb_lower": 327.3374,
-        "atr": 8.1021,
-        "ma50": 343.2196,
-        "ma200": 335.9461,
-        "price": 350.87,
-        "vol_ratio": 1.07,
-        "above_ma50": true,
-        "above_ma200": true
+        "rsi": 46.1146,
+        "stoch_k": 61.209,
+        "stoch_d": 70.6495,
+        "macd": -0.2423,
+        "macd_signal": -1.4056,
+        "macd_hist": 1.1633,
+        "bb_upper": 349.6303,
+        "bb_mid": 338.3863,
+        "bb_lower": 327.1423,
+        "atr": 8.7141,
+        "ma50": 342.9264,
+        "ma200": 336.0261,
+        "price": 335.78,
+        "vol_ratio": 0.86,
+        "above_ma50": false,
+        "above_ma200": false
       },
       "patterns": {
         "candle": {
@@ -41,11 +41,11 @@
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "upper",
+        "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
-        "in_fib_zone": true
+        "near_support": true,
+        "near_resistance": false,
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -78,45 +78,45 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 44.0,
+      "reason": "Neutral zone (44.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 54.0756,
-        "stoch_k": 43.2004,
-        "stoch_d": 37.2451,
-        "macd": 4.5017,
-        "macd_signal": 7.6278,
-        "macd_hist": -3.126,
-        "bb_upper": 387.4255,
-        "bb_mid": 352.5674,
-        "bb_lower": 317.7093,
-        "atr": 20.9418,
-        "ma50": 328.0813,
+        "rsi": 49.0036,
+        "stoch_k": 35.6791,
+        "stoch_d": 34.738,
+        "macd": 3.298,
+        "macd_signal": 7.387,
+        "macd_hist": -4.0891,
+        "bb_upper": 387.4698,
+        "bb_mid": 351.8129,
+        "bb_lower": 316.156,
+        "atr": 21.6714,
+        "ma50": 327.7795,
         "ma200": NaN,
-        "price": 350.87,
-        "vol_ratio": 0.19,
+        "price": 335.78,
+        "vol_ratio": 0.35,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": false,
+        "near_support": true,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -135,7 +135,8 @@
         315.01
       ],
       "resistance_levels": [
-        197.0
+        197.0,
+        338.64
       ],
       "fib_levels": {
         "0.0": 403.96,
