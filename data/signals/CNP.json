@@ -1,43 +1,43 @@
 {
   "ticker": "CNP",
   "market": "US",
-  "last_updated": "2026-10-01T09:39:22Z",
+  "last_updated": "2026-10-01T20:01:40Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "WATCH",
-      "score": 62.3,
-      "reason": "Elevated score (62.3) but not at confirmed range low | Bullish divergence detected",
+      "score": 66.3,
+      "reason": "Elevated score (66.3) but not at confirmed range low | Bullish divergence detected | Candle: bullish_engulfing (bullish)",
       "components": {
-        "rsi_stoch": 61.7,
+        "rsi_stoch": 51.4,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 29.8866,
-        "stoch_k": 10.7296,
-        "stoch_d": 8.3348,
-        "macd": -0.8896,
-        "macd_signal": -0.797,
-        "macd_hist": -0.0926,
-        "bb_upper": 40.6464,
-        "bb_mid": 38.302,
-        "bb_lower": 35.9576,
-        "atr": 0.6303,
-        "ma50": 39.8368,
-        "ma200": 41.0054,
-        "price": 36.8,
-        "vol_ratio": 0.91,
+        "rsi": 36.3883,
+        "stoch_k": 18.8607,
+        "stoch_d": 12.9233,
+        "macd": -0.8456,
+        "macd_signal": -0.8067,
+        "macd_hist": -0.0388,
+        "bb_upper": 40.5072,
+        "bb_mid": 38.1872,
+        "bb_lower": 35.8673,
+        "atr": 0.6506,
+        "ma50": 39.7127,
+        "ma200": 41.0055,
+        "price": 37.215,
+        "vol_ratio": 1.03,
         "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -78,31 +78,31 @@
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 69.0,
-      "reason": "Elevated score (69.0) but not at confirmed range low | Bullish divergence detected",
+      "score": 62.6,
+      "reason": "Elevated score (62.6) but not at confirmed range low | Bullish divergence detected",
       "components": {
-        "rsi_stoch": 69.0,
+        "rsi_stoch": 67.0,
         "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 85.0
+        "sr_fib": 45.0
       },
       "indicators": {
-        "rsi": 33.7093,
-        "stoch_k": 4.8062,
-        "stoch_d": 7.555,
-        "macd": -0.9925,
-        "macd_signal": -0.3042,
-        "macd_hist": -0.6882,
-        "bb_upper": 46.0273,
-        "bb_mid": 41.1633,
-        "bb_lower": 36.2993,
-        "atr": 1.7072,
-        "ma50": 40.5717,
+        "rsi": 35.8679,
+        "stoch_k": 6.4108,
+        "stoch_d": 8.0898,
+        "macd": -0.9594,
+        "macd_signal": -0.2976,
+        "macd_hist": -0.6618,
+        "bb_upper": 45.9726,
+        "bb_mid": 41.184,
+        "bb_lower": 36.3954,
+        "atr": 1.7147,
+        "ma50": 40.58,
         "ma200": NaN,
-        "price": 36.8,
-        "vol_ratio": 0.58,
+        "price": 37.215,
+        "vol_ratio": 0.8,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -115,8 +115,8 @@
         "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
-        "near_resistance": false,
+        "near_support": false,
+        "near_resistance": true,
         "in_fib_zone": true
       },
       "trade_levels": {
@@ -151,7 +151,7 @@
   },
   "yearly_trend": {
     "bias": "bearish",
-    "ma200_position": "below",
+    "ma200_position": "above",
     "structure": "downtrend (LH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
