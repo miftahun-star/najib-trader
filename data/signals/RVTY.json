@@ -1,43 +1,43 @@
 {
   "ticker": "RVTY",
   "market": "US",
-  "last_updated": "2026-10-05T09:53:12Z",
+  "last_updated": "2026-10-05T21:46:21Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 54.9,
+      "reason": "Neutral zone (54.9) | Candle: morning_star (bullish)",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 44.7,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 68.9781,
-        "stoch_k": 78.5493,
-        "stoch_d": 85.9596,
-        "macd": 7.3198,
-        "macd_signal": 7.0268,
-        "macd_hist": 0.293,
-        "bb_upper": 162.8076,
-        "bb_mid": 140.953,
-        "bb_lower": 119.0984,
-        "atr": 4.9133,
-        "ma50": 127.8164,
-        "ma200": 106.1737,
-        "price": 151.53,
-        "vol_ratio": 0.55,
+        "rsi": 73.7606,
+        "stoch_k": 81.7639,
+        "stoch_d": 82.0536,
+        "macd": 7.5915,
+        "macd_signal": 7.1398,
+        "macd_hist": 0.4517,
+        "bb_upper": 164.7218,
+        "bb_mid": 142.31,
+        "bb_lower": 119.8982,
+        "atr": 5.067,
+        "ma50": 128.7542,
+        "ma200": 106.4801,
+        "price": 157.36,
+        "vol_ratio": 0.68,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "morning_star",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -77,11 +77,11 @@
       }
     },
     "weekly": {
-      "signal": "WATCH",
-      "score": 30.8,
-      "reason": "Depressed score (30.8) but not at confirmed range high | Bearish divergence detected",
+      "signal": "PEAK",
+      "score": 29.6,
+      "reason": "Low confluence score (29.6) at range high | Bearish divergence detected",
       "components": {
-        "rsi_stoch": 30.0,
+        "rsi_stoch": 24.3,
         "divergence": 10.0,
         "candle_pattern": 50.0,
         "bb_touch": 15.0,
@@ -89,20 +89,20 @@
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 76.8071,
-        "stoch_k": 91.44,
-        "stoch_d": 88.1678,
-        "macd": 12.0953,
-        "macd_signal": 8.266,
-        "macd_hist": 3.8293,
-        "bb_upper": 150.7347,
-        "bb_mid": 117.8442,
-        "bb_lower": 84.9538,
-        "atr": 9.9461,
-        "ma50": 105.0025,
+        "rsi": 78.7589,
+        "stoch_k": 94.7293,
+        "stoch_d": 91.2107,
+        "macd": 13.3719,
+        "macd_signal": 9.2882,
+        "macd_hist": 4.0837,
+        "bb_upper": 156.639,
+        "bb_mid": 120.8678,
+        "bb_lower": 85.0965,
+        "atr": 9.7404,
+        "ma50": 106.1758,
         "ma200": NaN,
-        "price": 151.53,
-        "vol_ratio": 1.4,
+        "price": 157.36,
+        "vol_ratio": 0.2,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -120,21 +120,22 @@
         "in_fib_zone": false
       },
       "trade_levels": {
-        "entry": null,
-        "stop_loss": null,
-        "tp1": null,
-        "tp2": null,
-        "tp3": null,
-        "risk": null,
-        "rr_ratio": null,
-        "trailing_stop": null,
+        "entry": 157.36,
+        "stop_loss": 171.97,
+        "tp1": 142.75,
+        "tp2": 128.14,
+        "tp3": 140.07,
+        "risk": 14.61,
+        "rr_ratio": "1:1.0 / 1:2.0 / 1:1.2",
+        "trailing_stop": 181.71,
         "trailing_k": 2.5
       },
       "support_levels": [
         89.92
       ],
       "resistance_levels": [
-        114.09
+        120.42,
+        103.55
       ],
       "fib_levels": {
         "0.0": 158.28,
