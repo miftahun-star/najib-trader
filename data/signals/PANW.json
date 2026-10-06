@@ -1,17 +1,17 @@
 {
   "ticker": "PANW",
   "market": "US",
-  "last_updated": "2026-10-05T21:46:20Z",
+  "last_updated": "2026-10-06T09:40:44Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.5,
-      "reason": "Neutral zone (47.5)",
+      "score": 51.2,
+      "reason": "Neutral zone (51.2) | Candle: hammer (bullish)",
       "components": {
         "rsi_stoch": 37.5,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
@@ -36,8 +36,8 @@
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -77,13 +77,13 @@
       }
     },
     "weekly": {
-      "signal": "HOLD",
-      "score": 57.5,
-      "reason": "Neutral zone (57.5) | Bullish divergence detected",
+      "signal": "WATCH",
+      "score": 61.2,
+      "reason": "Elevated score (61.2) but not at confirmed range low | Bullish divergence detected | Candle: hammer (bullish)",
       "components": {
         "rsi_stoch": 37.3,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
@@ -98,7 +98,7 @@
         "bb_upper": 420.7108,
         "bb_mid": 340.1715,
         "bb_lower": 259.6322,
-        "atr": 34.3408,
+        "atr": 34.3409,
         "ma50": 246.3386,
         "ma200": NaN,
         "price": 406.76,
@@ -108,8 +108,8 @@
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
