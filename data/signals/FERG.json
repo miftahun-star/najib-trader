@@ -1,43 +1,43 @@
 {
   "ticker": "FERG",
   "market": "US",
-  "last_updated": "2026-10-07T09:36:46Z",
+  "last_updated": "2026-10-07T20:22:57Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 59.2,
-      "reason": "Neutral zone (59.2) | Bullish divergence detected | Candle: shooting_star (bearish)",
+      "signal": "WATCH",
+      "score": 63.0,
+      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 25.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 48.6236,
-        "stoch_k": 66.5064,
-        "stoch_d": 63.8421,
-        "macd": -1.5312,
-        "macd_signal": -2.5671,
-        "macd_hist": 1.0359,
-        "bb_upper": 228.1719,
-        "bb_mid": 220.6725,
-        "bb_lower": 213.1731,
-        "atr": 5.6366,
-        "ma50": 231.2778,
-        "ma200": 236.2788,
-        "price": 223.33,
-        "vol_ratio": 0.69,
+        "rsi": 37.7754,
+        "stoch_k": 49.9399,
+        "stoch_d": 59.7556,
+        "macd": -2.0059,
+        "macd_signal": -2.4549,
+        "macd_hist": 0.4489,
+        "bb_upper": 228.0623,
+        "bb_mid": 220.2645,
+        "bb_lower": 212.4667,
+        "atr": 5.864,
+        "ma50": 230.9558,
+        "ma200": 236.2409,
+        "price": 215.06,
+        "vol_ratio": 0.8,
         "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "shooting_star",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -59,7 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        219.1
+        219.71
       ],
       "resistance_levels": [
         235.25
@@ -76,38 +76,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "score": 50.5,
+      "reason": "Neutral zone (50.5) | Candle: evening_star (bearish)",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 56.2,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 45.1222,
-        "stoch_k": 20.1105,
-        "stoch_d": 15.4165,
-        "macd": -3.4528,
-        "macd_signal": -1.911,
-        "macd_hist": -1.5419,
-        "bb_upper": 249.1107,
-        "bb_mid": 230.6986,
-        "bb_lower": 212.2865,
-        "atr": 13.5381,
-        "ma50": 236.3689,
+        "rsi": 41.1792,
+        "stoch_k": 15.0722,
+        "stoch_d": 13.7371,
+        "macd": -4.1126,
+        "macd_signal": -2.0429,
+        "macd_hist": -2.0697,
+        "bb_upper": 249.7361,
+        "bb_mid": 230.2851,
+        "bb_lower": 210.8341,
+        "atr": 13.8175,
+        "ma50": 236.2035,
         "ma200": NaN,
-        "price": 223.33,
-        "vol_ratio": 0.24,
+        "price": 215.06,
+        "vol_ratio": 0.37,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -115,7 +115,7 @@
         "volume_climax": false,
         "near_support": true,
         "near_resistance": false,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -132,8 +132,7 @@
         213.23
       ],
       "resistance_levels": [
-        245.36,
-        267.45
+        256.41
       ],
       "fib_levels": {
         "0.0": 268.59,
