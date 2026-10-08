@@ -1,36 +1,36 @@
 {
   "ticker": "ADBE",
   "market": "US",
-  "last_updated": "2026-10-08T09:47:11Z",
+  "last_updated": "2026-10-08T20:25:40Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 40.8,
-      "reason": "Neutral zone (40.8) | Bearish divergence detected",
+      "score": 47.8,
+      "reason": "Neutral zone (47.8)",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 10.0,
+        "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 55.0
+        "sr_fib": 35.0
       },
       "indicators": {
-        "rsi": 38.0035,
-        "stoch_k": 39.4729,
-        "stoch_d": 40.2175,
-        "macd": -6.7374,
-        "macd_signal": -6.3661,
-        "macd_hist": -0.3712,
-        "bb_upper": 261.9374,
-        "bb_mid": 243.607,
-        "bb_lower": 225.2766,
-        "atr": 8.7417,
-        "ma50": 258.439,
-        "ma200": 258.1287,
-        "price": 232.77,
-        "vol_ratio": 1.21,
+        "rsi": 45.7258,
+        "stoch_k": 42.1445,
+        "stoch_d": 40.9992,
+        "macd": -6.1305,
+        "macd_signal": -6.319,
+        "macd_hist": 0.1885,
+        "bb_upper": 261.4114,
+        "bb_mid": 243.218,
+        "bb_lower": 225.0246,
+        "atr": 8.7988,
+        "ma50": 257.9914,
+        "ma200": 257.5546,
+        "price": 241.05,
+        "vol_ratio": 1.11,
         "above_ma50": false,
         "above_ma200": false
       },
@@ -40,11 +40,11 @@
           "direction": null
         },
         "bullish_divergence": false,
-        "bearish_divergence": true,
+        "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": true,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": true
       },
       "trade_levels": {
@@ -77,38 +77,38 @@
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 63.0,
-      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
+      "score": 66.8,
+      "reason": "Elevated score (66.8) but not at confirmed range low | Bullish divergence detected | Candle: hammer (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 43.3664,
-        "stoch_k": 36.0126,
-        "stoch_d": 44.9856,
-        "macd": -5.1114,
-        "macd_signal": -5.8579,
-        "macd_hist": 0.7465,
-        "bb_upper": 292.721,
-        "bb_mid": 241.9165,
-        "bb_lower": 191.112,
-        "atr": 23.5002,
-        "ma50": 269.4926,
+        "rsi": 45.9027,
+        "stoch_k": 39.3121,
+        "stoch_d": 46.0854,
+        "macd": -4.4508,
+        "macd_signal": -5.7258,
+        "macd_hist": 1.2749,
+        "bb_upper": 292.9558,
+        "bb_mid": 242.3305,
+        "bb_lower": 191.7052,
+        "atr": 23.5137,
+        "ma50": 269.6582,
         "ma200": NaN,
-        "price": 232.77,
-        "vol_ratio": 0.45,
+        "price": 241.05,
+        "vol_ratio": 0.65,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -149,9 +149,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "volatile",
+    "bias": "bullish",
     "ma200_position": "below",
-    "structure": "expanding (HH+LL)",
+    "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
