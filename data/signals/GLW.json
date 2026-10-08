@@ -1,43 +1,43 @@
 {
   "ticker": "GLW",
   "market": "US",
-  "last_updated": "2026-10-08T09:47:29Z",
+  "last_updated": "2026-10-08T20:25:49Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "score": 41.0,
+      "reason": "Neutral zone (41.0) | Candle: evening_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 54.3159,
-        "stoch_k": 77.9744,
-        "stoch_d": 84.7465,
-        "macd": 2.2365,
-        "macd_signal": 0.8763,
-        "macd_hist": 1.3603,
-        "bb_upper": 171.2876,
-        "bb_mid": 156.154,
-        "bb_lower": 141.0204,
-        "atr": 8.1335,
-        "ma50": 154.325,
-        "ma200": 151.2658,
-        "price": 163.25,
-        "vol_ratio": 0.66,
-        "above_ma50": true,
+        "rsi": 47.1236,
+        "stoch_k": 58.649,
+        "stoch_d": 74.8052,
+        "macd": 1.5286,
+        "macd_signal": 1.0067,
+        "macd_hist": 0.5219,
+        "bb_upper": 170.4726,
+        "bb_mid": 155.6395,
+        "bb_lower": 140.8064,
+        "atr": 8.4318,
+        "ma50": 154.9053,
+        "ma200": 151.593,
+        "price": 152.83,
+        "vol_ratio": 1.1,
+        "above_ma50": false,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "evening_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -77,39 +77,39 @@
       }
     },
     "weekly": {
-      "signal": "WATCH",
-      "score": 39.2,
-      "reason": "Depressed score (39.2) but not at confirmed range high | Bearish divergence detected",
+      "signal": "PEAK",
+      "score": 28.8,
+      "reason": "Low confluence score (28.8) at range high | Bearish divergence detected | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 45.0
+        "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 52.1584,
-        "stoch_k": 37.2916,
-        "stoch_d": 30.7353,
-        "macd": 2.8526,
-        "macd_signal": 5.6363,
-        "macd_hist": -2.7837,
-        "bb_upper": 209.4294,
-        "bb_mid": 168.1034,
-        "bb_lower": 126.7773,
-        "atr": 22.8413,
-        "ma50": 140.6866,
+        "rsi": 48.6726,
+        "stoch_k": 33.5292,
+        "stoch_d": 29.4812,
+        "macd": 2.0213,
+        "macd_signal": 5.47,
+        "macd_hist": -3.4487,
+        "bb_upper": 209.4255,
+        "bb_mid": 167.5824,
+        "bb_lower": 125.7392,
+        "atr": 23.3772,
+        "ma50": 140.4782,
         "ma200": NaN,
-        "price": 163.25,
-        "vol_ratio": 0.36,
+        "price": 152.83,
+        "vol_ratio": 0.51,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
@@ -120,14 +120,14 @@
         "in_fib_zone": true
       },
       "trade_levels": {
-        "entry": null,
-        "stop_loss": null,
-        "tp1": null,
-        "tp2": null,
-        "tp3": null,
-        "risk": null,
-        "rr_ratio": null,
-        "trailing_stop": null,
+        "entry": 152.83,
+        "stop_loss": 187.9,
+        "tp1": 117.76,
+        "tp2": 82.69,
+        "tp3": 126.26,
+        "risk": 35.07,
+        "rr_ratio": "1:1.0 / 1:2.0 / 1:0.8",
+        "trailing_stop": 211.27,
         "trailing_k": 2.5
       },
       "support_levels": [

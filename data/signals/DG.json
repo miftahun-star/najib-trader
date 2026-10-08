@@ -1,7 +1,7 @@
 {
   "ticker": "DG",
   "market": "US",
-  "last_updated": "2026-10-08T09:47:30Z",
+  "last_updated": "2026-10-08T20:25:50Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
@@ -17,21 +17,21 @@
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 49.6583,
-        "stoch_k": 55.1732,
-        "stoch_d": 35.4043,
-        "macd": -0.8848,
-        "macd_signal": -0.799,
-        "macd_hist": -0.0858,
-        "bb_upper": 127.0901,
-        "bb_mid": 122.1296,
-        "bb_lower": 117.1691,
-        "atr": 3.6916,
-        "ma50": 123.6595,
-        "ma200": 125.3146,
-        "price": 122.14,
-        "vol_ratio": 0.71,
-        "above_ma50": false,
+        "rsi": 53.6745,
+        "stoch_k": 76.4538,
+        "stoch_d": 56.481,
+        "macd": -0.5899,
+        "macd_signal": -0.7572,
+        "macd_hist": 0.1673,
+        "bb_upper": 127.2757,
+        "bb_mid": 122.224,
+        "bb_lower": 117.1722,
+        "atr": 3.7015,
+        "ma50": 123.584,
+        "ma200": 125.2624,
+        "price": 124.27,
+        "vol_ratio": 0.95,
+        "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
@@ -79,38 +79,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "score": 53.0,
+      "reason": "Neutral zone (53.0) | Candle: bullish_engulfing (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 50.757,
-        "stoch_k": 44.6994,
-        "stoch_d": 51.5484,
-        "macd": 0.89,
-        "macd_signal": 0.7838,
-        "macd_hist": 0.1061,
-        "bb_upper": 133.2944,
-        "bb_mid": 119.8363,
-        "bb_lower": 106.3782,
-        "atr": 9.121,
-        "ma50": 123.16,
+        "rsi": 52.2687,
+        "stoch_k": 48.1085,
+        "stoch_d": 52.6847,
+        "macd": 1.0599,
+        "macd_signal": 0.8178,
+        "macd_hist": 0.2421,
+        "bb_upper": 133.5109,
+        "bb_mid": 119.9428,
+        "bb_lower": 106.3746,
+        "atr": 9.1653,
+        "ma50": 123.2026,
         "ma200": NaN,
-        "price": 122.14,
-        "vol_ratio": 0.46,
-        "above_ma50": false,
+        "price": 124.27,
+        "vol_ratio": 0.62,
+        "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -153,9 +153,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "consolidating",
+    "bias": "bullish",
     "ma200_position": "above",
-    "structure": "contracting (LH+HL)",
+    "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
