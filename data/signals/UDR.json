@@ -1,50 +1,50 @@
 {
   "ticker": "UDR",
   "market": "US",
-  "last_updated": "2026-10-09T09:52:28Z",
+  "last_updated": "2026-10-09T19:58:27Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "signal": "WATCH",
+      "score": 63.0,
+      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected | Candle: morning_star (bullish)",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "divergence": 90.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 36.8569,
-        "stoch_k": 34.2993,
-        "stoch_d": 32.8697,
-        "macd": -0.7051,
-        "macd_signal": -0.7999,
-        "macd_hist": 0.0948,
-        "bb_upper": 35.0454,
-        "bb_mid": 33.9856,
-        "bb_lower": 32.9257,
-        "atr": 0.5931,
-        "ma50": 35.9202,
-        "ma200": 36.4051,
-        "price": 33.57,
-        "vol_ratio": 1.14,
+        "rsi": 44.9747,
+        "stoch_k": 43.1819,
+        "stoch_d": 37.3344,
+        "macd": -0.6268,
+        "macd_signal": -0.7653,
+        "macd_hist": 0.1385,
+        "bb_upper": 34.8982,
+        "bb_mid": 33.9427,
+        "bb_lower": 32.9873,
+        "atr": 0.6021,
+        "ma50": 35.8427,
+        "ma200": 36.4015,
+        "price": 34.12,
+        "vol_ratio": 0.75,
         "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "morning_star",
+          "direction": "bullish"
         },
-        "bullish_divergence": false,
+        "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
-        "near_resistance": false,
+        "near_support": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -64,7 +64,8 @@
         39.01
       ],
       "resistance_levels": [
-        38.22
+        38.22,
+        34.28
       ],
       "fib_levels": {
         "0.0": 41.52,
@@ -78,44 +79,44 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 57.0,
-      "reason": "Neutral zone (57.0)",
+      "score": 59.4,
+      "reason": "Neutral zone (59.4) | Candle: bullish_engulfing (bullish)",
       "components": {
-        "rsi_stoch": 69.9,
+        "rsi_stoch": 67.2,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 36.0321,
-        "stoch_k": 4.0611,
-        "stoch_d": 3.3105,
-        "macd": -0.733,
-        "macd_signal": -0.0932,
-        "macd_hist": -0.6398,
-        "bb_upper": 41.6452,
-        "bb_mid": 37.1711,
-        "bb_lower": 32.6969,
+        "rsi": 39.2998,
+        "stoch_k": 6.2387,
+        "stoch_d": 4.0363,
+        "macd": -0.6892,
+        "macd_signal": -0.0844,
+        "macd_hist": -0.6047,
+        "bb_upper": 41.5854,
+        "bb_mid": 37.1986,
+        "bb_lower": 32.8117,
         "atr": 1.4608,
-        "ma50": 35.9687,
+        "ma50": 35.9797,
         "ma200": NaN,
-        "price": 33.57,
-        "vol_ratio": 0.85,
+        "price": 34.12,
+        "vol_ratio": 1.0,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": false,
         "in_fib_zone": false
       },
