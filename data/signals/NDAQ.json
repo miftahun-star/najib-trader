@@ -1,7 +1,7 @@
 {
   "ticker": "NDAQ",
   "market": "US",
-  "last_updated": "2026-10-12T10:03:39Z",
+  "last_updated": "2026-10-12T22:21:49Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
@@ -17,20 +17,20 @@
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 52.3828,
-        "stoch_k": 42.0311,
-        "stoch_d": 41.1213,
-        "macd": -0.496,
-        "macd_signal": -0.6105,
-        "macd_hist": 0.1145,
-        "bb_upper": 95.9103,
-        "bb_mid": 92.4015,
-        "bb_lower": 88.8927,
-        "atr": 2.0534,
-        "ma50": 94.528,
-        "ma200": 90.0596,
-        "price": 93.65,
-        "vol_ratio": 0.55,
+        "rsi": 54.7528,
+        "stoch_k": 53.1265,
+        "stoch_d": 44.7133,
+        "macd": -0.3203,
+        "macd_signal": -0.5525,
+        "macd_hist": 0.2321,
+        "bb_upper": 96.1207,
+        "bb_mid": 92.5375,
+        "bb_lower": 88.9543,
+        "atr": 1.9926,
+        "ma50": 94.5363,
+        "ma200": 90.046,
+        "price": 94.29,
+        "vol_ratio": 0.49,
         "above_ma50": false,
         "above_ma200": true
       },
@@ -76,39 +76,39 @@
       }
     },
     "weekly": {
-      "signal": "WATCH",
-      "score": 63.0,
-      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected | Candle: bullish_engulfing (bullish)",
+      "signal": "HOLD",
+      "score": 57.0,
+      "reason": "Neutral zone (57.0) | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 53.3461,
-        "stoch_k": 63.0595,
-        "stoch_d": 65.7366,
-        "macd": 1.4605,
-        "macd_signal": 1.559,
-        "macd_hist": -0.0985,
-        "bb_upper": 101.7875,
-        "bb_mid": 91.1638,
-        "bb_lower": 80.5402,
-        "atr": 5.1274,
-        "ma50": 89.8295,
+        "rsi": 54.1993,
+        "stoch_k": 57.1877,
+        "stoch_d": 62.2445,
+        "macd": 1.4622,
+        "macd_signal": 1.5384,
+        "macd_hist": -0.0762,
+        "bb_upper": 101.9966,
+        "bb_mid": 91.2844,
+        "bb_lower": 80.5722,
+        "atr": 4.847,
+        "ma50": 90.0278,
         "ma200": NaN,
-        "price": 93.65,
-        "vol_ratio": 0.85,
+        "price": 94.29,
+        "vol_ratio": 0.1,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "bullish_engulfing",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -147,9 +147,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
+    "bias": "volatile",
     "ma200_position": "above",
-    "structure": "uptrend (HH+HL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
