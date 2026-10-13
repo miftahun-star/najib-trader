@@ -1,36 +1,36 @@
 {
   "ticker": "BBRI.JK",
   "market": "IHSG",
-  "last_updated": "2026-10-12T22:21:14Z",
+  "last_updated": "2026-10-13T09:55:52Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 55.8,
+      "reason": "Neutral zone (55.8)",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 52.9,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 43.7352,
-        "stoch_k": 20.067,
-        "stoch_d": 20.3956,
-        "macd": -39.0142,
-        "macd_signal": -23.4784,
-        "macd_hist": -15.5357,
-        "bb_upper": 3396.2273,
-        "bb_mid": 3189.0,
-        "bb_lower": 2981.7727,
-        "atr": 77.5206,
-        "ma50": 3188.2,
-        "ma200": 3211.6919,
-        "price": 3100.0,
-        "vol_ratio": 1.0,
+        "rsi": 42.208,
+        "stoch_k": 17.6587,
+        "stoch_d": 18.1741,
+        "macd": -40.0777,
+        "macd_signal": -26.7983,
+        "macd_hist": -13.2794,
+        "bb_upper": 3360.066,
+        "bb_mid": 3173.0,
+        "bb_lower": 2985.934,
+        "atr": 76.9834,
+        "ma50": 3190.0,
+        "ma200": 3210.3909,
+        "price": 3080.0,
+        "vol_ratio": 0.69,
         "above_ma50": false,
         "above_ma200": false
       },
@@ -44,8 +44,8 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": true,
-        "near_resistance": true,
-        "in_fib_zone": false
+        "near_resistance": false,
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -77,38 +77,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 48.1338,
-        "stoch_k": 58.3387,
-        "stoch_d": 67.5532,
-        "macd": -0.5068,
-        "macd_signal": -23.0001,
-        "macd_hist": 22.4933,
-        "bb_upper": 3421.947,
-        "bb_mid": 3039.0,
-        "bb_lower": 2656.053,
-        "atr": 192.9735,
-        "ma50": 3242.4535,
+        "rsi": 47.3501,
+        "stoch_k": 52.0911,
+        "stoch_d": 59.4437,
+        "macd": -5.4258,
+        "macd_signal": -19.4852,
+        "macd_hist": 14.0594,
+        "bb_upper": 3426.4945,
+        "bb_mid": 3045.5,
+        "bb_lower": 2664.5055,
+        "atr": 184.1858,
+        "ma50": 3231.9994,
         "ma200": NaN,
-        "price": 3100.0,
-        "vol_ratio": 0.55,
+        "price": 3080.0,
+        "vol_ratio": 0.09,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -147,9 +147,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "volatile",
+    "bias": "bullish",
     "ma200_position": "below",
-    "structure": "expanding (HH+LL)",
+    "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
