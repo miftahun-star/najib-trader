@@ -1,51 +1,51 @@
 {
   "ticker": "MCO",
   "market": "US",
-  "last_updated": "2026-10-13T09:56:24Z",
+  "last_updated": "2026-10-13T20:28:42Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.8,
-      "reason": "Neutral zone (47.8)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 35.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 53.2877,
-        "stoch_k": 64.419,
-        "stoch_d": 49.908,
-        "macd": -5.8014,
-        "macd_signal": -7.8091,
-        "macd_hist": 2.0077,
-        "bb_upper": 478.9712,
-        "bb_mid": 460.5285,
-        "bb_lower": 442.0858,
-        "atr": 9.951,
-        "ma50": 477.9501,
-        "ma200": 468.3219,
-        "price": 470.5,
-        "vol_ratio": 0.69,
+        "rsi": 48.9977,
+        "stoch_k": 68.8332,
+        "stoch_d": 60.2456,
+        "macd": -5.0045,
+        "macd_signal": -7.2482,
+        "macd_hist": 2.2437,
+        "bb_upper": 478.6392,
+        "bb_mid": 460.377,
+        "bb_lower": 442.1148,
+        "atr": 10.1653,
+        "ma50": 477.5859,
+        "ma200": 468.0733,
+        "price": 464.13,
+        "vol_ratio": 0.7,
         "above_ma50": false,
-        "above_ma200": true
+        "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": true,
-        "near_resistance": true,
-        "in_fib_zone": true
+        "near_resistance": false,
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -68,48 +68,48 @@
       ],
       "fib_levels": {
         "0.0": 522.21,
-        "23.6": 499.73,
-        "38.2": 485.83,
-        "50.0": 474.6,
-        "61.8": 463.36,
-        "78.6": 447.36,
-        "100.0": 426.99
+        "23.6": 501.69,
+        "38.2": 489.0,
+        "50.0": 478.74,
+        "61.8": 468.49,
+        "78.6": 453.88,
+        "100.0": 435.28
       }
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 65.2,
-      "reason": "Elevated score (65.2) but not at confirmed range low | Bullish divergence detected",
+      "score": 61.5,
+      "reason": "Elevated score (61.5) but not at confirmed range low | Bullish divergence detected | Candle: shooting_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 25.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 49.8171,
-        "stoch_k": 24.5695,
-        "stoch_d": 25.022,
-        "macd": 0.4992,
-        "macd_signal": 3.1562,
-        "macd_hist": -2.657,
-        "bb_upper": 516.7876,
-        "bb_mid": 474.5662,
-        "bb_lower": 432.3448,
-        "atr": 25.2711,
-        "ma50": 470.9741,
+        "rsi": 48.1283,
+        "stoch_k": 22.0476,
+        "stoch_d": 24.1814,
+        "macd": -0.0089,
+        "macd_signal": 3.0546,
+        "macd_hist": -3.0635,
+        "bb_upper": 516.6938,
+        "bb_mid": 474.2477,
+        "bb_lower": 431.8017,
+        "atr": 25.6556,
+        "ma50": 470.8467,
         "ma200": NaN,
-        "price": 470.5,
-        "vol_ratio": 0.14,
+        "price": 464.13,
+        "vol_ratio": 0.29,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "shooting_star",
+          "direction": "bearish"
         },
         "bullish_divergence": true,
         "bearish_divergence": true,
@@ -131,7 +131,8 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        452.58
+        452.58,
+        386.83
       ],
       "resistance_levels": [
         511.95
