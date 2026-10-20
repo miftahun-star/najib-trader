@@ -1,50 +1,50 @@
 {
   "ticker": "NXPI",
   "market": "US",
-  "last_updated": "2026-10-20T08:05:25Z",
+  "last_updated": "2026-10-20T18:52:24Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 60.0,
-      "reason": "Neutral zone (60.0) | Bullish divergence detected",
+      "signal": "WATCH",
+      "score": 63.0,
+      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected | Candle: bullish_engulfing (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 48.4942,
-        "stoch_k": 38.2638,
-        "stoch_d": 29.2756,
-        "macd": -1.1588,
-        "macd_signal": -0.3761,
-        "macd_hist": -0.7828,
-        "bb_upper": 246.5924,
-        "bb_mid": 233.8775,
-        "bb_lower": 221.1626,
-        "atr": 7.9867,
-        "ma50": 229.4613,
-        "ma200": 244.32,
-        "price": 230.19,
-        "vol_ratio": 0.97,
+        "rsi": 55.7816,
+        "stoch_k": 46.3876,
+        "stoch_d": 37.5303,
+        "macd": -0.4346,
+        "macd_signal": -0.3878,
+        "macd_hist": -0.0469,
+        "bb_upper": 246.6968,
+        "bb_mid": 233.9218,
+        "bb_lower": 221.1467,
+        "atr": 8.3537,
+        "ma50": 229.5827,
+        "ma200": 244.4202,
+        "price": 238.455,
+        "vol_ratio": 0.47,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -66,49 +66,49 @@
         323.01
       ],
       "fib_levels": {
-        "0.0": 335.64,
-        "23.6": 307.48,
-        "38.2": 290.06,
-        "50.0": 275.98,
-        "61.8": 261.9,
-        "78.6": 241.86,
+        "0.0": 332.37,
+        "23.6": 304.99,
+        "38.2": 288.04,
+        "50.0": 274.35,
+        "61.8": 260.66,
+        "78.6": 241.16,
         "100.0": 216.33
       }
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 45.3,
-      "reason": "Neutral zone (45.3)",
+      "score": 48.5,
+      "reason": "Neutral zone (48.5) | Candle: hammer (bullish)",
       "components": {
-        "rsi_stoch": 52.5,
+        "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 45.465,
-        "stoch_k": 17.9987,
-        "stoch_d": 20.8791,
-        "macd": -5.497,
-        "macd_signal": -2.5869,
-        "macd_hist": -2.9101,
-        "bb_upper": 305.5274,
-        "bb_mid": 249.6111,
-        "bb_lower": 193.6947,
-        "atr": 19.836,
-        "ma50": 238.7393,
+        "rsi": 48.4531,
+        "stoch_k": 22.3802,
+        "stoch_d": 22.3396,
+        "macd": -4.8377,
+        "macd_signal": -2.455,
+        "macd_hist": -2.3827,
+        "bb_upper": 305.4564,
+        "bb_mid": 250.0243,
+        "bb_lower": 194.5922,
+        "atr": 20.3108,
+        "ma50": 238.9046,
         "ma200": NaN,
-        "price": 230.19,
-        "vol_ratio": 0.17,
+        "price": 238.455,
+        "vol_ratio": 0.25,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
