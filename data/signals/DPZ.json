@@ -1,36 +1,36 @@
 {
   "ticker": "DPZ",
   "market": "US",
-  "last_updated": "2026-10-20T08:05:20Z",
+  "last_updated": "2026-10-20T18:52:17Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "signal": "WATCH",
+      "score": 39.2,
+      "reason": "Depressed score (39.2) but not at confirmed range high",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 48.7,
         "divergence": 50.0,
         "candle_pattern": 50.0,
-        "bb_touch": 50.0,
+        "bb_touch": 15.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 48.9778,
-        "stoch_k": 69.0057,
-        "stoch_d": 58.3401,
-        "macd": -2.8931,
-        "macd_signal": -4.7816,
-        "macd_hist": 1.8885,
-        "bb_upper": 312.2409,
-        "bb_mid": 300.316,
-        "bb_lower": 288.3911,
-        "atr": 9.8901,
-        "ma50": 318.936,
-        "ma200": 343.3591,
-        "price": 305.42,
-        "vol_ratio": 1.09,
+        "rsi": 56.8668,
+        "stoch_k": 81.0715,
+        "stoch_d": 69.8111,
+        "macd": -1.6665,
+        "macd_signal": -4.1586,
+        "macd_hist": 2.4921,
+        "bb_upper": 315.0022,
+        "bb_mid": 301.265,
+        "bb_lower": 287.5278,
+        "atr": 10.014,
+        "ma50": 318.3438,
+        "ma200": 342.8498,
+        "price": 316.1,
+        "vol_ratio": 0.56,
         "above_ma50": false,
         "above_ma200": false
       },
@@ -41,11 +41,11 @@
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "none",
+        "bb_touch": "upper",
         "volume_climax": false,
         "near_support": false,
         "near_resistance": true,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -60,7 +60,7 @@
       },
       "support_levels": [
         290.81,
-        327.86
+        331.55
       ],
       "resistance_levels": [
         319.59,
@@ -79,44 +79,44 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "score": 56.0,
+      "reason": "Neutral zone (56.0) | Candle: bullish_engulfing (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 41.7053,
-        "stoch_k": 27.6326,
-        "stoch_d": 23.1166,
-        "macd": -12.5562,
-        "macd_signal": -12.667,
-        "macd_hist": 0.1108,
-        "bb_upper": 357.8356,
-        "bb_mid": 318.359,
-        "bb_lower": 278.8825,
-        "atr": 22.53,
-        "ma50": 352.9845,
+        "rsi": 45.6969,
+        "stoch_k": 31.7306,
+        "stoch_d": 24.4825,
+        "macd": -11.7043,
+        "macd_signal": -12.4966,
+        "macd_hist": 0.7923,
+        "bb_upper": 357.919,
+        "bb_mid": 318.893,
+        "bb_lower": 279.8671,
+        "atr": 23.1099,
+        "ma50": 353.1981,
         "ma200": NaN,
-        "price": 305.42,
-        "vol_ratio": 0.23,
+        "price": 316.1,
+        "vol_ratio": 0.34,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": false,
         "in_fib_zone": false
       },
@@ -136,7 +136,8 @@
         287.05
       ],
       "resistance_levels": [
-        484.2
+        484.2,
+        446.02
       ],
       "fib_levels": {
         "0.0": 484.75,

@@ -1,38 +1,38 @@
 {
   "ticker": "MSCI",
   "market": "US",
-  "last_updated": "2026-10-20T08:05:25Z",
+  "last_updated": "2026-10-20T18:52:24Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 59.2,
-      "reason": "Neutral zone (59.2) | Bullish divergence detected",
+      "score": 58.5,
+      "reason": "Neutral zone (58.5) | Bullish divergence detected",
       "components": {
-        "rsi_stoch": 46.1,
+        "rsi_stoch": 50.0,
         "divergence": 90.0,
         "candle_pattern": 50.0,
-        "bb_touch": 50.0,
-        "volume_climax": 80.0,
-        "sr_fib": 30.0
+        "bb_touch": 15.0,
+        "volume_climax": 65.0,
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 53.0888,
-        "stoch_k": 83.1177,
-        "stoch_d": 82.5554,
-        "macd": 2.9258,
-        "macd_signal": 0.6395,
-        "macd_hist": 2.2863,
-        "bb_upper": 576.6625,
-        "bb_mid": 555.0475,
-        "bb_lower": 533.4325,
-        "atr": 11.1949,
-        "ma50": 558.5165,
-        "ma200": 569.3315,
-        "price": 563.49,
-        "vol_ratio": 2.11,
+        "rsi": 64.7174,
+        "stoch_k": 75.335,
+        "stoch_d": 80.835,
+        "macd": 4.9093,
+        "macd_signal": 1.4934,
+        "macd_hist": 3.4158,
+        "bb_upper": 583.2818,
+        "bb_mid": 557.0628,
+        "bb_lower": 530.8437,
+        "atr": 13.4034,
+        "ma50": 559.0787,
+        "ma200": 569.4824,
+        "price": 589.185,
+        "vol_ratio": 1.55,
         "above_ma50": true,
-        "above_ma200": false
+        "above_ma200": true
       },
       "patterns": {
         "candle": {
@@ -41,11 +41,11 @@
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
-        "bb_touch": "none",
-        "volume_climax": true,
+        "bb_touch": "upper",
+        "volume_climax": false,
         "near_support": false,
-        "near_resistance": true,
-        "in_fib_zone": false
+        "near_resistance": false,
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -77,32 +77,32 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 49.2,
-      "reason": "Neutral zone (49.2)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 45.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 49.1624,
-        "stoch_k": 31.0075,
-        "stoch_d": 22.4119,
-        "macd": -3.6806,
-        "macd_signal": -2.2997,
-        "macd_hist": -1.3809,
-        "bb_upper": 613.8944,
-        "bb_mid": 570.3986,
-        "bb_lower": 526.9028,
-        "atr": 29.4212,
-        "ma50": 567.0737,
+        "rsi": 54.765,
+        "stoch_k": 39.9295,
+        "stoch_d": 25.3859,
+        "macd": -1.6308,
+        "macd_signal": -1.8897,
+        "macd_hist": 0.2589,
+        "bb_upper": 615.833,
+        "bb_mid": 571.6834,
+        "bb_lower": 527.5338,
+        "atr": 32.0313,
+        "ma50": 567.5876,
         "ma200": NaN,
-        "price": 563.49,
-        "vol_ratio": 0.41,
-        "above_ma50": false,
+        "price": 589.185,
+        "vol_ratio": 0.71,
+        "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
@@ -116,7 +116,7 @@
         "volume_climax": false,
         "near_support": false,
         "near_resistance": true,
-        "in_fib_zone": true
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -133,8 +133,7 @@
         523.51
       ],
       "resistance_levels": [
-        579.4,
-        628.23
+        601.6
       ],
       "fib_levels": {
         "0.0": 642.47,
@@ -149,7 +148,7 @@
   },
   "yearly_trend": {
     "bias": "bearish",
-    "ma200_position": "below",
+    "ma200_position": "above",
     "structure": "downtrend (LH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
