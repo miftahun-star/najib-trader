@@ -1,50 +1,50 @@
 {
   "ticker": "ECHO",
   "market": "US",
-  "last_updated": "2026-10-21T08:10:32Z",
+  "last_updated": "2026-10-21T19:04:19Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 53.5,
-      "reason": "Neutral zone (53.5)",
+      "score": 53.0,
+      "reason": "Neutral zone (53.0) | Candle: morning_star (bullish)",
       "components": {
-        "rsi_stoch": 52.6,
+        "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 40.0814,
-        "stoch_k": 17.9233,
-        "stoch_d": 16.9377,
-        "macd": -1.2193,
-        "macd_signal": -0.1486,
-        "macd_hist": -1.0707,
-        "bb_upper": 99.9019,
-        "bb_mid": 91.3835,
-        "bb_lower": 82.8651,
-        "atr": 3.4432,
-        "ma50": 90.6692,
-        "ma200": 107.8554,
-        "price": 86.39,
-        "vol_ratio": 0.56,
-        "above_ma50": false,
+        "rsi": 52.1028,
+        "stoch_k": 30.288,
+        "stoch_d": 22.3262,
+        "macd": -0.9332,
+        "macd_signal": -0.3056,
+        "macd_hist": -0.6277,
+        "bb_upper": 99.8556,
+        "bb_mid": 91.353,
+        "bb_lower": 82.8504,
+        "atr": 3.7394,
+        "ma50": 90.7518,
+        "ma200": 107.7626,
+        "price": 92.11,
+        "vol_ratio": 1.07,
+        "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "morning_star",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
-        "near_resistance": false,
+        "near_support": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -59,8 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        90.75,
-        83.16,
+        87.49,
         108.13
       ],
       "resistance_levels": [
@@ -77,32 +76,32 @@
       }
     },
     "weekly": {
-      "signal": "HOLD",
-      "score": 42.2,
-      "reason": "Neutral zone (42.2) | Bearish divergence detected",
+      "signal": "WATCH",
+      "score": 39.2,
+      "reason": "Depressed score (39.2) but not at confirmed range high | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 65.0
+        "sr_fib": 45.0
       },
       "indicators": {
-        "rsi": 41.3402,
-        "stoch_k": 30.814,
-        "stoch_d": 39.332,
-        "macd": -4.4804,
-        "macd_signal": -4.018,
-        "macd_hist": -0.4624,
-        "bb_upper": 108.6232,
-        "bb_mid": 93.248,
-        "bb_lower": 77.8728,
-        "atr": 9.2131,
-        "ma50": 104.4764,
+        "rsi": 46.38,
+        "stoch_k": 41.1651,
+        "stoch_d": 42.7824,
+        "macd": -4.0241,
+        "macd_signal": -3.9267,
+        "macd_hist": -0.0974,
+        "bb_upper": 108.5814,
+        "bb_mid": 93.534,
+        "bb_lower": 78.4866,
+        "atr": 9.6833,
+        "ma50": 104.5908,
         "ma200": NaN,
-        "price": 86.39,
-        "vol_ratio": 0.18,
+        "price": 92.11,
+        "vol_ratio": 0.33,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -116,7 +115,7 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": true
       },
       "trade_levels": {
@@ -134,7 +133,8 @@
         20.68
       ],
       "resistance_levels": [
-        30.65
+        30.65,
+        90.16
       ],
       "fib_levels": {
         "0.0": 147.25,
