@@ -1,15 +1,15 @@
 {
   "ticker": "FDS",
   "market": "US",
-  "last_updated": "2026-10-22T08:11:25Z",
+  "last_updated": "2026-10-22T19:00:06Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 41.1,
-      "reason": "Neutral zone (41.1)",
+      "signal": "WATCH",
+      "score": 39.8,
+      "reason": "Depressed score (39.8) but not at confirmed range high",
       "components": {
-        "rsi_stoch": 31.9,
+        "rsi_stoch": 25.1,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 15.0,
@@ -17,20 +17,20 @@
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 70.9755,
-        "stoch_k": 93.8024,
-        "stoch_d": 90.7837,
-        "macd": 8.1578,
-        "macd_signal": 3.7636,
-        "macd_hist": 4.3943,
-        "bb_upper": 317.5695,
-        "bb_mid": 284.429,
-        "bb_lower": 251.2885,
-        "atr": 11.1073,
-        "ma50": 287.1456,
-        "ma200": 247.7871,
-        "price": 319.91,
-        "vol_ratio": 0.69,
+        "rsi": 75.8654,
+        "stoch_k": 96.0129,
+        "stoch_d": 93.0944,
+        "macd": 10.5245,
+        "macd_signal": 5.1157,
+        "macd_hist": 5.4087,
+        "bb_upper": 327.0193,
+        "bb_mid": 287.6065,
+        "bb_lower": 248.1937,
+        "atr": 11.7367,
+        "ma50": 288.3027,
+        "ma200": 248.0172,
+        "price": 334.8,
+        "vol_ratio": 0.67,
         "above_ma50": true,
         "above_ma200": true
       },
@@ -67,42 +67,42 @@
         264.79
       ],
       "fib_levels": {
-        "0.0": 320.7,
-        "23.6": 293.91,
-        "38.2": 277.34,
-        "50.0": 263.94,
-        "61.8": 250.54,
-        "78.6": 231.47,
+        "0.0": 339.83,
+        "23.6": 308.52,
+        "38.2": 289.16,
+        "50.0": 273.5,
+        "61.8": 257.85,
+        "78.6": 235.57,
         "100.0": 207.18
       }
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 44.8,
-      "reason": "Neutral zone (44.8)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
-        "bb_touch": 50.0,
+        "bb_touch": 15.0,
         "volume_climax": 50.0,
-        "sr_fib": 15.0
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 62.8557,
-        "stoch_k": 78.9287,
-        "stoch_d": 64.968,
-        "macd": 13.1513,
-        "macd_signal": 9.2367,
-        "macd_hist": 3.9147,
-        "bb_upper": 325.8009,
-        "bb_mid": 271.3261,
-        "bb_lower": 216.8514,
-        "atr": 25.8841,
-        "ma50": 254.0242,
+        "rsi": 65.4059,
+        "stoch_k": 77.5855,
+        "stoch_d": 64.5203,
+        "macd": 14.3391,
+        "macd_signal": 9.4742,
+        "macd_hist": 4.8649,
+        "bb_upper": 329.6592,
+        "bb_mid": 272.0706,
+        "bb_lower": 214.4821,
+        "atr": 27.2511,
+        "ma50": 254.322,
         "ma200": NaN,
-        "price": 319.91,
-        "vol_ratio": 0.42,
+        "price": 334.8,
+        "vol_ratio": 0.54,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -113,10 +113,10 @@
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "none",
+        "bb_touch": "upper",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": true,
+        "near_resistance": false,
         "in_fib_zone": true
       },
       "trade_levels": {
@@ -132,12 +132,12 @@
       },
       "support_levels": [
         193.88,
-        254.24
+        254.24,
+        409.21
       ],
       "resistance_levels": [
-        296.37,
-        461.69,
-        236.63
+        279.3,
+        461.69
       ],
       "fib_levels": {
         "0.0": 484.47,
@@ -152,7 +152,7 @@
   },
   "yearly_trend": {
     "bias": "bullish",
-    "ma200_position": "below",
+    "ma200_position": "above",
     "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
