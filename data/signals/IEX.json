@@ -1,37 +1,37 @@
 {
   "ticker": "IEX",
   "market": "US",
-  "last_updated": "2026-10-22T08:11:27Z",
+  "last_updated": "2026-10-22T19:00:08Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 53.0,
+      "reason": "Neutral zone (53.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
-        "bb_touch": 50.0,
+        "bb_touch": 85.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 35.0
       },
       "indicators": {
-        "rsi": 56.957,
-        "stoch_k": 52.4638,
-        "stoch_d": 57.4064,
-        "macd": 2.0509,
-        "macd_signal": 2.113,
-        "macd_hist": -0.0622,
-        "bb_upper": 239.7528,
-        "bb_mid": 233.1562,
-        "bb_lower": 226.5596,
-        "atr": 4.5073,
-        "ma50": 230.1902,
-        "ma200": 213.1475,
-        "price": 235.43,
-        "vol_ratio": 1.05,
-        "above_ma50": true,
+        "rsi": 39.1521,
+        "stoch_k": 36.9299,
+        "stoch_d": 48.6506,
+        "macd": 1.1334,
+        "macd_signal": 1.9171,
+        "macd_hist": -0.7838,
+        "bb_upper": 240.2355,
+        "bb_mid": 233.0035,
+        "bb_lower": 225.7715,
+        "atr": 5.0525,
+        "ma50": 229.8895,
+        "ma200": 213.3642,
+        "price": 224.72,
+        "vol_ratio": 0.73,
+        "above_ma50": false,
         "above_ma200": true
       },
       "patterns": {
@@ -41,11 +41,11 @@
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "none",
+        "bb_touch": "lower",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": false,
-        "in_fib_zone": false
+        "near_support": true,
+        "near_resistance": true,
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -59,8 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        216.95,
-        228.44
+        220.4
       ],
       "resistance_levels": [
         241.1,
@@ -68,55 +67,55 @@
       ],
       "fib_levels": {
         "0.0": 243.03,
-        "23.6": 234.06,
-        "38.2": 228.52,
-        "50.0": 224.04,
-        "61.8": 219.56,
-        "78.6": 213.18,
-        "100.0": 205.05
+        "23.6": 234.64,
+        "38.2": 229.45,
+        "50.0": 225.26,
+        "61.8": 221.07,
+        "78.6": 215.1,
+        "100.0": 207.5
       }
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 44.0,
+      "reason": "Neutral zone (44.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 65.363,
-        "stoch_k": 69.7854,
-        "stoch_d": 66.4592,
-        "macd": 7.5378,
-        "macd_signal": 8.0845,
-        "macd_hist": -0.5467,
-        "bb_upper": 239.9505,
-        "bb_mid": 227.9439,
-        "bb_lower": 215.9372,
-        "atr": 9.6884,
-        "ma50": 206.9503,
+        "rsi": 53.2727,
+        "stoch_k": 55.6521,
+        "stoch_d": 61.7481,
+        "macd": 6.6834,
+        "macd_signal": 7.9136,
+        "macd_hist": -1.2302,
+        "bb_upper": 238.9558,
+        "bb_mid": 227.4084,
+        "bb_lower": 215.8609,
+        "atr": 10.1864,
+        "ma50": 206.7361,
         "ma200": NaN,
-        "price": 235.43,
-        "vol_ratio": 0.59,
+        "price": 224.72,
+        "vol_ratio": 0.73,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": false,
+        "near_support": true,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
