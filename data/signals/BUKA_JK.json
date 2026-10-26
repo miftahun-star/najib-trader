@@ -1,51 +1,51 @@
 {
   "ticker": "BUKA.JK",
   "market": "IHSG",
-  "last_updated": "2026-10-23T18:49:39Z",
+  "last_updated": "2026-10-26T08:20:46Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 49.2,
-      "reason": "Neutral zone (49.2)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 45.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 56.9544,
-        "stoch_k": 78.5714,
-        "stoch_d": 81.261,
-        "macd": 0.1304,
-        "macd_signal": -1.1095,
-        "macd_hist": 1.2399,
-        "bb_upper": 110.6311,
-        "bb_mid": 103.45,
-        "bb_lower": 96.2689,
-        "atr": 5.7661,
-        "ma50": 107.14,
-        "ma200": 127.845,
-        "price": 109.0,
-        "vol_ratio": 0.58,
-        "above_ma50": true,
+        "rsi": 45.6743,
+        "stoch_k": 59.5238,
+        "stoch_d": 74.5591,
+        "macd": -0.1292,
+        "macd_signal": -0.9134,
+        "macd_hist": 0.7843,
+        "bb_upper": 110.6082,
+        "bb_mid": 103.4,
+        "bb_lower": 96.1918,
+        "atr": 5.9257,
+        "ma50": 106.94,
+        "ma200": 127.535,
+        "price": 102.0,
+        "vol_ratio": 0.92,
+        "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
-        "in_fib_zone": true
+        "near_support": true,
+        "near_resistance": false,
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -59,56 +59,56 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        97.58
+        97.27
       ],
       "resistance_levels": [
         113.5,
         124.5
       ],
       "fib_levels": {
-        "0.0": 126.0,
-        "23.6": 117.5,
-        "38.2": 112.25,
-        "50.0": 108.0,
-        "61.8": 103.75,
-        "78.6": 97.7,
+        "0.0": 125.0,
+        "23.6": 116.74,
+        "38.2": 111.63,
+        "50.0": 107.5,
+        "61.8": 103.37,
+        "78.6": 97.49,
         "100.0": 90.0
       }
     },
     "weekly": {
-      "signal": "WATCH",
-      "score": 66.0,
-      "reason": "Elevated score (66.0) but not at confirmed range low | Bullish divergence detected | Candle: bullish_engulfing (bullish)",
+      "signal": "HOLD",
+      "score": 60.0,
+      "reason": "Neutral zone (60.0) | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 45.3906,
-        "stoch_k": 33.006,
-        "stoch_d": 30.5556,
-        "macd": -7.9684,
-        "macd_signal": -8.788,
-        "macd_hist": 0.8196,
-        "bb_upper": 121.3031,
-        "bb_mid": 107.5,
-        "bb_lower": 93.6969,
-        "atr": 12.6994,
-        "ma50": 132.7,
+        "rsi": 41.3082,
+        "stoch_k": 37.1429,
+        "stoch_d": 32.5198,
+        "macd": -7.7734,
+        "macd_signal": -8.5808,
+        "macd_hist": 0.8075,
+        "bb_upper": 120.7069,
+        "bb_mid": 106.95,
+        "bb_lower": 93.1931,
+        "atr": 12.3636,
+        "ma50": 131.4,
         "ma200": NaN,
-        "price": 109.0,
-        "vol_ratio": 1.09,
+        "price": 102.0,
+        "vol_ratio": 0.14,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "bullish_engulfing",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -134,8 +134,9 @@
         154.67
       ],
       "resistance_levels": [
-        140.86,
-        190.0
+        152.5,
+        190.0,
+        121.5
       ],
       "fib_levels": {
         "0.0": 198.0,
