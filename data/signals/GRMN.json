@@ -1,37 +1,37 @@
 {
   "ticker": "GRMN",
   "market": "US",
-  "last_updated": "2026-10-28T09:11:38Z",
+  "last_updated": "2026-10-28T20:01:30Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 46.1,
-      "reason": "Neutral zone (46.1)",
+      "score": 58.2,
+      "reason": "Neutral zone (58.2)",
       "components": {
-        "rsi_stoch": 45.5,
+        "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "volume_climax": 80.0,
+        "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 55.423,
-        "stoch_k": 83.607,
-        "stoch_d": 88.4205,
-        "macd": 2.7921,
-        "macd_signal": 1.3892,
-        "macd_hist": 1.4029,
-        "bb_upper": 300.0253,
-        "bb_mid": 283.0045,
-        "bb_lower": 265.9837,
-        "atr": 7.3399,
-        "ma50": 283.4048,
-        "ma200": 251.3666,
-        "price": 289.34,
-        "vol_ratio": 1.2,
-        "above_ma50": true,
+        "rsi": 39.1737,
+        "stoch_k": 61.3234,
+        "stoch_d": 78.1327,
+        "macd": 1.3591,
+        "macd_signal": 1.3832,
+        "macd_hist": -0.0241,
+        "bb_upper": 299.8303,
+        "bb_mid": 282.286,
+        "bb_lower": 264.7417,
+        "atr": 8.9774,
+        "ma50": 282.9284,
+        "ma200": 251.6843,
+        "price": 272.47,
+        "vol_ratio": 2.03,
+        "above_ma50": false,
         "above_ma200": true
       },
       "patterns": {
@@ -42,10 +42,10 @@
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
-        "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
-        "in_fib_zone": false
+        "volume_climax": true,
+        "near_support": true,
+        "near_resistance": false,
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -59,12 +59,12 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        232.35,
+        233.02,
         267.26
       ],
       "resistance_levels": [
         247.82,
-        295.01
+        293.01
       ],
       "fib_levels": {
         "0.0": 313.07,
@@ -79,44 +79,44 @@
     "weekly": {
       "signal": "HOLD",
       "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "reason": "Neutral zone (47.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 57.7215,
-        "stoch_k": 69.0232,
-        "stoch_d": 61.9003,
-        "macd": 12.5117,
-        "macd_signal": 13.1414,
-        "macd_hist": -0.6297,
-        "bb_upper": 323.7525,
-        "bb_mid": 273.5115,
-        "bb_lower": 223.2706,
-        "atr": 17.5386,
-        "ma50": 243.5418,
+        "rsi": 51.8096,
+        "stoch_k": 61.4234,
+        "stoch_d": 59.3671,
+        "macd": 11.1659,
+        "macd_signal": 12.8722,
+        "macd_hist": -1.7063,
+        "bb_upper": 322.3535,
+        "bb_mid": 272.668,
+        "bb_lower": 222.9826,
+        "atr": 18.9309,
+        "ma50": 243.2044,
         "ma200": NaN,
-        "price": 289.34,
-        "vol_ratio": 0.37,
+        "price": 272.47,
+        "vol_ratio": 0.75,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
+        "near_support": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -131,7 +131,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        193.87,
+        189.08,
         224.61,
         264.72
       ],

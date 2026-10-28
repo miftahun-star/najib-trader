@@ -1,47 +1,47 @@
 {
   "ticker": "HONA",
   "market": "US",
-  "last_updated": "2026-10-28T09:11:39Z",
+  "last_updated": "2026-10-28T20:01:30Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 46.5,
-      "reason": "Neutral zone (46.5)",
+      "score": 46.1,
+      "reason": "Neutral zone (46.1) | Candle: bullish_engulfing (bullish)",
       "components": {
-        "rsi_stoch": 47.5,
+        "rsi_stoch": 34.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
-        "bb_touch": 50.0,
-        "volume_climax": 50.0,
+        "candle_pattern": 90.0,
+        "bb_touch": 15.0,
+        "volume_climax": 65.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 58.1372,
-        "stoch_k": 81.9621,
-        "stoch_d": 73.2887,
-        "macd": 1.3132,
-        "macd_signal": -0.033,
-        "macd_hist": 1.3461,
-        "bb_upper": 169.5495,
-        "bb_mid": 159.646,
-        "bb_lower": 149.7425,
-        "atr": 5.8787,
-        "ma50": 160.1082,
+        "rsi": 66.4076,
+        "stoch_k": 92.7837,
+        "stoch_d": 82.914,
+        "macd": 2.3249,
+        "macd_signal": 0.4386,
+        "macd_hist": 1.8863,
+        "bb_upper": 173.0769,
+        "bb_mid": 160.749,
+        "bb_lower": 148.4211,
+        "atr": 6.445,
+        "ma50": 160.4336,
         "ma200": NaN,
-        "price": 167.9,
-        "vol_ratio": 0.99,
+        "price": 177.03,
+        "vol_ratio": 1.8,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "none",
+        "bb_touch": "upper",
         "volume_climax": false,
         "near_support": false,
         "near_resistance": true,
@@ -59,7 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        150.27
+        152.47
       ],
       "resistance_levels": [
         172.47,
@@ -78,9 +78,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "volatile",
+    "bias": "neutral",
     "ma200_position": "below",
-    "structure": "expanding (HH+LL)",
+    "structure": null,
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
