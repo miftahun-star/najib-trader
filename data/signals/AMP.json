@@ -1,51 +1,51 @@
 {
   "ticker": "AMP",
   "market": "US",
-  "last_updated": "2026-10-30T09:22:07Z",
+  "last_updated": "2026-10-30T19:48:54Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "WATCH",
-      "score": 60.8,
-      "reason": "Elevated score (60.8) but not at confirmed range low | Bullish divergence detected | Candle: bullish_engulfing (bullish)",
+      "score": 63.0,
+      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 15.0
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 47.6258,
-        "stoch_k": 46.1443,
-        "stoch_d": 43.4219,
-        "macd": -6.4669,
-        "macd_signal": -8.4345,
-        "macd_hist": 1.9676,
-        "bb_upper": 504.9811,
-        "bb_mid": 494.3455,
-        "bb_lower": 483.7099,
-        "atr": 11.8607,
-        "ma50": 520.7546,
-        "ma200": 491.0271,
-        "price": 497.9,
-        "vol_ratio": 1.47,
+        "rsi": 42.7318,
+        "stoch_k": 43.8126,
+        "stoch_d": 43.5541,
+        "macd": -6.3256,
+        "macd_signal": -8.0127,
+        "macd_hist": 1.6871,
+        "bb_upper": 505.0064,
+        "bb_mid": 494.298,
+        "bb_lower": 483.5895,
+        "atr": 11.991,
+        "ma50": 519.612,
+        "ma200": 490.9641,
+        "price": 489.96,
+        "vol_ratio": 0.82,
         "above_ma50": false,
-        "above_ma200": true
+        "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "bullish_engulfing",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
-        "in_fib_zone": true
+        "near_support": true,
+        "near_resistance": false,
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -68,20 +68,20 @@
       ],
       "fib_levels": {
         "0.0": 572.56,
-        "23.6": 541.55,
-        "38.2": 522.37,
-        "50.0": 506.87,
-        "61.8": 491.36,
-        "78.6": 469.29,
-        "100.0": 441.17
+        "23.6": 541.89,
+        "38.2": 522.92,
+        "50.0": 507.59,
+        "61.8": 492.26,
+        "78.6": 470.42,
+        "100.0": 442.62
       }
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 55.2,
-      "reason": "Neutral zone (55.2)",
+      "score": 55.9,
+      "reason": "Neutral zone (55.9)",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 53.3,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
@@ -89,20 +89,20 @@
         "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 47.2317,
-        "stoch_k": 20.1303,
-        "stoch_d": 23.0851,
-        "macd": 4.6784,
-        "macd_signal": 11.7365,
-        "macd_hist": -7.058,
-        "bb_upper": 588.8034,
-        "bb_mid": 519.1025,
-        "bb_lower": 449.4017,
+        "rsi": 44.5519,
+        "stoch_k": 17.334,
+        "stoch_d": 22.153,
+        "macd": 4.0451,
+        "macd_signal": 11.6098,
+        "macd_hist": -7.5647,
+        "bb_upper": 589.0028,
+        "bb_mid": 518.7055,
+        "bb_lower": 448.4083,
         "atr": 26.1303,
-        "ma50": 488.7109,
+        "ma50": 488.5521,
         "ma200": NaN,
-        "price": 497.9,
-        "vol_ratio": 1.08,
+        "price": 489.96,
+        "vol_ratio": 1.23,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -150,7 +150,7 @@
   },
   "yearly_trend": {
     "bias": "consolidating",
-    "ma200_position": "above",
+    "ma200_position": "below",
     "structure": "contracting (LH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
