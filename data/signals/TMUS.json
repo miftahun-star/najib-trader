@@ -1,36 +1,36 @@
 {
   "ticker": "TMUS",
   "market": "US",
-  "last_updated": "2026-11-02T10:23:43Z",
+  "last_updated": "2026-11-02T22:58:41Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "WATCH",
-      "score": 61.5,
-      "reason": "Elevated score (61.5) but not at confirmed range low | Bullish divergence detected",
+      "signal": "HOLD",
+      "score": 60.0,
+      "reason": "Neutral zone (60.0) | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 65.0,
+        "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 48.5579,
-        "stoch_k": 35.2901,
-        "stoch_d": 22.2626,
-        "macd": -4.7529,
-        "macd_signal": -4.9831,
-        "macd_hist": 0.2302,
-        "bb_upper": 170.6335,
-        "bb_mid": 155.806,
-        "bb_lower": 140.9785,
-        "atr": 5.9049,
-        "ma50": 167.023,
-        "ma200": 185.4684,
-        "price": 156.44,
-        "vol_ratio": 1.6,
+        "rsi": 52.3775,
+        "stoch_k": 56.0075,
+        "stoch_d": 36.0951,
+        "macd": -3.8068,
+        "macd_signal": -4.7478,
+        "macd_hist": 0.941,
+        "bb_upper": 169.9754,
+        "bb_mid": 155.5815,
+        "bb_lower": 141.1876,
+        "atr": 5.946,
+        "ma50": 166.5862,
+        "ma200": 185.3309,
+        "price": 160.15,
+        "vol_ratio": 0.99,
         "above_ma50": false,
         "above_ma200": false
       },
@@ -59,7 +59,8 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        169.63
+        169.63,
+        145.82
       ],
       "resistance_levels": [
         187.0
@@ -75,32 +76,32 @@
       }
     },
     "weekly": {
-      "signal": "WATCH",
-      "score": 62.3,
-      "reason": "Elevated score (62.3) but not at confirmed range low | Bullish divergence detected",
+      "signal": "HOLD",
+      "score": 60.0,
+      "reason": "Neutral zone (60.0) | Bullish divergence detected",
       "components": {
-        "rsi_stoch": 54.0,
+        "rsi_stoch": 50.0,
         "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 65.0,
+        "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 39.3499,
-        "stoch_k": 16.8163,
-        "stoch_d": 11.8068,
-        "macd": -10.2155,
-        "macd_signal": -8.2814,
-        "macd_hist": -1.9341,
-        "bb_upper": 198.2616,
-        "bb_mid": 173.0125,
-        "bb_lower": 147.7634,
-        "atr": 13.1438,
-        "ma50": 187.7254,
+        "rsi": 41.7831,
+        "stoch_k": 21.1756,
+        "stoch_d": 15.3638,
+        "macd": -9.81,
+        "macd_signal": -8.5917,
+        "macd_hist": -1.2184,
+        "bb_upper": 197.5957,
+        "bb_mid": 171.9886,
+        "bb_lower": 146.3815,
+        "atr": 12.6679,
+        "ma50": 186.8255,
         "ma200": NaN,
-        "price": 156.44,
-        "vol_ratio": 1.58,
+        "price": 160.15,
+        "vol_ratio": 0.28,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -129,7 +130,8 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        189.2
+        181.63,
+        219.47
       ],
       "resistance_levels": [
         263.04,
@@ -147,9 +149,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
+    "bias": "volatile",
     "ma200_position": "below",
-    "structure": "uptrend (HH+HL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
