@@ -1,37 +1,37 @@
 {
   "ticker": "TGT",
   "market": "US",
-  "last_updated": "2026-11-02T10:23:43Z",
+  "last_updated": "2026-11-02T22:58:42Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 51.262,
-        "stoch_k": 44.9438,
-        "stoch_d": 28.4449,
-        "macd": -1.1802,
-        "macd_signal": -1.1028,
-        "macd_hist": -0.0774,
-        "bb_upper": 158.1278,
-        "bb_mid": 153.0345,
-        "bb_lower": 147.9412,
-        "atr": 4.146,
-        "ma50": 157.1502,
-        "ma200": 132.7969,
-        "price": 154.38,
-        "vol_ratio": 1.34,
-        "above_ma50": false,
+        "rsi": 57.1558,
+        "stoch_k": 66.9944,
+        "stoch_d": 45.9947,
+        "macd": -0.6173,
+        "macd_signal": -1.0057,
+        "macd_hist": 0.3884,
+        "bb_upper": 158.9299,
+        "bb_mid": 153.304,
+        "bb_lower": 147.6781,
+        "atr": 4.2005,
+        "ma50": 157.009,
+        "ma200": 133.0481,
+        "price": 158.38,
+        "vol_ratio": 1.09,
+        "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
@@ -43,8 +43,8 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
-        "near_resistance": false,
+        "near_support": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -59,9 +59,9 @@
         "trailing_k": 2.5
       },
       "support_levels": [
+        145.31,
         152.66,
-        125.22,
-        145.3
+        125.22
       ],
       "resistance_levels": [
         158.56,
@@ -79,38 +79,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 53.8,
-      "reason": "Neutral zone (53.8) | Candle: hammer (bullish)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 75.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 60.9613,
-        "stoch_k": 54.8006,
-        "stoch_d": 58.9129,
-        "macd": 8.4652,
-        "macd_signal": 9.9416,
-        "macd_hist": -1.4764,
-        "bb_upper": 172.2568,
-        "bb_mid": 149.4334,
-        "bb_lower": 126.6099,
-        "atr": 8.6593,
-        "ma50": 126.7878,
+        "rsi": 64.0159,
+        "stoch_k": 53.1758,
+        "stoch_d": 55.5097,
+        "macd": 8.2577,
+        "macd_signal": 9.6052,
+        "macd_hist": -1.3475,
+        "bb_upper": 172.0197,
+        "bb_mid": 150.8652,
+        "bb_lower": 129.7106,
+        "atr": 8.3915,
+        "ma50": 128.25,
         "ma200": NaN,
-        "price": 154.38,
-        "vol_ratio": 0.98,
+        "price": 158.38,
+        "vol_ratio": 0.22,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "hammer",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -151,9 +151,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
+    "bias": "volatile",
     "ma200_position": "above",
-    "structure": "uptrend (HH+HL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
