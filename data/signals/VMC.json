@@ -1,51 +1,51 @@
 {
   "ticker": "VMC",
   "market": "US",
-  "last_updated": "2026-11-03T10:22:04Z",
+  "last_updated": "2026-11-03T20:44:21Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 40.8,
-      "reason": "Neutral zone (40.8)",
+      "score": 43.4,
+      "reason": "Neutral zone (43.4) | Candle: bearish_engulfing (bearish)",
       "components": {
-        "rsi_stoch": 30.2,
+        "rsi_stoch": 35.8,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
-        "bb_touch": 15.0,
+        "candle_pattern": 10.0,
+        "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 76.783,
-        "stoch_k": 91.287,
-        "stoch_d": 87.5616,
-        "macd": 7.4125,
-        "macd_signal": 3.7526,
-        "macd_hist": 3.6599,
-        "bb_upper": 286.1577,
-        "bb_mid": 258.9205,
-        "bb_lower": 231.6833,
-        "atr": 7.4601,
-        "ma50": 255.9762,
-        "ma200": 279.4103,
-        "price": 289.14,
-        "vol_ratio": 1.15,
+        "rsi": 70.216,
+        "stoch_k": 91.2314,
+        "stoch_d": 90.0135,
+        "macd": 8.0843,
+        "macd_signal": 4.6189,
+        "macd_hist": 3.4654,
+        "bb_upper": 289.7233,
+        "bb_mid": 260.6925,
+        "bb_lower": 231.6617,
+        "atr": 7.308,
+        "ma50": 256.1432,
+        "ma200": 279.3107,
+        "price": 284.29,
+        "vol_ratio": 0.49,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "upper",
+        "bb_touch": "none",
         "volume_climax": false,
         "near_support": true,
         "near_resistance": true,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -59,8 +59,8 @@
         "trailing_k": 2.5
       },
       "support_levels": [
+        265.07,
         240.66,
-        269.4,
         285.14
       ],
       "resistance_levels": [
@@ -80,38 +80,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "score": 45.5,
+      "reason": "Neutral zone (45.5) | Candle: shooting_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 25.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 45.0
       },
       "indicators": {
-        "rsi": 57.7356,
-        "stoch_k": 68.9968,
-        "stoch_d": 47.976,
-        "macd": -4.5164,
-        "macd_signal": -7.1642,
-        "macd_hist": 2.6478,
-        "bb_upper": 312.92,
-        "bb_mid": 271.9207,
-        "bb_lower": 230.9213,
+        "rsi": 55.9539,
+        "stoch_k": 65.9648,
+        "stoch_d": 46.9654,
+        "macd": -4.9033,
+        "macd_signal": -7.2416,
+        "macd_hist": 2.3383,
+        "bb_upper": 312.3044,
+        "bb_mid": 271.6782,
+        "bb_lower": 231.052,
         "atr": 16.6154,
-        "ma50": 282.6672,
+        "ma50": 282.5702,
         "ma200": NaN,
-        "price": 289.14,
-        "vol_ratio": 0.28,
+        "price": 284.29,
+        "vol_ratio": 0.39,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "shooting_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -119,7 +119,7 @@
         "volume_climax": false,
         "near_support": false,
         "near_resistance": true,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
