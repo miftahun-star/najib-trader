@@ -1,51 +1,51 @@
 {
   "ticker": "ALGN",
   "market": "US",
-  "last_updated": "2026-11-03T20:44:08Z",
+  "last_updated": "2026-11-04T21:00:53Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 51.0,
-      "reason": "Neutral zone (51.0) | Bullish divergence detected | Candle: bearish_engulfing (bearish)",
+      "signal": "WATCH",
+      "score": 61.4,
+      "reason": "Elevated score (61.4) but not at confirmed range low | Bullish divergence detected",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 49.7,
         "divergence": 90.0,
-        "candle_pattern": 10.0,
-        "bb_touch": 50.0,
-        "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "candle_pattern": 50.0,
+        "bb_touch": 15.0,
+        "volume_climax": 65.0,
+        "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 51.8478,
-        "stoch_k": 69.3501,
-        "stoch_d": 73.8707,
-        "macd": 1.0674,
-        "macd_signal": 0.4785,
-        "macd_hist": 0.5889,
-        "bb_upper": 158.9776,
-        "bb_mid": 148.8265,
-        "bb_lower": 138.6754,
-        "atr": 4.6203,
-        "ma50": 150.1224,
-        "ma200": 168.628,
-        "price": 151.42,
-        "vol_ratio": 0.37,
+        "rsi": 67.4027,
+        "stoch_k": 80.2149,
+        "stoch_d": 75.2583,
+        "macd": 2.0745,
+        "macd_signal": 0.7997,
+        "macd_hist": 1.2747,
+        "bb_upper": 161.6639,
+        "bb_mid": 150.086,
+        "bb_lower": 138.5081,
+        "atr": 5.3652,
+        "ma50": 150.2314,
+        "ma200": 168.6255,
+        "price": 164.9,
+        "vol_ratio": 1.59,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
-        "bb_touch": "none",
+        "bb_touch": "upper",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
-        "in_fib_zone": false
+        "near_support": true,
+        "near_resistance": false,
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -60,11 +60,11 @@
       },
       "support_levels": [
         165.25,
-        140.15
+        142.6
       ],
       "resistance_levels": [
-        186.53,
-        155.51
+        155.51,
+        189.47
       ],
       "fib_levels": {
         "0.0": 190.97,
@@ -78,31 +78,31 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 43.9763,
-        "stoch_k": 28.9951,
-        "stoch_d": 24.731,
-        "macd": -6.1125,
-        "macd_signal": -5.1846,
-        "macd_hist": -0.9279,
-        "bb_upper": 189.1129,
-        "bb_mid": 161.1935,
-        "bb_lower": 133.2741,
-        "atr": 11.6138,
-        "ma50": 167.3138,
+        "rsi": 52.5304,
+        "stoch_k": 39.1725,
+        "stoch_d": 28.1235,
+        "macd": -5.0372,
+        "macd_signal": -4.9695,
+        "macd_hist": -0.0677,
+        "bb_upper": 189.4422,
+        "bb_mid": 161.8675,
+        "bb_lower": 134.2928,
+        "atr": 12.4234,
+        "ma50": 167.5834,
         "ma200": NaN,
-        "price": 151.42,
-        "vol_ratio": 0.28,
+        "price": 164.9,
+        "vol_ratio": 0.68,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -115,7 +115,7 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": false,
         "in_fib_zone": false
       },
