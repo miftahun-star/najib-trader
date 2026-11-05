@@ -1,37 +1,37 @@
 {
   "ticker": "IEX",
   "market": "US",
-  "last_updated": "2026-11-05T10:08:24Z",
+  "last_updated": "2026-11-05T21:18:34Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "score": 45.2,
+      "reason": "Neutral zone (45.2) | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 50.0,
+        "divergence": 10.0,
         "candle_pattern": 50.0,
-        "bb_touch": 50.0,
+        "bb_touch": 85.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 50.3212,
-        "stoch_k": 70.9786,
-        "stoch_d": 71.8138,
-        "macd": 1.2575,
-        "macd_signal": 1.2873,
-        "macd_hist": -0.0298,
-        "bb_upper": 240.9905,
-        "bb_mid": 234.576,
-        "bb_lower": 228.1615,
-        "atr": 6.1929,
-        "ma50": 230.3098,
-        "ma200": 216.1449,
-        "price": 233.69,
-        "vol_ratio": 1.37,
-        "above_ma50": true,
+        "rsi": 37.6683,
+        "stoch_k": 48.6306,
+        "stoch_d": 63.3468,
+        "macd": 0.1895,
+        "macd_signal": 1.0677,
+        "macd_hist": -0.8782,
+        "bb_upper": 242.4117,
+        "bb_mid": 234.1185,
+        "bb_lower": 225.8253,
+        "atr": 6.7427,
+        "ma50": 230.064,
+        "ma200": 216.2694,
+        "price": 222.6,
+        "vol_ratio": 1.01,
+        "above_ma50": false,
         "above_ma200": true
       },
       "patterns": {
@@ -40,10 +40,10 @@
           "direction": null
         },
         "bullish_divergence": false,
-        "bearish_divergence": false,
-        "bb_touch": "none",
+        "bearish_divergence": true,
+        "bb_touch": "lower",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": true,
         "in_fib_zone": false
       },
@@ -63,7 +63,7 @@
       ],
       "resistance_levels": [
         241.46,
-        228.9
+        229.25
       ],
       "fib_levels": {
         "0.0": 243.8,
@@ -77,44 +77,44 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "score": 44.0,
+      "reason": "Neutral zone (44.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 60.7263,
-        "stoch_k": 54.1355,
-        "stoch_d": 56.2988,
-        "macd": 6.5064,
-        "macd_signal": 7.4454,
-        "macd_hist": -0.939,
-        "bb_upper": 239.803,
-        "bb_mid": 229.4795,
-        "bb_lower": 219.1559,
-        "atr": 10.5359,
-        "ma50": 210.1399,
+        "rsi": 49.772,
+        "stoch_k": 38.2631,
+        "stoch_d": 51.008,
+        "macd": 5.6217,
+        "macd_signal": 7.2685,
+        "macd_hist": -1.6468,
+        "bb_upper": 239.4849,
+        "bb_mid": 228.925,
+        "bb_lower": 218.365,
+        "atr": 10.9043,
+        "ma50": 209.9181,
         "ma200": NaN,
-        "price": 233.69,
-        "vol_ratio": 0.86,
+        "price": 222.6,
+        "vol_ratio": 1.1,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": true,
         "in_fib_zone": false
       },
@@ -145,7 +145,7 @@
         "50.0": 196.89,
         "61.8": 185.82,
         "78.6": 170.05,
-        "100.0": 149.97
+        "100.0": 149.98
       }
     }
   },
