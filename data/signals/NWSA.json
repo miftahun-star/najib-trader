@@ -1,38 +1,38 @@
 {
   "ticker": "NWSA",
   "market": "US",
-  "last_updated": "2026-11-05T10:08:26Z",
+  "last_updated": "2026-11-05T21:18:37Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 48.5,
-      "reason": "Neutral zone (48.5)",
+      "score": 58.2,
+      "reason": "Neutral zone (58.2)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
-        "bb_touch": 50.0,
-        "volume_climax": 65.0,
-        "sr_fib": 30.0
+        "bb_touch": 85.0,
+        "volume_climax": 80.0,
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 57.8958,
-        "stoch_k": 42.6791,
-        "stoch_d": 27.674,
-        "macd": 0.1164,
-        "macd_signal": 0.1501,
-        "macd_hist": -0.0337,
-        "bb_upper": 31.1434,
-        "bb_mid": 29.901,
-        "bb_lower": 28.6586,
-        "atr": 0.6998,
-        "ma50": 29.7331,
-        "ma200": 26.8664,
-        "price": 30.56,
-        "vol_ratio": 1.83,
-        "above_ma50": true,
-        "above_ma200": true
+        "rsi": 32.3775,
+        "stoch_k": 31.8829,
+        "stoch_d": 31.6038,
+        "macd": -0.1625,
+        "macd_signal": 0.0876,
+        "macd_hist": -0.25,
+        "bb_upper": 31.7155,
+        "bb_mid": 29.7765,
+        "bb_lower": 27.8375,
+        "atr": 0.9423,
+        "ma50": 29.6455,
+        "ma200": 26.8691,
+        "price": 26.48,
+        "vol_ratio": 2.63,
+        "above_ma50": false,
+        "above_ma200": false
       },
       "patterns": {
         "candle": {
@@ -41,10 +41,10 @@
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "none",
-        "volume_climax": false,
+        "bb_touch": "lower",
+        "volume_climax": true,
         "near_support": false,
-        "near_resistance": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -78,32 +78,32 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "score": 50.8,
+      "reason": "Neutral zone (50.8)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 55.0
       },
       "indicators": {
-        "rsi": 59.7735,
-        "stoch_k": 70.3383,
-        "stoch_d": 69.9311,
-        "macd": 0.9594,
-        "macd_signal": 0.9327,
-        "macd_hist": 0.0267,
-        "bb_upper": 31.9003,
-        "bb_mid": 28.8258,
-        "bb_lower": 25.7512,
-        "atr": 1.5679,
-        "ma50": 26.7127,
+        "rsi": 43.0735,
+        "stoch_k": 45.1514,
+        "stoch_d": 61.5355,
+        "macd": 0.6339,
+        "macd_signal": 0.8676,
+        "macd_hist": -0.2337,
+        "bb_upper": 31.7527,
+        "bb_mid": 28.6218,
+        "bb_lower": 25.4908,
+        "atr": 1.7533,
+        "ma50": 26.6311,
         "ma200": NaN,
-        "price": 30.56,
-        "vol_ratio": 0.77,
-        "above_ma50": true,
+        "price": 26.48,
+        "vol_ratio": 1.23,
+        "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
@@ -115,9 +115,9 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": true,
-        "in_fib_zone": false
+        "near_support": true,
+        "near_resistance": false,
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -135,8 +135,7 @@
         27.36
       ],
       "resistance_levels": [
-        27.53,
-        30.78
+        29.15
       ],
       "fib_levels": {
         "0.0": 31.55,
@@ -151,7 +150,7 @@
   },
   "yearly_trend": {
     "bias": "consolidating",
-    "ma200_position": "above",
+    "ma200_position": "below",
     "structure": "contracting (LH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }

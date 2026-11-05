@@ -1,50 +1,50 @@
 {
   "ticker": "JPM",
   "market": "US",
-  "last_updated": "2026-11-05T10:08:24Z",
+  "last_updated": "2026-11-05T21:18:35Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 47.8,
-      "reason": "Neutral zone (47.8)",
+      "score": 42.5,
+      "reason": "Neutral zone (42.5) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
-        "bb_touch": 15.0,
-        "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "candle_pattern": 10.0,
+        "bb_touch": 50.0,
+        "volume_climax": 65.0,
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 63.6275,
-        "stoch_k": 73.8865,
-        "stoch_d": 68.4849,
-        "macd": 1.0657,
-        "macd_signal": -0.7082,
-        "macd_hist": 1.7739,
-        "bb_upper": 346.3338,
-        "bb_mid": 336.6595,
-        "bb_lower": 326.9852,
-        "atr": 6.7585,
-        "ma50": 341.6401,
-        "ma200": 320.9003,
-        "price": 352.11,
-        "vol_ratio": 1.45,
-        "above_ma50": true,
+        "rsi": 48.9747,
+        "stoch_k": 57.3278,
+        "stoch_d": 63.477,
+        "macd": 0.8,
+        "macd_signal": -0.4066,
+        "macd_hist": 1.2066,
+        "bb_upper": 346.3119,
+        "bb_mid": 336.9555,
+        "bb_lower": 327.5991,
+        "atr": 7.9807,
+        "ma50": 341.2923,
+        "ma200": 321.0986,
+        "price": 337.34,
+        "vol_ratio": 1.73,
+        "above_ma50": false,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "upper",
+        "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
-        "near_resistance": false,
+        "near_support": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -63,53 +63,53 @@
         346.83
       ],
       "resistance_levels": [
-        341.18,
+        342.23,
         360.54
       ],
       "fib_levels": {
         "0.0": 364.68,
-        "23.6": 353.15,
-        "38.2": 346.02,
-        "50.0": 340.26,
-        "61.8": 334.49,
-        "78.6": 326.29,
-        "100.0": 315.83
+        "23.6": 354.36,
+        "38.2": 347.98,
+        "50.0": 342.82,
+        "61.8": 337.66,
+        "78.6": 330.32,
+        "100.0": 320.97
       }
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 46.2,
+      "reason": "Neutral zone (46.2) | Candle: shooting_star (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 25.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 59.9442,
-        "stoch_k": 39.554,
-        "stoch_d": 31.6966,
-        "macd": 6.585,
-        "macd_signal": 8.7965,
-        "macd_hist": -2.2115,
-        "bb_upper": 365.3778,
-        "bb_mid": 344.0109,
-        "bb_lower": 322.644,
-        "atr": 14.146,
-        "ma50": 319.9097,
+        "rsi": 52.783,
+        "stoch_k": 27.3761,
+        "stoch_d": 27.6372,
+        "macd": 5.4068,
+        "macd_signal": 8.5609,
+        "macd_hist": -3.1541,
+        "bb_upper": 364.481,
+        "bb_mid": 343.2724,
+        "bb_lower": 322.0637,
+        "atr": 14.6793,
+        "ma50": 319.6143,
         "ma200": NaN,
-        "price": 352.11,
-        "vol_ratio": 0.62,
+        "price": 337.34,
+        "vol_ratio": 0.95,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "shooting_star",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,

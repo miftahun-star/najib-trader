@@ -1,37 +1,37 @@
 {
   "ticker": "APP",
   "market": "US",
-  "last_updated": "2026-11-05T10:08:18Z",
+  "last_updated": "2026-11-05T21:18:26Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "WATCH",
-      "score": 63.0,
-      "reason": "Elevated score (63.0) but not at confirmed range low | Bullish divergence detected",
+      "signal": "HOLD",
+      "score": 57.5,
+      "reason": "Neutral zone (57.5) | Bullish divergence detected",
       "components": {
-        "rsi_stoch": 50.0,
+        "rsi_stoch": 48.5,
         "divergence": 90.0,
         "candle_pattern": 50.0,
-        "bb_touch": 50.0,
+        "bb_touch": 15.0,
         "volume_climax": 80.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 50.8092,
-        "stoch_k": 42.275,
-        "stoch_d": 21.957,
-        "macd": -12.6676,
-        "macd_signal": -13.6575,
-        "macd_hist": 0.9899,
-        "bb_upper": 291.3725,
-        "bb_mid": 262.749,
-        "bb_lower": 234.1255,
-        "atr": 14.1752,
-        "ma50": 290.8236,
-        "ma200": 410.84,
-        "price": 271.75,
-        "vol_ratio": 3.27,
-        "above_ma50": false,
+        "rsi": 71.783,
+        "stoch_k": 71.2194,
+        "stoch_d": 43.2831,
+        "macd": -3.7678,
+        "macd_signal": -11.6796,
+        "macd_hist": 7.9118,
+        "bb_upper": 316.8433,
+        "bb_mid": 266.548,
+        "bb_lower": 216.2527,
+        "atr": 19.847,
+        "ma50": 291.7834,
+        "ma200": 409.9577,
+        "price": 356.1,
+        "vol_ratio": 4.29,
+        "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
@@ -41,10 +41,10 @@
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
-        "bb_touch": "none",
+        "bb_touch": "upper",
         "volume_climax": true,
-        "near_support": true,
-        "near_resistance": true,
+        "near_support": false,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -65,7 +65,8 @@
       ],
       "resistance_levels": [
         331.91,
-        282.24
+        282.24,
+        429.37
       ],
       "fib_levels": {
         "0.0": 576.46,
@@ -79,31 +80,31 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "score": 54.5,
+      "reason": "Neutral zone (54.5)",
       "components": {
-        "rsi_stoch": 64.8,
+        "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "volume_climax": 65.0,
+        "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 38.0814,
-        "stoch_k": 8.1772,
-        "stoch_d": 4.0533,
-        "macd": -56.1804,
-        "macd_signal": -51.3236,
-        "macd_hist": -4.8568,
-        "bb_upper": 512.2973,
-        "bb_mid": 342.2265,
-        "bb_lower": 172.1557,
-        "atr": 49.692,
-        "ma50": 445.218,
+        "rsi": 49.5281,
+        "stoch_k": 21.4024,
+        "stoch_d": 8.4617,
+        "macd": -49.4517,
+        "macd_signal": -49.9779,
+        "macd_hist": 0.5262,
+        "bb_upper": 513.3094,
+        "bb_mid": 346.444,
+        "bb_lower": 179.5786,
+        "atr": 56.1124,
+        "ma50": 446.905,
         "ma200": NaN,
-        "price": 271.75,
-        "vol_ratio": 0.92,
+        "price": 356.1,
+        "vol_ratio": 1.69,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -116,7 +117,7 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": false,
         "in_fib_zone": false
       },
@@ -132,11 +133,11 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        329.64
+        329.64,
+        517.15
       ],
       "resistance_levels": [
-        522.76,
-        599.23,
+        560.99,
         741.81
       ],
       "fib_levels": {

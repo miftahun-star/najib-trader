@@ -1,36 +1,36 @@
 {
   "ticker": "GNRC",
   "market": "US",
-  "last_updated": "2026-11-05T10:08:23Z",
+  "last_updated": "2026-11-05T21:18:32Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 54.5,
-      "reason": "Neutral zone (54.5)",
+      "score": 56.8,
+      "reason": "Neutral zone (56.8)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
-        "bb_touch": 50.0,
+        "bb_touch": 85.0,
         "volume_climax": 65.0,
-        "sr_fib": 70.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 42.9606,
-        "stoch_k": 60.2083,
-        "stoch_d": 60.5906,
-        "macd": -1.734,
-        "macd_signal": -1.7422,
-        "macd_hist": 0.0082,
-        "bb_upper": 224.4155,
-        "bb_mid": 201.167,
-        "bb_lower": 177.9185,
-        "atr": 11.9993,
-        "ma50": 198.8422,
-        "ma200": 219.0661,
-        "price": 189.32,
-        "vol_ratio": 1.68,
+        "rsi": 35.4827,
+        "stoch_k": 40.7691,
+        "stoch_d": 55.9598,
+        "macd": -3.7204,
+        "macd_signal": -2.1379,
+        "macd_hist": -1.5825,
+        "bb_upper": 222.509,
+        "bb_mid": 198.5635,
+        "bb_lower": 174.618,
+        "atr": 12.6023,
+        "ma50": 198.1564,
+        "ma200": 219.0674,
+        "price": 172.33,
+        "vol_ratio": 1.78,
         "above_ma50": false,
         "above_ma200": false
       },
@@ -41,9 +41,9 @@
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "none",
+        "bb_touch": "lower",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": false,
         "in_fib_zone": false
       },
@@ -59,8 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        183.34,
-        206.19
+        189.05
       ],
       "resistance_levels": [
         228.0,
@@ -68,56 +67,56 @@
       ],
       "fib_levels": {
         "0.0": 296.44,
-        "23.6": 267.37,
-        "38.2": 249.38,
-        "50.0": 234.85,
-        "61.8": 220.31,
-        "78.6": 199.61,
-        "100.0": 173.25
+        "23.6": 266.34,
+        "38.2": 247.71,
+        "50.0": 232.66,
+        "61.8": 217.61,
+        "78.6": 196.18,
+        "100.0": 168.88
       }
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 44.8,
-      "reason": "Neutral zone (44.8)",
+      "score": 44.0,
+      "reason": "Neutral zone (44.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 15.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 43.2564,
-        "stoch_k": 30.9345,
-        "stoch_d": 33.6082,
-        "macd": -6.6434,
-        "macd_signal": -3.8815,
-        "macd_hist": -2.7619,
-        "bb_upper": 257.8075,
-        "bb_mid": 209.953,
-        "bb_lower": 162.0985,
-        "atr": 26.0751,
-        "ma50": 207.7506,
+        "rsi": 39.0533,
+        "stoch_k": 23.6248,
+        "stoch_d": 31.1717,
+        "macd": -7.9987,
+        "macd_signal": -4.1526,
+        "macd_hist": -3.8461,
+        "bb_upper": 259.0573,
+        "bb_mid": 209.1035,
+        "bb_lower": 159.1497,
+        "atr": 26.9844,
+        "ma50": 207.4108,
         "ma200": NaN,
-        "price": 189.32,
-        "vol_ratio": 0.69,
+        "price": 172.33,
+        "vol_ratio": 1.06,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": true,
-        "in_fib_zone": true
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -134,8 +133,7 @@
         149.77
       ],
       "resistance_levels": [
-        135.11,
-        166.76,
+        150.94,
         201.93,
         236.49
       ],
@@ -151,9 +149,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
-    "ma200_position": "above",
-    "structure": "uptrend (HH+HL)",
+    "bias": "volatile",
+    "ma200_position": "below",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
