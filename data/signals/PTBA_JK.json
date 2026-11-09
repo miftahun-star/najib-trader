@@ -1,43 +1,43 @@
 {
   "ticker": "PTBA.JK",
   "market": "IHSG",
-  "last_updated": "2026-11-06T20:40:31Z",
+  "last_updated": "2026-11-09T10:43:31Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 49.2,
-      "reason": "Neutral zone (49.2) | Candle: bearish_engulfing (bearish)",
+      "score": 55.2,
+      "reason": "Neutral zone (55.2)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 85.0
       },
       "indicators": {
-        "rsi": 43.6768,
-        "stoch_k": 48.6842,
-        "stoch_d": 55.9792,
-        "macd": -9.0826,
-        "macd_signal": 22.5475,
-        "macd_hist": -31.6301,
-        "bb_upper": 3416.6328,
-        "bb_mid": 3129.0,
-        "bb_lower": 2841.3672,
-        "atr": 174.3512,
-        "ma50": 3075.2,
-        "ma200": 2674.5584,
-        "price": 2950.0,
-        "vol_ratio": 0.81,
+        "rsi": 44.6807,
+        "stoch_k": 24.8904,
+        "stoch_d": 37.0492,
+        "macd": -24.3445,
+        "macd_signal": 6.793,
+        "macd_hist": -31.1375,
+        "bb_upper": 3384.4015,
+        "bb_mid": 3100.0,
+        "bb_lower": 2815.5985,
+        "atr": 160.5885,
+        "ma50": 3092.4,
+        "ma200": 2681.4255,
+        "price": 2970.0,
+        "vol_ratio": 0.31,
         "above_ma50": false,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -79,41 +79,41 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 44.0,
-      "reason": "Neutral zone (44.0) | Candle: evening_star (bearish)",
+      "score": 40.0,
+      "reason": "Neutral zone (40.0) | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
-        "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "divergence": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 54.0775,
-        "stoch_k": 71.7514,
-        "stoch_d": 69.4915,
-        "macd": 168.2237,
-        "macd_signal": 132.6715,
-        "macd_hist": 35.5522,
-        "bb_upper": 3504.5278,
-        "bb_mid": 2737.0,
-        "bb_lower": 1969.4722,
-        "atr": 270.4726,
-        "ma50": 2608.9882,
+        "rsi": 54.6022,
+        "stoch_k": 63.7163,
+        "stoch_d": 67.9431,
+        "macd": 157.2396,
+        "macd_signal": 137.986,
+        "macd_hist": 19.2536,
+        "bb_upper": 3523.4367,
+        "bb_mid": 2769.0,
+        "bb_lower": 2014.5633,
+        "atr": 256.1016,
+        "ma50": 2624.8467,
         "ma200": NaN,
-        "price": 2950.0,
-        "vol_ratio": 1.07,
+        "price": 2970.0,
+        "vol_ratio": 0.1,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "evening_star",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
-        "bearish_divergence": false,
+        "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
@@ -132,7 +132,8 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        2185.01
+        2185.01,
+        2652.4
       ],
       "resistance_levels": [
         2422.79
