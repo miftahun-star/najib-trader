@@ -1,50 +1,50 @@
 {
   "ticker": "CHTR",
   "market": "US",
-  "last_updated": "2026-11-09T10:43:46Z",
+  "last_updated": "2026-11-09T23:40:16Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 59.4,
-      "reason": "Neutral zone (59.4) | Bullish divergence detected",
+      "signal": "WATCH",
+      "score": 63.8,
+      "reason": "Elevated score (63.8) but not at confirmed range low | Bullish divergence detected | Candle: hammer (bullish)",
       "components": {
-        "rsi_stoch": 47.1,
+        "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
-        "volume_climax": 80.0,
-        "sr_fib": 30.0
+        "volume_climax": 50.0,
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 53.9354,
-        "stoch_k": 82.3454,
-        "stoch_d": 87.2742,
-        "macd": 0.2935,
-        "macd_signal": -2.2556,
-        "macd_hist": 2.5492,
-        "bb_upper": 122.3296,
-        "bb_mid": 110.3675,
-        "bb_lower": 98.4054,
-        "atr": 6.159,
-        "ma50": 120.9344,
-        "ma200": 163.116,
-        "price": 118.07,
-        "vol_ratio": 2.3,
-        "above_ma50": false,
+        "rsi": 56.775,
+        "stoch_k": 79.0787,
+        "stoch_d": 83.5678,
+        "macd": 0.8107,
+        "macd_signal": -1.6424,
+        "macd_hist": 2.4531,
+        "bb_upper": 123.5921,
+        "bb_mid": 111.3035,
+        "bb_lower": 99.0149,
+        "atr": 6.1219,
+        "ma50": 120.286,
+        "ma200": 162.7636,
+        "price": 121.2,
+        "vol_ratio": 1.2,
+        "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
         "bb_touch": "none",
-        "volume_climax": true,
+        "volume_climax": false,
         "near_support": false,
-        "near_resistance": true,
+        "near_resistance": false,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -79,38 +79,38 @@
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 63.2,
-      "reason": "Elevated score (63.2) but not at confirmed range low | Bullish divergence detected",
+      "score": 66.8,
+      "reason": "Elevated score (66.8) but not at confirmed range low | Bullish divergence detected | Candle: hammer (bullish)",
       "components": {
-        "rsi_stoch": 51.0,
+        "rsi_stoch": 50.0,
         "divergence": 90.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 75.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 38.6645,
-        "stoch_k": 19.2322,
-        "stoch_d": 14.3547,
-        "macd": -17.4499,
-        "macd_signal": -17.9843,
-        "macd_hist": 0.5344,
-        "bb_upper": 165.815,
-        "bb_mid": 130.5825,
-        "bb_lower": 95.35,
-        "atr": 15.5405,
-        "ma50": 169.5266,
+        "rsi": 40.5389,
+        "stoch_k": 26.5313,
+        "stoch_d": 20.098,
+        "macd": -16.2048,
+        "macd_signal": -17.6268,
+        "macd_hist": 1.422,
+        "bb_upper": 165.4044,
+        "bb_mid": 129.9605,
+        "bb_lower": 94.5166,
+        "atr": 14.833,
+        "ma50": 167.9482,
         "ma200": NaN,
-        "price": 118.07,
-        "vol_ratio": 1.24,
+        "price": 121.2,
+        "vol_ratio": 0.24,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "hammer",
+          "direction": "bullish"
         },
         "bullish_divergence": true,
         "bearish_divergence": false,
@@ -132,8 +132,8 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        193.9,
         117.8,
+        186.69,
         253.24,
         319.59
       ],

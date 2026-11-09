@@ -1,51 +1,51 @@
 {
   "ticker": "NDSN",
   "market": "US",
-  "last_updated": "2026-11-09T10:43:52Z",
+  "last_updated": "2026-11-09T23:40:22Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 57.5,
-      "reason": "Neutral zone (57.5)",
+      "score": 56.0,
+      "reason": "Neutral zone (56.0) | Candle: morning_star (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
-        "bb_touch": 85.0,
+        "candle_pattern": 90.0,
+        "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 65.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 37.3037,
-        "stoch_k": 28.4834,
-        "stoch_d": 54.8559,
-        "macd": -1.2709,
-        "macd_signal": 0.4003,
-        "macd_hist": -1.6712,
-        "bb_upper": 337.4534,
-        "bb_mid": 324.73,
-        "bb_lower": 312.0066,
-        "atr": 8.6235,
-        "ma50": 322.1967,
-        "ma200": 295.08,
-        "price": 309.86,
-        "vol_ratio": 1.1,
-        "above_ma50": false,
+        "rsi": 50.2918,
+        "stoch_k": 20.6844,
+        "stoch_d": 34.987,
+        "macd": -1.0462,
+        "macd_signal": 0.111,
+        "macd_hist": -1.1572,
+        "bb_upper": 336.839,
+        "bb_mid": 324.4,
+        "bb_lower": 311.961,
+        "atr": 9.2075,
+        "ma50": 322.2011,
+        "ma200": 295.3548,
+        "price": 323.84,
+        "vol_ratio": 0.74,
+        "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "morning_star",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "lower",
+        "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
-        "near_resistance": true,
-        "in_fib_zone": true
+        "near_support": false,
+        "near_resistance": false,
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -60,11 +60,11 @@
       },
       "support_levels": [
         311.85,
-        284.99
+        280.85
       ],
       "resistance_levels": [
         306.72,
-        336.28
+        336.16
       ],
       "fib_levels": {
         "0.0": 338.18,
@@ -78,38 +78,38 @@
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 31.0,
-      "reason": "Depressed score (31.0) but not at confirmed range high | Bearish divergence detected | Candle: bearish_engulfing (bearish)",
+      "score": 37.0,
+      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 52.5073,
-        "stoch_k": 53.9215,
-        "stoch_d": 65.0366,
-        "macd": 10.7713,
-        "macd_signal": 12.6123,
-        "macd_hist": -1.841,
-        "bb_upper": 341.2291,
-        "bb_mid": 311.6077,
-        "bb_lower": 281.9864,
-        "atr": 15.6568,
-        "ma50": 286.208,
+        "rsi": 58.9243,
+        "stoch_k": 52.2133,
+        "stoch_d": 57.9884,
+        "macd": 10.5245,
+        "macd_signal": 12.1973,
+        "macd_hist": -1.6728,
+        "bb_upper": 342.395,
+        "bb_mid": 312.7714,
+        "bb_lower": 283.1477,
+        "atr": 15.7389,
+        "ma50": 287.9901,
         "ma200": NaN,
-        "price": 309.86,
-        "vol_ratio": 1.06,
+        "price": 323.84,
+        "vol_ratio": 0.16,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
