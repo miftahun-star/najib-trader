@@ -1,36 +1,36 @@
 {
   "ticker": "CBRE",
   "market": "US",
-  "last_updated": "2026-11-16T10:26:54Z",
+  "last_updated": "2026-11-16T23:37:25Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 57.0,
-      "reason": "Neutral zone (57.0) | Bullish divergence detected",
+      "score": 60.0,
+      "reason": "Neutral zone (60.0) | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 49.7706,
-        "stoch_k": 51.9011,
-        "stoch_d": 56.2374,
-        "macd": 0.5004,
-        "macd_signal": 0.0974,
-        "macd_hist": 0.403,
-        "bb_upper": 142.9042,
-        "bb_mid": 131.9145,
-        "bb_lower": 120.9248,
-        "atr": 4.5389,
-        "ma50": 133.8762,
-        "ma200": 140.0176,
-        "price": 133.12,
-        "vol_ratio": 0.55,
+        "rsi": 49.8483,
+        "stoch_k": 49.6761,
+        "stoch_d": 51.9712,
+        "macd": 0.4179,
+        "macd_signal": 0.1615,
+        "macd_hist": 0.2564,
+        "bb_upper": 143.024,
+        "bb_mid": 132.0345,
+        "bb_lower": 121.045,
+        "atr": 4.3715,
+        "ma50": 133.5826,
+        "ma200": 139.8318,
+        "price": 133.17,
+        "vol_ratio": 0.78,
         "above_ma50": false,
         "above_ma200": false
       },
@@ -43,7 +43,7 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": true,
         "in_fib_zone": false
       },
@@ -59,8 +59,9 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        138.64,
-        124.81
+        124.81,
+        134.83,
+        144.08
       ],
       "resistance_levels": [
         144.62,
@@ -90,20 +91,20 @@
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 45.4903,
-        "stoch_k": 31.482,
-        "stoch_d": 22.7248,
-        "macd": -3.3256,
-        "macd_signal": -2.5568,
-        "macd_hist": -0.7688,
-        "bb_upper": 156.2662,
-        "bb_mid": 139.4475,
-        "bb_lower": 122.6288,
-        "atr": 9.9375,
-        "ma50": 143.9736,
+        "rsi": 45.5371,
+        "stoch_k": 35.5834,
+        "stoch_d": 29.239,
+        "macd": -3.1958,
+        "macd_signal": -2.6866,
+        "macd_hist": -0.5092,
+        "bb_upper": 156.0406,
+        "bb_mid": 139.027,
+        "bb_lower": 122.0134,
+        "atr": 9.3844,
+        "ma50": 143.4198,
         "ma200": NaN,
-        "price": 133.12,
-        "vol_ratio": 0.96,
+        "price": 133.17,
+        "vol_ratio": 0.22,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -132,7 +133,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        124.18,
+        124.48,
         148.37
       ],
       "resistance_levels": [
@@ -150,9 +151,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bearish",
+    "bias": "volatile",
     "ma200_position": "below",
-    "structure": "downtrend (LH+LL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }

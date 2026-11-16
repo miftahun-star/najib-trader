@@ -1,48 +1,48 @@
 {
   "ticker": "KDP",
   "market": "US",
-  "last_updated": "2026-11-16T10:26:59Z",
+  "last_updated": "2026-11-16T23:37:32Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 42.5,
+      "reason": "Neutral zone (42.5) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
-        "volume_climax": 80.0,
+        "volume_climax": 65.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 55.883,
-        "stoch_k": 59.601,
-        "stoch_d": 73.5889,
-        "macd": 1.0591,
-        "macd_signal": 1.1345,
-        "macd_hist": -0.0754,
-        "bb_upper": 38.0853,
-        "bb_mid": 35.788,
-        "bb_lower": 33.4907,
-        "atr": 1.2194,
-        "ma50": 33.2639,
-        "ma200": 30.1299,
-        "price": 36.34,
-        "vol_ratio": 2.75,
+        "rsi": 51.9275,
+        "stoch_k": 36.8893,
+        "stoch_d": 56.5102,
+        "macd": 0.9238,
+        "macd_signal": 1.0924,
+        "macd_hist": -0.1686,
+        "bb_upper": 38.0581,
+        "bb_mid": 35.844,
+        "bb_lower": 33.6299,
+        "atr": 1.2308,
+        "ma50": 33.3284,
+        "ma200": 30.1738,
+        "price": 35.58,
+        "vol_ratio": 1.83,
         "above_ma50": true,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
-        "volume_climax": true,
+        "volume_climax": false,
         "near_support": false,
         "near_resistance": true,
         "in_fib_zone": false
@@ -64,7 +64,8 @@
       ],
       "resistance_levels": [
         32.14,
-        35.4
+        35.4,
+        38.09
       ],
       "fib_levels": {
         "0.0": 38.29,
@@ -78,31 +79,31 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 51.1,
-      "reason": "Neutral zone (51.1)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
-        "rsi_stoch": 40.4,
+        "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 80.0,
-        "sr_fib": 50.0
+        "volume_climax": 50.0,
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 67.5127,
-        "stoch_k": 87.6817,
-        "stoch_d": 91.1075,
-        "macd": 1.6431,
-        "macd_signal": 1.1772,
-        "macd_hist": 0.4659,
-        "bb_upper": 36.6422,
-        "bb_mid": 32.3267,
-        "bb_lower": 28.0112,
-        "atr": 2.049,
-        "ma50": 29.7697,
+        "rsi": 63.567,
+        "stoch_k": 78.2836,
+        "stoch_d": 85.6,
+        "macd": 1.6651,
+        "macd_signal": 1.2744,
+        "macd_hist": 0.3907,
+        "bb_upper": 36.9993,
+        "bb_mid": 32.4527,
+        "bb_lower": 27.906,
+        "atr": 2.0012,
+        "ma50": 29.9252,
         "ma200": NaN,
-        "price": 36.34,
-        "vol_ratio": 2.09,
+        "price": 35.58,
+        "vol_ratio": 0.64,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -114,9 +115,9 @@
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
-        "volume_climax": true,
+        "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
+        "near_resistance": true,
         "in_fib_zone": false
       },
       "trade_levels": {
@@ -150,9 +151,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "consolidating",
+    "bias": "bullish",
     "ma200_position": "above",
-    "structure": "contracting (LH+HL)",
+    "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
