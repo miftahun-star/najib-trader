@@ -1,43 +1,43 @@
 {
   "ticker": "ADRO.JK",
   "market": "IHSG",
-  "last_updated": "2026-11-13T21:07:20Z",
+  "last_updated": "2026-11-16T10:26:37Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.8,
-      "reason": "Neutral zone (50.8)",
+      "score": 44.8,
+      "reason": "Neutral zone (44.8) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 55.0
       },
       "indicators": {
-        "rsi": 53.1934,
-        "stoch_k": 36.1111,
-        "stoch_d": 26.3889,
-        "macd": -37.5628,
-        "macd_signal": -44.3965,
-        "macd_hist": 6.8338,
-        "bb_upper": 2523.0192,
-        "bb_mid": 2370.5,
-        "bb_lower": 2217.9808,
-        "atr": 97.2052,
-        "ma50": 2498.6,
-        "ma200": 2391.1103,
-        "price": 2450.0,
-        "vol_ratio": 1.11,
+        "rsi": 51.8861,
+        "stoch_k": 73.6111,
+        "stoch_d": 55.0926,
+        "macd": -20.0053,
+        "macd_signal": -36.5902,
+        "macd_hist": 16.5849,
+        "bb_upper": 2510.9351,
+        "bb_mid": 2395.5,
+        "bb_lower": 2280.0649,
+        "atr": 93.4576,
+        "ma50": 2488.6,
+        "ma200": 2394.1752,
+        "price": 2440.0,
+        "vol_ratio": 0.72,
         "above_ma50": false,
         "above_ma200": true
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -60,7 +60,7 @@
       },
       "support_levels": [
         2511.11,
-        2260.0,
+        2266.67,
         2100.0
       ],
       "resistance_levels": [
@@ -77,39 +77,39 @@
       }
     },
     "weekly": {
-      "signal": "HOLD",
-      "score": 43.0,
-      "reason": "Neutral zone (43.0) | Bearish divergence detected | Candle: bullish_engulfing (bullish)",
+      "signal": "WATCH",
+      "score": 37.0,
+      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 90.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 51.0865,
-        "stoch_k": 37.7193,
-        "stoch_d": 36.5497,
-        "macd": 27.1666,
-        "macd_signal": 65.1386,
-        "macd_hist": -37.972,
-        "bb_upper": 2761.6104,
-        "bb_mid": 2499.0,
-        "bb_lower": 2236.3896,
-        "atr": 193.0546,
-        "ma50": 2307.542,
+        "rsi": 50.5836,
+        "stoch_k": 40.7895,
+        "stoch_d": 39.3275,
+        "macd": 25.9154,
+        "macd_signal": 57.7123,
+        "macd_hist": -31.7969,
+        "bb_upper": 2753.7241,
+        "bb_mid": 2507.5,
+        "bb_lower": 2261.2759,
+        "atr": 188.9087,
+        "ma50": 2324.9334,
         "ma200": NaN,
-        "price": 2450.0,
-        "vol_ratio": 0.72,
+        "price": 2440.0,
+        "vol_ratio": 0.15,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "bullish_engulfing",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
@@ -150,9 +150,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "volatile",
+    "bias": "bullish",
     "ma200_position": "above",
-    "structure": "expanding (HH+LL)",
+    "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
