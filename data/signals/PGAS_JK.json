@@ -1,49 +1,49 @@
 {
   "ticker": "PGAS.JK",
   "market": "IHSG",
-  "last_updated": "2026-11-16T23:37:00Z",
+  "last_updated": "2026-11-17T11:23:36Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 46.4,
-      "reason": "Neutral zone (46.4) | Candle: hammer (bullish)",
+      "signal": "WATCH",
+      "score": 39.7,
+      "reason": "Depressed score (39.7) but not at confirmed range high | Candle: bearish_engulfing (bearish)",
       "components": {
-        "rsi_stoch": 28.1,
+        "rsi_stoch": 28.5,
         "divergence": 50.0,
-        "candle_pattern": 75.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 64.4989,
-        "stoch_k": 97.5124,
-        "stoch_d": 96.341,
-        "macd": 40.9355,
-        "macd_signal": 13.6301,
-        "macd_hist": 27.3054,
-        "bb_upper": 1594.621,
-        "bb_mid": 1389.0,
-        "bb_lower": 1183.379,
-        "atr": 57.7575,
-        "ma50": 1417.6,
-        "ma200": 1635.747,
-        "price": 1550.0,
-        "vol_ratio": 0.66,
+        "rsi": 61.7086,
+        "stoch_k": 97.1831,
+        "stoch_d": 96.9051,
+        "macd": 43.2082,
+        "macd_signal": 19.5457,
+        "macd_hist": 23.6625,
+        "bb_upper": 1611.0748,
+        "bb_mid": 1400.25,
+        "bb_lower": 1189.4252,
+        "atr": 55.7748,
+        "ma50": 1417.4,
+        "ma200": 1634.0346,
+        "price": 1530.0,
+        "vol_ratio": 0.47,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "hammer",
-          "direction": "bullish"
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": true,
         "in_fib_zone": false
       },
@@ -59,8 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        1484.17,
-        1357.5
+        1484.17
       ],
       "resistance_levels": [
         1553.89,
@@ -78,38 +77,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 52.3,
-      "reason": "Neutral zone (52.3) | Candle: hammer (bullish)",
+      "score": 48.9,
+      "reason": "Neutral zone (48.9)",
       "components": {
-        "rsi_stoch": 42.8,
+        "rsi_stoch": 44.7,
         "divergence": 50.0,
-        "candle_pattern": 75.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 53.015,
-        "stoch_k": 85.7678,
-        "stoch_d": 69.5367,
-        "macd": -48.8977,
-        "macd_signal": -69.2021,
-        "macd_hist": 20.3043,
-        "bb_upper": 1635.8678,
-        "bb_mid": 1457.0,
-        "bb_lower": 1278.1322,
-        "atr": 113.5391,
-        "ma50": 1654.8594,
+        "rsi": 51.8951,
+        "stoch_k": 84.2697,
+        "stoch_d": 69.0373,
+        "macd": -50.4932,
+        "macd_signal": -69.5212,
+        "macd_hist": 19.028,
+        "bb_upper": 1632.8913,
+        "bb_mid": 1456.0,
+        "bb_lower": 1279.1087,
+        "atr": 114.2537,
+        "ma50": 1654.4594,
         "ma200": NaN,
-        "price": 1550.0,
-        "vol_ratio": 0.22,
+        "price": 1530.0,
+        "vol_ratio": 0.38,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "hammer",
-          "direction": "bullish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,

@@ -1,43 +1,43 @@
 {
   "ticker": "TPIA.JK",
   "market": "IHSG",
-  "last_updated": "2026-11-16T23:37:02Z",
+  "last_updated": "2026-11-17T11:23:37Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 44.0,
-      "reason": "Neutral zone (44.0) | Candle: bearish_engulfing (bearish)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 38.9732,
-        "stoch_k": 29.2275,
-        "stoch_d": 26.6201,
-        "macd": -78.3856,
-        "macd_signal": -94.0097,
-        "macd_hist": 15.6241,
-        "bb_upper": 1406.5667,
-        "bb_mid": 1305.0,
-        "bb_lower": 1203.4333,
-        "atr": 98.7398,
-        "ma50": 1552.1,
-        "ma200": 3387.5093,
-        "price": 1245.0,
-        "vol_ratio": 0.58,
+        "rsi": 38.3145,
+        "stoch_k": 28.481,
+        "stoch_d": 28.3782,
+        "macd": -76.8373,
+        "macd_signal": -90.5752,
+        "macd_hist": 13.7379,
+        "bb_upper": 1408.5512,
+        "bb_mid": 1303.0,
+        "bb_lower": 1197.4488,
+        "atr": 95.6156,
+        "ma50": 1537.8,
+        "ma200": 3360.4242,
+        "price": 1235.0,
+        "vol_ratio": 0.32,
         "above_ma50": false,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -79,10 +79,10 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 58.0,
-      "reason": "Neutral zone (58.0) | Bullish divergence detected | Candle: bearish_engulfing (bearish)",
+      "score": 58.1,
+      "reason": "Neutral zone (58.1) | Bullish divergence detected | Candle: bearish_engulfing (bearish)",
       "components": {
-        "rsi_stoch": 54.8,
+        "rsi_stoch": 55.4,
         "divergence": 90.0,
         "candle_pattern": 10.0,
         "bb_touch": 50.0,
@@ -90,20 +90,20 @@
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 29.1265,
-        "stoch_k": 16.7045,
-        "stoch_d": 16.7317,
-        "macd": -665.448,
-        "macd_signal": -760.6058,
-        "macd_hist": 95.1578,
-        "bb_upper": 2424.1432,
-        "bb_mid": 1737.5,
-        "bb_lower": 1050.8568,
-        "atr": 350.0978,
-        "ma50": 3775.0953,
+        "rsi": 29.0142,
+        "stoch_k": 16.3711,
+        "stoch_d": 16.6206,
+        "macd": -666.2457,
+        "macd_signal": -760.7654,
+        "macd_hist": 94.5197,
+        "bb_upper": 2425.1661,
+        "bb_mid": 1737.0,
+        "bb_lower": 1048.8339,
+        "atr": 351.8843,
+        "ma50": 3774.8953,
         "ma200": NaN,
-        "price": 1245.0,
-        "vol_ratio": 0.11,
+        "price": 1235.0,
+        "vol_ratio": 0.16,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -151,9 +151,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bullish",
+    "bias": "volatile",
     "ma200_position": "below",
-    "structure": "uptrend (HH+HL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
