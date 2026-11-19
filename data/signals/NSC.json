@@ -1,37 +1,37 @@
 {
   "ticker": "NSC",
   "market": "US",
-  "last_updated": "2026-11-19T10:59:12Z",
+  "last_updated": "2026-11-19T22:32:21Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 53.2,
-      "reason": "Neutral zone (53.2)",
+      "score": 57.0,
+      "reason": "Neutral zone (57.0)",
       "components": {
-        "rsi_stoch": 51.0,
+        "rsi_stoch": 62.5,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 50.0,
+        "volume_climax": 65.0,
         "sr_fib": 70.0
       },
       "indicators": {
-        "rsi": 45.7867,
-        "stoch_k": 19.1697,
-        "stoch_d": 27.123,
-        "macd": -0.1309,
-        "macd_signal": 1.542,
-        "macd_hist": -1.6728,
-        "bb_upper": 347.1728,
-        "bb_mid": 332.3969,
-        "bb_lower": 317.6209,
-        "atr": 7.0876,
-        "ma50": 322.8691,
-        "ma200": 315.3438,
-        "price": 323.5,
-        "vol_ratio": 0.95,
-        "above_ma50": true,
+        "rsi": 40.876,
+        "stoch_k": 10.0259,
+        "stoch_d": 17.3598,
+        "macd": -1.022,
+        "macd_signal": 1.0292,
+        "macd_hist": -2.0512,
+        "bb_upper": 347.5521,
+        "bb_mid": 331.3957,
+        "bb_lower": 315.2393,
+        "atr": 7.2556,
+        "ma50": 322.766,
+        "ma200": 315.4193,
+        "price": 316.82,
+        "vol_ratio": 1.52,
+        "above_ma50": false,
         "above_ma200": true
       },
       "patterns": {
@@ -77,38 +77,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 47.0,
-      "reason": "Neutral zone (47.0)",
+      "score": 41.0,
+      "reason": "Neutral zone (41.0) | Candle: bearish_engulfing (bearish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 10.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 51.2399,
-        "stoch_k": 38.9168,
-        "stoch_d": 46.7861,
-        "macd": 3.9492,
-        "macd_signal": 5.3371,
-        "macd_hist": -1.3879,
-        "bb_upper": 351.7284,
-        "bb_mid": 328.8258,
-        "bb_lower": 305.9232,
-        "atr": 14.701,
-        "ma50": 310.6445,
+        "rsi": 48.2874,
+        "stoch_k": 34.4947,
+        "stoch_d": 45.3121,
+        "macd": 3.4163,
+        "macd_signal": 5.2306,
+        "macd_hist": -1.8142,
+        "bb_upper": 351.9104,
+        "bb_mid": 328.4918,
+        "bb_lower": 305.0732,
+        "atr": 14.9769,
+        "ma50": 310.5109,
         "ma200": NaN,
-        "price": 323.5,
-        "vol_ratio": 0.71,
+        "price": 316.82,
+        "vol_ratio": 1.03,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bearish_engulfing",
+          "direction": "bearish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -150,9 +150,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "consolidating",
+    "bias": "bearish",
     "ma200_position": "above",
-    "structure": "contracting (LH+HL)",
+    "structure": "downtrend (LH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
