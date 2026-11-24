@@ -1,49 +1,49 @@
 {
   "ticker": "HSY",
   "market": "US",
-  "last_updated": "2026-11-24T01:59:09Z",
+  "last_updated": "2026-11-24T13:09:09Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "WATCH",
-      "score": 37.0,
-      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected | Candle: shooting_star (bearish)",
+      "signal": "HOLD",
+      "score": 42.2,
+      "reason": "Neutral zone (42.2) | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 25.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 65.0,
-        "sr_fib": 45.0
+        "volume_climax": 50.0,
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 57.0733,
-        "stoch_k": 75.5165,
-        "stoch_d": 78.174,
-        "macd": 2.275,
-        "macd_signal": 1.9892,
-        "macd_hist": 0.2858,
-        "bb_upper": 181.3015,
-        "bb_mid": 170.7659,
-        "bb_lower": 160.2304,
-        "atr": 5.0478,
-        "ma50": 167.111,
-        "ma200": 184.0599,
-        "price": 175.48,
-        "vol_ratio": 1.56,
+        "rsi": 52.2937,
+        "stoch_k": 58.7301,
+        "stoch_d": 70.5444,
+        "macd": 2.0448,
+        "macd_signal": 2.0003,
+        "macd_hist": 0.0444,
+        "bb_upper": 181.448,
+        "bb_mid": 171.0525,
+        "bb_lower": 160.6571,
+        "atr": 4.9309,
+        "ma50": 167.1176,
+        "ma200": 183.7998,
+        "price": 172.56,
+        "vol_ratio": 1.06,
         "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
         "candle": {
-          "name": "shooting_star",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": true,
         "in_fib_zone": true
       },
@@ -78,31 +78,31 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 49.2,
-      "reason": "Neutral zone (49.2)",
+      "score": 50.8,
+      "reason": "Neutral zone (50.8)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 65.0,
-        "sr_fib": 35.0
+        "volume_climax": 50.0,
+        "sr_fib": 55.0
       },
       "indicators": {
-        "rsi": 50.6523,
-        "stoch_k": 59.1102,
-        "stoch_d": 50.2606,
-        "macd": -3.1638,
-        "macd_signal": -4.3806,
-        "macd_hist": 1.2169,
-        "bb_upper": 184.881,
-        "bb_mid": 171.589,
-        "bb_lower": 158.2971,
-        "atr": 9.9096,
-        "ma50": 184.3209,
+        "rsi": 48.4212,
+        "stoch_k": 55.2616,
+        "stoch_d": 54.1524,
+        "macd": -2.8268,
+        "macd_signal": -4.0699,
+        "macd_hist": 1.2431,
+        "bb_upper": 184.9677,
+        "bb_mid": 171.6736,
+        "bb_lower": 158.3794,
+        "atr": 9.4451,
+        "ma50": 184.2444,
         "ma200": NaN,
-        "price": 175.48,
-        "vol_ratio": 1.51,
+        "price": 172.56,
+        "vol_ratio": 0.31,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -115,7 +115,7 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": false,
         "in_fib_zone": true
       },
@@ -131,7 +131,8 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        161.11
+        169.48,
+        151.06
       ],
       "resistance_levels": [
         189.03
@@ -149,7 +150,7 @@
   },
   "yearly_trend": {
     "bias": "bullish",
-    "ma200_position": "above",
+    "ma200_position": "below",
     "structure": "uptrend (HH+HL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
