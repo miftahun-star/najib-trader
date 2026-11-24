@@ -1,36 +1,36 @@
 {
   "ticker": "AON",
   "market": "US",
-  "last_updated": "2026-11-24T13:09:05Z",
+  "last_updated": "2026-11-24T23:43:08Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 52.2,
-      "reason": "Neutral zone (52.2)",
+      "score": 50.0,
+      "reason": "Neutral zone (50.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 65.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 57.6534,
-        "stoch_k": 27.0203,
-        "stoch_d": 34.3215,
-        "macd": 8.1155,
-        "macd_signal": 9.8304,
-        "macd_hist": -1.7149,
-        "bb_upper": 352.2022,
-        "bb_mid": 331.6232,
-        "bb_lower": 311.0442,
-        "atr": 7.95,
-        "ma50": 303.0971,
-        "ma200": 323.8628,
-        "price": 331.86,
-        "vol_ratio": 0.74,
+        "rsi": 65.0176,
+        "stoch_k": 39.1631,
+        "stoch_d": 33.0059,
+        "macd": 8.3437,
+        "macd_signal": 9.5331,
+        "macd_hist": -1.1893,
+        "bb_upper": 349.3044,
+        "bb_mid": 333.6798,
+        "bb_lower": 318.0552,
+        "atr": 8.1865,
+        "ma50": 303.8764,
+        "ma200": 324.037,
+        "price": 342.86,
+        "vol_ratio": 0.85,
         "above_ma50": true,
         "above_ma200": true
       },
@@ -43,9 +43,9 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
-        "near_resistance": false,
-        "in_fib_zone": true
+        "near_support": true,
+        "near_resistance": true,
+        "in_fib_zone": false
       },
       "trade_levels": {
         "entry": null,
@@ -60,7 +60,8 @@
       },
       "support_levels": [
         347.03,
-        268.5
+        268.5,
+        328.71
       ],
       "resistance_levels": [
         277.98,
@@ -80,31 +81,31 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 47.8,
-      "reason": "Neutral zone (47.8)",
+      "score": 52.2,
+      "reason": "Neutral zone (52.2)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 35.0
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 53.585,
-        "stoch_k": 72.262,
-        "stoch_d": 69.6776,
-        "macd": -2.098,
-        "macd_signal": -5.7654,
-        "macd_hist": 3.6674,
-        "bb_upper": 388.5406,
-        "bb_mid": 324.8279,
-        "bb_lower": 261.1153,
-        "atr": 18.8897,
-        "ma50": 327.7437,
+        "rsi": 57.2499,
+        "stoch_k": 76.1153,
+        "stoch_d": 70.9621,
+        "macd": -1.2205,
+        "macd_signal": -5.5899,
+        "macd_hist": 4.3694,
+        "bb_upper": 389.5345,
+        "bb_mid": 325.3779,
+        "bb_lower": 261.2213,
+        "atr": 19.5428,
+        "ma50": 327.9637,
         "ma200": NaN,
-        "price": 331.86,
-        "vol_ratio": 0.14,
+        "price": 342.86,
+        "vol_ratio": 0.28,
         "above_ma50": true,
         "above_ma200": null
       },
@@ -151,9 +152,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bearish",
+    "bias": "volatile",
     "ma200_position": "below",
-    "structure": "downtrend (LH+LL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }
