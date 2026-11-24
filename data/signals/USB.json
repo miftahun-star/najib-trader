@@ -1,36 +1,36 @@
 {
   "ticker": "USB",
   "market": "US",
-  "last_updated": "2026-11-24T01:59:17Z",
+  "last_updated": "2026-11-24T13:09:13Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "WATCH",
-      "score": 62.2,
-      "reason": "Elevated score (62.2) but not at confirmed range low",
+      "signal": "HOLD",
+      "score": 52.1,
+      "reason": "Neutral zone (52.1)",
       "components": {
-        "rsi_stoch": 69.7,
+        "rsi_stoch": 60.6,
         "divergence": 50.0,
         "candle_pattern": 50.0,
-        "bb_touch": 85.0,
+        "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 50.0
       },
       "indicators": {
-        "rsi": 33.3183,
-        "stoch_k": 4.2037,
-        "stoch_d": 8.9644,
-        "macd": -0.3173,
-        "macd_signal": 0.1532,
-        "macd_hist": -0.4705,
-        "bb_upper": 62.3126,
-        "bb_mid": 59.74,
-        "bb_lower": 57.1674,
-        "atr": 1.3784,
-        "ma50": 58.9166,
-        "ma200": 57.5375,
-        "price": 56.05,
-        "vol_ratio": 1.45,
+        "rsi": 41.5724,
+        "stoch_k": 11.5303,
+        "stoch_d": 7.2643,
+        "macd": -0.4156,
+        "macd_signal": 0.0395,
+        "macd_hist": -0.4551,
+        "bb_upper": 62.4014,
+        "bb_mid": 59.6255,
+        "bb_lower": 56.8496,
+        "atr": 1.3985,
+        "ma50": 58.8229,
+        "ma200": 57.5296,
+        "price": 57.41,
+        "vol_ratio": 1.07,
         "above_ma50": false,
         "above_ma200": false
       },
@@ -41,9 +41,9 @@
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "lower",
+        "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": false,
         "in_fib_zone": false
       },
@@ -59,7 +59,7 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        60.33,
+        60.37,
         55.79
       ],
       "resistance_levels": [
@@ -77,38 +77,38 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 41.0,
-      "reason": "Neutral zone (41.0) | Candle: bearish_engulfing (bearish)",
+      "score": 47.0,
+      "reason": "Neutral zone (47.0)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
         "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 42.8912,
-        "stoch_k": 32.5327,
-        "stoch_d": 38.6213,
-        "macd": 0.4774,
-        "macd_signal": 1.1128,
-        "macd_hist": -0.6355,
-        "bb_upper": 65.4151,
-        "bb_mid": 60.6933,
-        "bb_lower": 55.9715,
-        "atr": 2.8326,
-        "ma50": 56.8126,
+        "rsi": 46.8389,
+        "stoch_k": 27.5109,
+        "stoch_d": 34.6994,
+        "macd": 0.2981,
+        "macd_signal": 0.9499,
+        "macd_hist": -0.6518,
+        "bb_upper": 65.3801,
+        "bb_mid": 60.4723,
+        "bb_lower": 55.5644,
+        "atr": 2.7488,
+        "ma50": 56.9319,
         "ma200": NaN,
-        "price": 56.05,
-        "vol_ratio": 0.88,
-        "above_ma50": false,
+        "price": 57.41,
+        "vol_ratio": 0.2,
+        "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
@@ -134,7 +134,7 @@
         50.16
       ],
       "resistance_levels": [
-        47.28,
+        47.12,
         58.26
       ],
       "fib_levels": {
@@ -149,9 +149,9 @@
     }
   },
   "yearly_trend": {
-    "bias": "bearish",
+    "bias": "volatile",
     "ma200_position": "above",
-    "structure": "downtrend (LH+LL)",
+    "structure": "expanding (HH+LL)",
     "description": "Long-term trend bias \u2014 not a reversal call"
   }
 }

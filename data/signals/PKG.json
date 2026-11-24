@@ -1,36 +1,36 @@
 {
   "ticker": "PKG",
   "market": "US",
-  "last_updated": "2026-11-24T01:59:13Z",
+  "last_updated": "2026-11-24T13:09:12Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 56.3,
-      "reason": "Neutral zone (56.3)",
+      "score": 50.9,
+      "reason": "Neutral zone (50.9)",
       "components": {
-        "rsi_stoch": 70.2,
+        "rsi_stoch": 65.9,
         "divergence": 50.0,
         "candle_pattern": 50.0,
-        "bb_touch": 85.0,
+        "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 30.0
+        "sr_fib": 35.0
       },
       "indicators": {
-        "rsi": 35.6391,
-        "stoch_k": 3.8788,
-        "stoch_d": 9.9399,
-        "macd": -0.3414,
-        "macd_signal": 2.3381,
-        "macd_hist": -2.6795,
-        "bb_upper": 263.6468,
-        "bb_mid": 250.5055,
-        "bb_lower": 237.3642,
-        "atr": 6.21,
-        "ma50": 240.7252,
-        "ma200": 229.5077,
-        "price": 234.18,
-        "vol_ratio": 0.84,
+        "rsi": 41.1148,
+        "stoch_k": 7.2793,
+        "stoch_d": 6.0783,
+        "macd": -0.9095,
+        "macd_signal": 1.6886,
+        "macd_hist": -2.5981,
+        "bb_upper": 263.9066,
+        "bb_mid": 249.7115,
+        "bb_lower": 235.5164,
+        "atr": 6.2464,
+        "ma50": 240.8472,
+        "ma200": 229.525,
+        "price": 237.86,
+        "vol_ratio": 0.67,
         "above_ma50": false,
         "above_ma200": true
       },
@@ -41,11 +41,11 @@
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
-        "bb_touch": "lower",
+        "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": true,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -78,44 +78,44 @@
     },
     "weekly": {
       "signal": "WATCH",
-      "score": 34.0,
-      "reason": "Depressed score (34.0) but not at confirmed range high | Bearish divergence detected | Candle: bearish_engulfing (bearish)",
+      "score": 37.0,
+      "reason": "Depressed score (37.0) but not at confirmed range high | Bearish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 10.0,
-        "candle_pattern": 10.0,
+        "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 30.0
       },
       "indicators": {
-        "rsi": 48.8638,
-        "stoch_k": 54.4722,
-        "stoch_d": 69.8337,
-        "macd": 5.1345,
-        "macd_signal": 5.6456,
-        "macd_hist": -0.5111,
-        "bb_upper": 261.0933,
-        "bb_mid": 241.3375,
-        "bb_lower": 221.5817,
-        "atr": 13.2145,
-        "ma50": 226.7468,
+        "rsi": 50.8942,
+        "stoch_k": 44.2765,
+        "stoch_d": 58.7482,
+        "macd": 4.4463,
+        "macd_signal": 5.4057,
+        "macd_hist": -0.9594,
+        "bb_upper": 260.5784,
+        "bb_mid": 241.8655,
+        "bb_lower": 223.1526,
+        "atr": 12.7505,
+        "ma50": 227.5039,
         "ma200": NaN,
-        "price": 234.18,
-        "vol_ratio": 0.91,
+        "price": 237.86,
+        "vol_ratio": 0.15,
         "above_ma50": true,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": "bearish_engulfing",
-          "direction": "bearish"
+          "name": null,
+          "direction": null
         },
         "bullish_divergence": false,
         "bearish_divergence": true,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": true,
         "in_fib_zone": false
       },
@@ -131,12 +131,13 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        185.76,
+        189.63,
         222.59
       ],
       "resistance_levels": [
         237.99,
-        208.62
+        208.62,
+        260.45
       ],
       "fib_levels": {
         "0.0": 262.59,

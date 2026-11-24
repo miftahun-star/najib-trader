@@ -1,37 +1,37 @@
 {
   "ticker": "UNVR.JK",
   "market": "IHSG",
-  "last_updated": "2026-11-24T01:58:42Z",
+  "last_updated": "2026-11-24T13:08:53Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
       "signal": "HOLD",
-      "score": 50.0,
-      "reason": "Neutral zone (50.0)",
+      "score": 44.8,
+      "reason": "Neutral zone (44.8)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 50.0
+        "sr_fib": 15.0
       },
       "indicators": {
-        "rsi": 49.6249,
-        "stoch_k": 73.8095,
-        "stoch_d": 79.8942,
-        "macd": 8.1118,
-        "macd_signal": -0.4411,
-        "macd_hist": 8.5529,
-        "bb_upper": 1615.2203,
-        "bb_mid": 1479.5,
-        "bb_lower": 1343.7797,
-        "atr": 43.8168,
-        "ma50": 1527.2,
-        "ma200": 1699.6274,
-        "price": 1505.0,
-        "vol_ratio": 0.45,
-        "above_ma50": false,
+        "rsi": 57.8944,
+        "stoch_k": 76.455,
+        "stoch_d": 77.0723,
+        "macd": 10.7487,
+        "macd_signal": 1.7969,
+        "macd_hist": 8.9518,
+        "bb_upper": 1621.094,
+        "bb_mid": 1487.5,
+        "bb_lower": 1353.906,
+        "atr": 44.2585,
+        "ma50": 1525.8,
+        "ma200": 1696.9226,
+        "price": 1555.0,
+        "vol_ratio": 0.93,
+        "above_ma50": true,
         "above_ma200": false
       },
       "patterns": {
@@ -44,8 +44,8 @@
         "bb_touch": "none",
         "volume_climax": false,
         "near_support": false,
-        "near_resistance": false,
-        "in_fib_zone": false
+        "near_resistance": true,
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
@@ -78,46 +78,46 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 53.0,
-      "reason": "Neutral zone (53.0)",
+      "score": 53.8,
+      "reason": "Neutral zone (53.8) | Candle: bullish_engulfing (bullish)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
-        "candle_pattern": 50.0,
+        "candle_pattern": 90.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 70.0
+        "sr_fib": 35.0
       },
       "indicators": {
-        "rsi": 42.5685,
-        "stoch_k": 42.0326,
-        "stoch_d": 39.192,
-        "macd": -73.5687,
-        "macd_signal": -69.7839,
-        "macd_hist": -3.7849,
-        "bb_upper": 1884.8247,
-        "bb_mid": 1615.5,
-        "bb_lower": 1346.1753,
-        "atr": 112.0351,
-        "ma50": 1777.74,
+        "rsi": 45.7787,
+        "stoch_k": 45.2688,
+        "stoch_d": 40.2708,
+        "macd": -69.5801,
+        "macd_signal": -68.9861,
+        "macd_hist": -0.594,
+        "bb_upper": 1883.9125,
+        "bb_mid": 1618.0,
+        "bb_lower": 1352.0875,
+        "atr": 113.107,
+        "ma50": 1778.74,
         "ma200": NaN,
-        "price": 1505.0,
-        "vol_ratio": 0.13,
+        "price": 1555.0,
+        "vol_ratio": 0.37,
         "above_ma50": false,
         "above_ma200": null
       },
       "patterns": {
         "candle": {
-          "name": null,
-          "direction": null
+          "name": "bullish_engulfing",
+          "direction": "bullish"
         },
         "bullish_divergence": false,
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": true,
+        "near_support": false,
         "near_resistance": false,
-        "in_fib_zone": false
+        "in_fib_zone": true
       },
       "trade_levels": {
         "entry": null,
