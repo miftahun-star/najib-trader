@@ -1,38 +1,38 @@
 {
   "ticker": "CBRE",
   "market": "US",
-  "last_updated": "2026-11-27T11:39:25Z",
+  "last_updated": "2026-11-27T23:07:07Z",
   "data_stale": false,
   "timeframes": {
     "daily": {
-      "signal": "HOLD",
-      "score": 59.2,
-      "reason": "Neutral zone (59.2) | Bullish divergence detected",
+      "signal": "WATCH",
+      "score": 62.2,
+      "reason": "Elevated score (62.2) but not at confirmed range low | Bullish divergence detected",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 90.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
-        "volume_climax": 65.0,
-        "sr_fib": 35.0
+        "volume_climax": 50.0,
+        "sr_fib": 65.0
       },
       "indicators": {
-        "rsi": 58.481,
-        "stoch_k": 46.7073,
-        "stoch_d": 24.6731,
-        "macd": -0.0765,
-        "macd_signal": -0.3169,
-        "macd_hist": 0.2404,
-        "bb_upper": 140.9985,
-        "bb_mid": 133.303,
-        "bb_lower": 125.6075,
-        "atr": 4.5295,
-        "ma50": 132.3228,
-        "ma200": 138.5381,
-        "price": 137.89,
-        "vol_ratio": 1.51,
+        "rsi": 60.8263,
+        "stoch_k": 72.8006,
+        "stoch_d": 46.4734,
+        "macd": 0.522,
+        "macd_signal": -0.1491,
+        "macd_hist": 0.6711,
+        "bb_upper": 141.7434,
+        "bb_mid": 133.864,
+        "bb_lower": 125.9846,
+        "atr": 4.3874,
+        "ma50": 132.3324,
+        "ma200": 138.4896,
+        "price": 139.8,
+        "vol_ratio": 0.58,
         "above_ma50": true,
-        "above_ma200": false
+        "above_ma200": true
       },
       "patterns": {
         "candle": {
@@ -59,8 +59,9 @@
         "trailing_k": 2.5
       },
       "support_levels": [
-        139.46,
-        125.09
+        125.09,
+        134.83,
+        144.08
       ],
       "resistance_levels": [
         144.4,
@@ -79,31 +80,31 @@
     },
     "weekly": {
       "signal": "HOLD",
-      "score": 47.8,
-      "reason": "Neutral zone (47.8)",
+      "score": 50.8,
+      "reason": "Neutral zone (50.8)",
       "components": {
         "rsi_stoch": 50.0,
         "divergence": 50.0,
         "candle_pattern": 50.0,
         "bb_touch": 50.0,
         "volume_climax": 50.0,
-        "sr_fib": 35.0
+        "sr_fib": 55.0
       },
       "indicators": {
-        "rsi": 50.4254,
-        "stoch_k": 32.855,
-        "stoch_d": 31.2656,
-        "macd": -3.0785,
-        "macd_signal": -2.8491,
-        "macd_hist": -0.2294,
-        "bb_upper": 156.3329,
-        "bb_mid": 138.6225,
-        "bb_lower": 120.9121,
-        "atr": 9.9962,
-        "ma50": 142.857,
+        "rsi": 51.7693,
+        "stoch_k": 34.8002,
+        "stoch_d": 31.914,
+        "macd": -2.9261,
+        "macd_signal": -2.8186,
+        "macd_hist": -0.1075,
+        "bb_upper": 156.4323,
+        "bb_mid": 138.718,
+        "bb_lower": 121.0037,
+        "atr": 10.0726,
+        "ma50": 142.8952,
         "ma200": NaN,
-        "price": 137.89,
-        "vol_ratio": 0.79,
+        "price": 139.8,
+        "vol_ratio": 0.92,
         "above_ma50": false,
         "above_ma200": null
       },
@@ -116,7 +117,7 @@
         "bearish_divergence": false,
         "bb_touch": "none",
         "volume_climax": false,
-        "near_support": false,
+        "near_support": true,
         "near_resistance": false,
         "in_fib_zone": true
       },
